@@ -7,8 +7,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
-
+import "swiper/css/navigation";
 import "./PartnerCarousel.css";
+
+//to use navigation on swiper
+//1. import "swiper/css/navigation";
+//2. add Navigation to module
+//3. add navigation={true} to swiper element
+
 
 // import required modules
 import Image from "next/image";
@@ -47,7 +53,67 @@ export default function PartnerCarousel() {
             <div className="h-28 bg-green-400">
               <Image alt="" role="img" src={sg_airline} />
             </div>
-          </SwiperSlide>{" "}
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 ">
+              <Image alt="" role="img" src={thai_airway} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 bg-green-400">
+              <Image alt="" role="img" src={sg_airline} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 ">
+              <Image alt="" role="img" src={thai_airway} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 bg-green-400">
+              <Image alt="" role="img" src={sg_airline} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 ">
+              <Image alt="" role="img" src={thai_airway} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 bg-green-400">
+              <Image alt="" role="img" src={sg_airline} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 ">
+              <Image alt="" role="img" src={thai_airway} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 bg-green-400">
+              <Image alt="" role="img" src={sg_airline} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 ">
+              <Image alt="" role="img" src={thai_airway} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 bg-green-400">
+              <Image alt="" role="img" src={sg_airline} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 ">
+              <Image alt="" role="img" src={thai_airway} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 bg-green-400">
+              <Image alt="" role="img" src={sg_airline} />
+            </div>
+          </SwiperSlide>
           <SwiperSlide>
             <div className="h-28 ">
               <Image alt="" role="img" src={thai_airway} />
@@ -67,47 +133,7 @@ export default function PartnerCarousel() {
             <div className="h-28 bg-green-400">
               <Image alt="" role="img" src={sg_airline} />
             </div>
-          </SwiperSlide>{" "}
-          <SwiperSlide>
-            <div className="h-28 ">
-              <Image alt="" role="img" src={thai_airway} />
-            </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 bg-green-400">
-              <Image alt="" role="img" src={sg_airline} />
-            </div>
-          </SwiperSlide>{" "}
-          <SwiperSlide>
-            <div className="h-28 ">
-              <Image alt="" role="img" src={thai_airway} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 bg-green-400">
-              <Image alt="" role="img" src={sg_airline} />
-            </div>
-          </SwiperSlide>{" "}
-          <SwiperSlide>
-            <div className="h-28 ">
-              <Image alt="" role="img" src={thai_airway} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 bg-green-400">
-              <Image alt="" role="img" src={sg_airline} />
-            </div>
-          </SwiperSlide>{" "}
-          <SwiperSlide>
-            <div className="h-28 ">
-              <Image alt="" role="img" src={thai_airway} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 bg-green-400">
-              <Image alt="" role="img" src={sg_airline} />
-            </div>
-          </SwiperSlide>{" "}
           <SwiperSlide>
             <div className="h-28 ">
               <Image alt="" role="img" src={thai_airway} />
