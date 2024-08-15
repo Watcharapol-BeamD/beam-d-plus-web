@@ -123,7 +123,7 @@ export default function PartnerCarousel() {
             <div className="h-28 bg-green-400">
               <Image alt="" role="img" src={sg_airline} />
             </div>
-          </SwiperSlide>{" "}
+          </SwiperSlide> 
           <SwiperSlide>
             <div className="h-28 ">
               <Image alt="" role="img" src={thai_airway} />
