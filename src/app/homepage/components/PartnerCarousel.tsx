@@ -1,0 +1,122 @@
+"use client";
+import React from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/grid";
+import "swiper/css/pagination";
+
+import "./PartnerCarousel.css";
+
+// import required modules
+import Image from "next/image";
+import { Grid, Pagination } from "swiper/modules";
+import thai_airway from "../../assets/thai_air_way.png";
+import join_img from "../../assets/join.png";
+import sg_airline from "../../assets/sg_airline.jpg";
+
+export default function PartnerCarousel() {
+  const renderCarousel = () => {
+    return (
+      <div className="h-96">
+        <Swiper
+          slidesPerView={5}
+          grid={{
+            rows: 2,
+          }}
+          spaceBetween={10}
+          //   pagination={{
+          //     clickable: true,
+          //   }}
+          modules={[Grid, Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="h-28 ">
+              <Image alt="" role="img" src={thai_airway} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 bg-green-400">
+              <Image alt="" role="img" src={sg_airline} />
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide>
+            <div className="h-28 ">
+              <Image alt="" role="img" src={thai_airway} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 bg-green-400">
+              <Image alt="" role="img" src={sg_airline} />
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide>
+            <div className="h-28 ">
+              <Image alt="" role="img" src={thai_airway} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 bg-green-400">
+              <Image alt="" role="img" src={sg_airline} />
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide>
+            <div className="h-28 ">
+              <Image alt="" role="img" src={thai_airway} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 bg-green-400">
+              <Image alt="" role="img" src={sg_airline} />
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide>
+            <div className="h-28 ">
+              <Image alt="" role="img" src={thai_airway} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 bg-green-400">
+              <Image alt="" role="img" src={sg_airline} />
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide>
+            <div className="h-28 ">
+              <Image alt="" role="img" src={thai_airway} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 bg-green-400">
+              <Image alt="" role="img" src={sg_airline} />
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide>
+            <div className="h-28 ">
+              <Image alt="" role="img" src={thai_airway} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 bg-green-400">
+              <Image alt="" role="img" src={sg_airline} />
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide>
+            <div className="h-28 ">
+              <Image alt="" role="img" src={thai_airway} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-28 bg-green-400">
+              <Image alt="" role="img" src={sg_airline} />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    );
+  };
+
+  return <>{renderCarousel()} </>;
+}
