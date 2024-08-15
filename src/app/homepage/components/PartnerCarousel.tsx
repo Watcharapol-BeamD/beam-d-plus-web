@@ -15,7 +15,6 @@ import "./PartnerCarousel.css";
 //2. add Navigation to module
 //3. add navigation={true} to swiper element
 
-
 // import required modules
 import Image from "next/image";
 import { Grid, Pagination, Autoplay, Navigation } from "swiper/modules";
@@ -24,11 +23,29 @@ import join_img from "../../assets/join.png";
 import sg_airline from "../../assets/sg_airline.jpg";
 
 export default function PartnerCarousel() {
+  const breakpointsJson = JSON.stringify({
+    768: {
+      slidesPerView: 6,
+      grid: {
+        rows: 2,
+        fill: "row",
+      },
+    },
+    1024: {
+      slidesPerView: 8,
+      grid: {
+        rows: 2,
+        fill: "row",
+      },
+    },
+  });
+  const breakpoints = JSON.parse(breakpointsJson);
+
   const renderCarousel = () => {
     return (
       <div className="h-96" id="partner-section">
         <Swiper
-          slidesPerView={5}
+          // slidesPerView={5}
           grid={{
             rows: 2,
           }}
@@ -43,107 +60,79 @@ export default function PartnerCarousel() {
             disableOnInteraction: false,
           }}
           // navigation={true}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              grid: {
+                rows: 2,
+                fill: "row",
+              },
+            },
+            320: { slidesPerView: 2,
+              grid: {
+                rows: 2,
+                fill: "row",
+              }, },
+            440: { slidesPerView: 3 ,
+              grid: {
+                rows: 2,
+                fill: "row",
+              },},
+            600: { slidesPerView: 4 ,
+              grid: {
+                rows: 2,
+                fill: "row",
+              },},
+            800: { slidesPerView: 5 ,
+              grid: {
+                rows: 2,
+                fill: "row",
+              },},
+          }}
+
+          //  breakpoints={JSON.parse(
+          //         JSON.stringify({
+          //           0: { slidesPerView: 1,
+          //             grid: {
+          //               rows: 2,
+          //               fill: "row",
+          //             } },
+          //           320: { slidesPerView: 2,
+          //             grid: {
+          //               rows: 2,
+          //               fill: "row",
+          //             } },
+          //           440: { slidesPerView: 3,
+          //             grid: {
+          //               rows: 2,
+          //               fill: "row",
+          //             } },
+          //           600: { slidesPerView: 4 ,
+          //             grid: {
+          //               rows: 2,
+          //               fill: "row",
+          //             }},
+          //           800: { slidesPerView: 5,
+          //             grid: {
+          //               rows: 2,
+          //               fill: "row",
+          //             } },
+          //         })
+          //       )}
+
+          // breakpoints={breakpoints}
         >
-          <SwiperSlide>
-            <div className="h-28 ">
-              <Image alt="" role="img" src={thai_airway} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 bg-green-400">
-              <Image alt="" role="img" src={sg_airline} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 ">
-              <Image alt="" role="img" src={thai_airway} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 bg-green-400">
-              <Image alt="" role="img" src={sg_airline} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 ">
-              <Image alt="" role="img" src={thai_airway} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 bg-green-400">
-              <Image alt="" role="img" src={sg_airline} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 ">
-              <Image alt="" role="img" src={thai_airway} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 bg-green-400">
-              <Image alt="" role="img" src={sg_airline} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 ">
-              <Image alt="" role="img" src={thai_airway} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 bg-green-400">
-              <Image alt="" role="img" src={sg_airline} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 ">
-              <Image alt="" role="img" src={thai_airway} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 bg-green-400">
-              <Image alt="" role="img" src={sg_airline} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 ">
-              <Image alt="" role="img" src={thai_airway} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 bg-green-400">
-              <Image alt="" role="img" src={sg_airline} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 ">
-              <Image alt="" role="img" src={thai_airway} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 bg-green-400">
-              <Image alt="" role="img" src={sg_airline} />
-            </div>
-          </SwiperSlide> 
-          <SwiperSlide>
-            <div className="h-28 ">
-              <Image alt="" role="img" src={thai_airway} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 bg-green-400">
-              <Image alt="" role="img" src={sg_airline} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 ">
-              <Image alt="" role="img" src={thai_airway} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-28 bg-green-400">
-              <Image alt="" role="img" src={sg_airline} />
-            </div>
-          </SwiperSlide>
+          {[...Array(18)].map((_, index) => (
+            <SwiperSlide key={index}>
+              <div className="h-28">
+                <Image
+                  alt=""
+                  role="img"
+                  src={index % 2 === 0 ? thai_airway : sg_airline}
+                />
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     );
