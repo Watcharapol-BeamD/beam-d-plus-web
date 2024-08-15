@@ -9,7 +9,7 @@ export default function Homepage() {
         <div className="h-[40rem] bg-green-400"></div>
         <p className="text-center text-3xl">WE ARE</p>
         <p className="text-center text-3xl">PROUD PARTNER TO GREAT BRANDS</p>
-        <div id="product-carousel"className="bg-blue-400  ">
+        <div id="product-carousel"className="bg-orange-400  ">
           <PartnerCarousel />
         </div>
       </div>

@@ -12,7 +12,7 @@ import "./PartnerCarousel.css";
 
 // import required modules
 import Image from "next/image";
-import { Grid, Pagination } from "swiper/modules";
+import { Grid, Pagination, Autoplay, Navigation } from "swiper/modules";
 import thai_airway from "../../assets/thai_air_way.png";
 import join_img from "../../assets/join.png";
 import sg_airline from "../../assets/sg_airline.jpg";
@@ -30,8 +30,13 @@ export default function PartnerCarousel() {
           //   pagination={{
           //     clickable: true,
           //   }}
-          modules={[Grid, Pagination]}
-         
+          modules={[Grid, Pagination, Autoplay, Navigation]}
+          loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          // navigation={true}
         >
           <SwiperSlide>
             <div className="h-28 ">
