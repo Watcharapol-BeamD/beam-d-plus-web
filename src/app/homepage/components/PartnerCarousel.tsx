@@ -20,7 +20,7 @@ import sg_airline from "../../assets/sg_airline.jpg";
 export default function PartnerCarousel() {
   const renderCarousel = () => {
     return (
-      <div className="h-96">
+      <div className="h-96" id="partner-section">
         <Swiper
           slidesPerView={5}
           grid={{
@@ -31,7 +31,7 @@ export default function PartnerCarousel() {
           //     clickable: true,
           //   }}
           modules={[Grid, Pagination]}
-          className="mySwiper"
+         
         >
           <SwiperSlide>
             <div className="h-28 ">

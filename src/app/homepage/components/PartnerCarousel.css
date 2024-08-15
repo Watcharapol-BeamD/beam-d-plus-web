@@ -1,97 +1,25 @@
-.swiper {
+#partner-section .swiper {
   width: 100%;
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* #product-carousel .swiper-pagination-fraction,
-.swiper-pagination-custom,
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  top:18rem;
-  height: 20rem;
-} */
-
-#product-carousel .swiper-slide {
+#partner-section .swiper-slide {
   text-align: center;
   font-size: 18px;
-  /* background: #fb1414; */
+  /* background: #fff; */
   height: 22.5rem;
-
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* top: 1rem; */
 }
 
-.swiper-slide img {
+/* ------- */
+#partner-section .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-/*  arrow size */
-#product-carousel .swiper-button-prev:after,
-#product-carousel .swiper-button-next:after {
-  font-size: 1.5rem; /* 36px */
-  line-height: 2.5rem; /* 40px */
-}
-
-/* background arrow size */
-#product-carousel .swiper-button-prev,
-#product-carousel .swiper-button-next {
-  background-color: #cbc7cc;
-  opacity: 0.3;
-  height: 3rem;
-  width: 3rem;
-  border-radius: 9999px;
-  color: black;
-  top: 45%;
-}
-
-#product-carousel .swiper-button-prev {
-  left: 0px;
-}
-
-#product-carousel .swiper-button-next {
-  right: 0px;
-}
-
-/*Hover background arrow size */
-#product-carousel .swiper-button-prev:hover,
-#product-carousel .swiper-button-next:hover {
-  background-color: #ccc7c7;
-  opacity: 0.6;
-}
-
-@media only screen and (max-width: 1024px) {
-  /*  arrow size */
-  #product-carousel .swiper-button-prev:after,
-  #product-carousel .swiper-button-next:after {
-    font-size: 1.875rem; /* 30px */
-    line-height: 2.25rem; /* 36px */
-  }
-}
-
-@media only screen and (max-width: 660px) {
-  /*  arrow size */
-  #product-carousel .swiper-button-prev:after,
-  #product-carousel .swiper-button-next:after {
-    font-size: 1.125rem; /* 18px */
-    line-height: 1.75rem; /* 28px */
-  }
-}
-
-/* hidden arrow */
-@media only screen and (max-width: 559px) {
-  /* background arrow size */
-  #product-carousel .swiper-button-prev,
-  #product-carousel .swiper-button-next {
-    display: none;
-  }
-}
-
-#product-carousel .swiper-pagination-bullet-active {
-  background-color: #783ed6;
 }
