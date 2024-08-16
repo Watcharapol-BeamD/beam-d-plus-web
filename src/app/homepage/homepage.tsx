@@ -8,7 +8,7 @@ export default function Homepage() {
         <div className="absolute inset-0 grid grid-rows-[auto,1fr,auto] items-center justify-items-center">
           <p className="text-3xl font-bold">OUR SERVICES</p>
 
-          <div className="grid grid-cols-4 md:grid-cols-6 w-full justify-items-center items-center">
+          <div className="grid grid-cols-3 lg:grid-cols-6 w-full justify-items-center items-center gap-2">
             <div className="h-60 w-40 bg-red-400 rounded-xl"> </div>
             <div className="h-60 w-40 bg-red-400 rounded-xl"> </div>
             <div className="h-60 w-40 bg-red-400 rounded-xl"> </div>
