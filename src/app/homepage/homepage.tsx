@@ -75,7 +75,7 @@ export default function Homepage() {
           <PartnerCarousel />
         </div>
         {renderOurService()}
-        {renderOurTeamDesktop()}
+        {/* {renderOurTeamDesktop()} */}
         <TechnologyExpertiseSection />
       </div>
     );
