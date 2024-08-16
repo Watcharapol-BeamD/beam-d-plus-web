@@ -89,7 +89,7 @@ export default function TeamCarousel() {
                     {item.description}
                   </p>
                 </div> */}
-                <p className="line-clamp-10 text-center mt-10">
+                <p className="line-clamp-10 text-sm text-center mt-10">
                   {item.description}
                 </p>
               </div>

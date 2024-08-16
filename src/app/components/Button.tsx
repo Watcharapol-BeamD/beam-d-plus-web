@@ -8,7 +8,7 @@ type ButtonProps = {
 // Define and export the Button component
 export default function Button({ title }: ButtonProps) {
   return (
-    <button className="bg-gray-500 py-3 px-6 rounded-full text-white text-lg">
+    <button className="bg-primary py-3 px-6 rounded-full text-white text-lg">
       {title}
     </button>
   );

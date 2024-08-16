@@ -76,6 +76,9 @@ const config: Config = {
       lineClamp: {
         10: "10",
       },
+      colors: {
+        "primary": "#a09c7c",  
+      },
     },
   },
   plugins: [],

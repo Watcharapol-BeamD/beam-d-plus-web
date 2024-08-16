@@ -1,8 +1,9 @@
 import React from "react";
-import PartnerCarousel from "./components/partnerCarousel/PartnerCarousel";
-import TeamCarousel from "./components/teamCarousel/TeamCarousel";
+import PartnerCarousel from "./components/partner-carousel/PartnerCarousel";
+import TeamCarousel from "./components/team-carousel/TeamCarousel";
 import Button from "../components/Button";
 import ProductSection from "./components/ProductCarousel/ProductSection";
+import TechnologyExpertiseSection from "./components/technology-expertise-section/technology-expertise-section";
 
 export default function Homepage() {
   const renderOurService = () => {
@@ -46,7 +47,7 @@ export default function Homepage() {
     );
   };
 
-  const renderOurTeamMobile = ()=>{
+  const renderOurTeamMobile = () => {
     return (
       <div className="h-160 w-full flex">
         <div className="w-1/2 flex items-center justify-center bg-blue-100">
@@ -62,8 +63,7 @@ export default function Homepage() {
         </div>
       </div>
     );
-  }
-  
+  };
 
   const renderHomepage = () => {
     return (
@@ -76,7 +76,7 @@ export default function Homepage() {
         </div>
         {renderOurService()}
         {renderOurTeamDesktop()}
-        <ProductSection />
+        <TechnologyExpertiseSection />
       </div>
     );
   };
