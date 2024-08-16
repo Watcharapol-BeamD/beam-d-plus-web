@@ -52,15 +52,16 @@ export default function TechnologyExpertiseCarouselMobile() {
         <SwiperSlide>
           <div id="frontend" className="h-80 w-86 bg-white rounded-3xl p-4 text-2xl ">
             <p>Frontend</p>
-            <div className="grid grid-cols-2 ">
-             
+            <div className="flex flex-col items-center justify-center">
+              <div className="flex justify-around">
                 <Image alt="tech-img" src={typeScript_img} />
                 <Image alt="tech-img" src={javaScript_img} /> 
                 <Image alt="tech-img" src={react_img} />
-          
+              </div>
+              <div className="flex justify-around">
                 <Image alt="tech-img" src={nextjs_img} />
                 <Image alt="tech-img" src={tailwind_img} />
-             
+              </div>
             </div>
           </div>
         </SwiperSlide>
