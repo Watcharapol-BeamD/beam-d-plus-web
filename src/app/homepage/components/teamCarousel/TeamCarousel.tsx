@@ -53,22 +53,30 @@ export default function TeamCarousel() {
               voluptates id nihil assumenda consequatur animi molestiae
               provident, quibusdam rerum et`,
     },
+    {
+      profilePic: man_image,
+      fullName: "May Kannika",
+      position: "Managing Directtor",
+      description: ` Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
+              voluptates id nihil assumenda consequatur animi molestiae
+              provident, quibusdam rerum et`,
+    },
   ];
 
   return (
-    <div id="team-carousel" className="bg-red-400 h-full w-160">
+    <div id="team-carousel" className="h-full w-160">
       <Swiper
         scrollbar={{
-          hide: true,
+          hide: false,
         }}
         slidesPerView={2}
-        spaceBetween={6}
+        spaceBetween={10}
         modules={[Scrollbar]}
       >
         {personList.map((item) => {
           return (
             <SwiperSlide>
-              <div className=" h-full w-full bg-green-500 p-6 flex flex-col items-center p-">
+              <div className="h-full w-full  p-6 flex flex-col items-center shadow-2xl border cursor-pointer">
                 <div className="h-44 w-44 rounded-full overflow-hidden">
                   <Image alt="person" role="img" src={item.profilePic} />
                 </div>
@@ -81,9 +89,9 @@ export default function TeamCarousel() {
                     {item.description}
                   </p>
                 </div> */}
-                 <p className="line-clamp-10 text-center mt-10">
-                    {item.description}
-                  </p>
+                <p className="line-clamp-10 text-center mt-10">
+                  {item.description}
+                </p>
               </div>
             </SwiperSlide>
           );

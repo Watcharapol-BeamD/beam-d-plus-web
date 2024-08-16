@@ -39,7 +39,7 @@ export default function Homepage() {
             <Button title="View Our Team" />
           </div>
         </div>
-        <div className="w-1/2 h-full bg-blue-700 py-6 flex justify-center">
+        <div className="w-1/2 h-full   py-6 flex justify-center">
           <TeamCarousel />
         </div>
       </div>
