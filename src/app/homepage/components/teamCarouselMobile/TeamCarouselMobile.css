@@ -1,4 +1,4 @@
-#team-carousel .swiper {
+#team-carousel-mobile .swiper {
   width: 100%;
   height: 100%;
 }
@@ -8,30 +8,21 @@
     width: 12px;
 } */
 
-#team-carousel .swiper-slide {
+#team-carousel-mobile .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #1a5edb;
+  background: #fff;
   /* height: 22.5rem; */
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
- 
+  width: 150px;
 }
 
-#team-carousel .swiper-slide img {
+#team-carousel-mobile .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-/* @media only screen and (max-width: 1280px) {
-  #team-carousel .swiper {
-    width: 75%;
-    height: 100%;
- 
-  }
-}
-  */

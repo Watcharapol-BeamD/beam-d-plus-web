@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/scrollbar";
 
-import "./TeamCarousel.css";
+import "./TeamCarouselMobile.css";
 
 // import required modules
 import { Scrollbar } from "swiper/modules";
@@ -15,7 +15,7 @@ import { Scrollbar } from "swiper/modules";
 import man_image from "../../../assets/man.jpg";
 import Image from "next/image";
 
-export default function TeamCarousel() {
+export default function TeamCarouselMobile() {
   const personList = [
     {
       profilePic: man_image,
@@ -76,7 +76,7 @@ export default function TeamCarousel() {
         {personList.map((item) => {
           return (
             <SwiperSlide>
-              <div className="h-full w-full p-6 flex flex-col items-center shadow-2xl border cursor-pointer bg-red-400">
+              <div className="h-full w-full p-6 flex flex-col items-center shadow-2xl border cursor-pointer ">
                 <div className="h-44 w-44 rounded-full overflow-hidden">
                   <Image alt="person" role="img" src={item.profilePic} />
                 </div>

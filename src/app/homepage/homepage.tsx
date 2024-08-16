@@ -28,7 +28,7 @@ export default function Homepage() {
     );
   };
 
-  const renderOurTeam = () => {
+  const renderOurTeamDesktop = () => {
     return (
       <div className="h-160 w-full flex">
         <div className="w-1/2 flex items-center justify-center bg-blue-100">
@@ -39,12 +39,31 @@ export default function Homepage() {
             <Button title="View Our Team" />
           </div>
         </div>
-        <div className="w-1/2 h-full   py-6 flex justify-center">
+        <div className="w-1/2 h-full py-6 flex justify-center">
           <TeamCarousel />
         </div>
       </div>
     );
   };
+
+  const renderOurTeamMobile = ()=>{
+    return (
+      <div className="h-160 w-full flex">
+        <div className="w-1/2 flex items-center justify-center bg-blue-100">
+          <div className="text-center text-3xl">
+            <p className="uppercase">your trusted partner in</p>
+            <p className="uppercase">business development,</p>
+            <p className="uppercase my-20">Driven by expertise and passion</p>
+            <Button title="View Our Team" />
+          </div>
+        </div>
+        <div className="w-1/2 h-full py-6 flex justify-center bg-blue-400">
+          <TeamCarousel />
+        </div>
+      </div>
+    );
+  }
+  
 
   const renderHomepage = () => {
     return (
@@ -56,7 +75,7 @@ export default function Homepage() {
           <PartnerCarousel />
         </div>
         {renderOurService()}
-        {renderOurTeam()}
+        {renderOurTeamDesktop()}
         <ProductSection />
       </div>
     );
