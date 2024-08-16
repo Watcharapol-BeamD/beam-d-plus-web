@@ -2,6 +2,32 @@ import React from "react";
 import PartnerCarousel from "./components/PartnerCarousel";
 
 export default function Homepage() {
+  const renderOurService = () => {
+    return (
+      <div id="our-service" className="h-144 relative ">
+        <div className="absolute inset-0 grid grid-rows-[auto,1fr,auto] items-center justify-items-center">
+          <p className="text-3xl font-bold">OUR SERVICES</p>
+
+          <div className="grid grid-cols-4 md:grid-cols-6 w-full justify-items-center items-center">
+            <div className="h-60 w-40 bg-red-400 rounded-xl"> </div>
+            <div className="h-60 w-40 bg-red-400 rounded-xl"> </div>
+            <div className="h-60 w-40 bg-red-400 rounded-xl"> </div>
+            <div className="h-60 w-40 bg-red-400 rounded-xl"> </div>
+            <div className="h-60 w-40 bg-red-400 rounded-xl"> </div>
+            <div className="h-60 w-40 bg-red-400 rounded-xl"> </div>
+          </div>
+
+          <button className="bg-gray-500 p-4 rounded-full text-white">
+            View All Service
+          </button>
+        </div>
+
+        <div className="bg-green-800 h-1/2"></div>
+        <div className="bg-yellow-400 h-1/2"></div>
+      </div>
+    );
+  };
+
   const renderHomepage = () => {
     return (
       <div className="xl:container mx-auto">
@@ -11,25 +37,7 @@ export default function Homepage() {
         <div id="partner-carousel" className="bg-orange-400  ">
           <PartnerCarousel />
         </div>
-        <div id="our-service" className="bg-blue-400 min-h-[36rem] relative">
-          <div className="absolute inset-0 flex flex-col items-center justify-around">
-            <p className="text-3xl font-bold">OUR SERVICES</p>
-            <div className="flex justify-around w-full flex-wrap gap-2">
-              <div className="h-60 w-40 bg-red-400 rounded-xl"> </div>
-              <div className="h-60 w-40 bg-red-400 rounded-xl"> </div>
-              <div className="h-60 w-40 bg-red-400 rounded-xl"> </div>
-              <div className="h-60 w-40 bg-red-400 rounded-xl"> </div>
-              <div className="h-60 w-40 bg-red-400 rounded-xl"> </div>
-              <div className="h-60 w-40 bg-red-400 rounded-xl"> </div>
-            </div>
-            <button className="bg-gray-500 p-4 rounded-full text-white">
-              View All Service
-            </button>
-          </div>
-
-          <div className="bg-green-800 h-1/2 "></div>
-          <div className="bg-yellow-400 h-1/2"></div>
-        </div>
+    {renderOurService()}
       </div>
     );
   };
