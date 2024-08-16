@@ -18,9 +18,9 @@ import "./PartnerCarousel.css";
 // import required modules
 import Image from "next/image";
 import { Grid, Pagination, Autoplay, Navigation } from "swiper/modules";
-import thai_airway from "../../assets/thai_air_way.png";
-import join_img from "../../assets/join.png";
-import sg_airline from "../../assets/sg_airline.jpg";
+import thai_airway from "../../../assets/thai_air_way.png";
+import join_img from "../../../assets/join.png";
+import sg_airline from "../../../assets/sg_airline.jpg";
 
 export default function PartnerCarousel() {
   const breakpointsJson = JSON.stringify({
@@ -68,26 +68,34 @@ export default function PartnerCarousel() {
                 fill: "row",
               },
             },
-            320: { slidesPerView: 2,
+            320: {
+              slidesPerView: 2,
               grid: {
                 rows: 2,
                 fill: "row",
-              }, },
-            440: { slidesPerView: 3 ,
+              },
+            },
+            440: {
+              slidesPerView: 3,
               grid: {
                 rows: 2,
                 fill: "row",
-              },},
-            600: { slidesPerView: 4 ,
+              },
+            },
+            600: {
+              slidesPerView: 4,
               grid: {
                 rows: 2,
                 fill: "row",
-              },},
-            800: { slidesPerView: 5 ,
+              },
+            },
+            800: {
+              slidesPerView: 5,
               grid: {
                 rows: 2,
                 fill: "row",
-              },},
+              },
+            },
           }}
 
           //  breakpoints={JSON.parse(

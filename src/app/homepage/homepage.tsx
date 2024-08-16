@@ -1,5 +1,5 @@
 import React from "react";
-import PartnerCarousel from "./components/PartnerCarousel";
+import PartnerCarousel from "./components/PartnerCarousel/PartnerCarousel";
 
 export default function Homepage() {
   const renderOurService = () => {
@@ -28,6 +28,20 @@ export default function Homepage() {
     );
   };
 
+  const renderOurTeam = () => {
+    return (
+      <div className="h-160">
+        <div>
+          <p className="uppercase">
+            your trusted partner in business development,
+          </p>
+          <p className="uppercase">Driven by expertise and passion</p>
+        </div>
+        <div></div>
+      </div>
+    );
+  };
+
   const renderHomepage = () => {
     return (
       <div className="xl:container mx-auto">
@@ -37,7 +51,8 @@ export default function Homepage() {
         <div id="partner-carousel" className="bg-orange-400  ">
           <PartnerCarousel />
         </div>
-    {renderOurService()}
+        {renderOurService()}
+        {renderOurTeam()}
       </div>
     );
   };
