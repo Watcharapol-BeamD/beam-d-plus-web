@@ -73,6 +73,9 @@ const config: Config = {
         176: "44rem",
         192: "52rem",
       },
+      lineClamp: {
+        10: "10",
+      },
     },
   },
   plugins: [],
