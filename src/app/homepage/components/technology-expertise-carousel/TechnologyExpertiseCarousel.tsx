@@ -60,7 +60,7 @@ export default function TechnologyExpertiseCarouselMobile() {
               <Image alt="tech-img" src={javaScript_img} className="w-14 h-14" />
               <Image alt="tech-img" src={react_img} className="w-14 h-14" />
             </div>
-            <div className="flex justify-around mt-5">
+            <div className="flex justify-around mt-10">
               <Image alt="tech-img" src={nextjs_img} className="w-16" />
               <Image alt="tech-img" src={tailwind_img} className="w-16" />
             </div>
