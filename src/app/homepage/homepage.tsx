@@ -5,6 +5,9 @@ import Button from "../components/Button";
 import ProductSection from "./components/ProductCarousel/ProductSection";
 import TechnologyExpertiseSection from "./components/technology-expertise-section/technology-expertise-section";
 
+import ml_img from "@/app/assets/our-service/ml.svg";
+import Image from "next/image";
+
 export default function Homepage() {
   const renderOurService = () => {
     return (
@@ -13,7 +16,10 @@ export default function Homepage() {
           <p className="text-3xl font-bold">OUR SERVICES</p>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6  w-full justify-items-center items-center gap-2">
-            <div className="h-60 w-40 bg-white rounded-xl"> </div>
+            <div className="h-60 w-40 bg-white rounded-xl p-4 shadow border-primary border">
+              <Image alt="icon" src={ml_img} height={45} className="text-red-400"/>
+              <p className="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, vel?</p>
+            </div>
             <div className="h-60 w-40 bg-white rounded-xl"> </div>
             <div className="h-60 w-40 bg-white rounded-xl"> </div>
             <div className="h-60 w-40 bg-white rounded-xl"> </div>
