@@ -50,48 +50,55 @@ export default function TechnologyExpertiseCarouselMobile() {
         }}
       >
         <SwiperSlide>
-          <div id="frontend" className="h-80 w-86 bg-white rounded-3xl p-4 text-2xl ">
+          <div
+            id="frontend"
+            className="h-80 w-86 bg-white rounded-3xl p-4 text-2xl "
+          >
             <p>Frontend</p>
-            <div className="flex flex-col items-center justify-center">
-              <div className="flex justify-around">
-                <Image alt="tech-img" src={typeScript_img} />
-                <Image alt="tech-img" src={javaScript_img} /> 
-                <Image alt="tech-img" src={react_img} />
-              </div>
-              <div className="flex justify-around">
-                <Image alt="tech-img" src={nextjs_img} />
-                <Image alt="tech-img" src={tailwind_img} />
-              </div>
+            <div className="flex justify-around mt-10">
+              <Image alt="tech-img" src={typeScript_img} className="w-14 h-14" />
+              <Image alt="tech-img" src={javaScript_img} className="w-14 h-14" />
+              <Image alt="tech-img" src={react_img} className="w-14 h-14" />
+            </div>
+            <div className="flex justify-around mt-5">
+              <Image alt="tech-img" src={nextjs_img} className="w-16" />
+              <Image alt="tech-img" src={tailwind_img} className="w-16" />
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div id="backend"  className="h-80 w-86 bg-white rounded-3xl p-4 text-2xl ">
+          <div
+            id="backend"
+            className="h-80 w-86 bg-white rounded-3xl p-4 text-2xl "
+          >
             <p>Backend</p>
-            <div className="flex flex-col justify-around gap-4">
+            <div className="flex flex-col justify-around gap-4 mt-10">
               <div className="flex justify-around">
-                <Image alt="tech-img" src={nodejs_img} />
-                <Image alt="tech-img" src={express_img} />
+                <Image alt="tech-img" src={nodejs_img} className="w-20" />
+                <Image alt="tech-img" src={express_img} className="w-24" />
               </div>
-              <div className="flex justify-around">
-                <Image alt="tech-img" src={postgresql_img} />
-                <Image alt="tech-img" src={mysql_img} />
+              <div className="flex justify-around mt-5">
+                <Image alt="tech-img" src={postgresql_img} className="w-20 h-20" />
+                <Image alt="tech-img" src={mysql_img} className="w-20 h-20" />
               </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div id="tool"  className="h-80 w-86 bg-white rounded-3xl p-4 text-2xl ">
-            <p>Tools</p> 
-            <div className="flex flex-col justify-around gap-4">
+          <div
+            id="tool"
+            className="h-80 w-86 bg-white rounded-3xl p-4 text-2xl "
+          >
+            <p>Tools</p>
+            <div className="flex flex-col justify-around gap-4 mt-10">
               <div className="flex justify-around">
-                <Image alt="tech-img" src={redux_img} />
-                <Image alt="tech-img" src={mui_img} />{" "}
-                <Image alt="tech-img" src={figma_img} />
+                <Image alt="tech-img" src={redux_img} className="w-18 h-18" />
+                <Image alt="tech-img" src={mui_img} className="w-16 h-16" />
+                <Image alt="tech-img" src={figma_img} className="w-16 h-16" />
               </div>
-              <div className="flex justify-around">
-                <Image alt="tech-img" src={ant_design_img} />
-                <Image alt="tech-img" src={vscode_img} />
+              <div className="flex justify-around mt-5">
+                <Image alt="tech-img" src={ant_design_img} className="w-16 h-16" />
+                <Image alt="tech-img" src={vscode_img} className="w-16 h-16" />
               </div>
             </div>
           </div>
