@@ -28,7 +28,7 @@ export default function SolutionSection() {
       return (
         <div id="solution-carousel" className="w-full ">
           <Swiper
-            spaceBetween={0}
+            spaceBetween={5}
             // navigation={true}
             pagination={true}
             modules={[Navigation, Pagination]}
@@ -130,5 +130,5 @@ export default function SolutionSection() {
     );
   };
 
-  return <div>{renderSolution()}</div>;
+  return <div className=" p-2">{renderSolution()}</div>;
 }
