@@ -26,9 +26,9 @@ export default function SolutionSection() {
   const renderSolution = () => {
     const solutionCarousel = () => {
       return (
-        <div id="solution-carousel" className="w-full">
+        <div id="solution-carousel" className="w-full ">
           <Swiper
-            spaceBetween={30}
+            spaceBetween={0}
             // navigation={true}
             pagination={true}
             modules={[Navigation, Pagination]}
@@ -46,14 +46,14 @@ export default function SolutionSection() {
                 className="bg-cover bg-center md:w-80 md:h-144 w-72 h-112 rounded-3xl overflow-hidden"
                 style={{ backgroundImage: `url(${solution_img1.src})` }}
               >
-                <div className="bg-primary h-full w-full bg-opacity-60 text-white p-4">
+                <div className="bg-primary h-full w-full bg-opacity-60 text-white p-4 flex flex-col">
                   <Image
                     alt=""
                     src={ribbon_img}
-                    className="text-red-400 h-40"
+                    className="text-red-400 md:h-40 h-36"
                   />
-                  <p className="font-bold text-xl uppercase">ONE-STOP-SERVCE</p>
-                  <p className="text-lg text-start">
+                  <p className="font-bold md:text-xl text-lg uppercase md:pt-10 pt-2">ONE-STOP-SERVCE</p>
+                  <p className="md:text-lg text-base text-start">
                     Our services encompass the entire end-to-end project cycle,
                     including comprehensive tech support and change management
                     to ensure smooth and successful project implementation
@@ -76,10 +76,10 @@ export default function SolutionSection() {
                   <Image
                     alt=""
                     src={services_img}
-                    className="text-red-400 h-40"
+                    className="text-red-400 md:h-40 h-36"
                   />
-                  <p className="font-bold text-xl uppercase">Deep Expertise</p>
-                  <p className="text-lg text-start">
+                  <p className="font-bold md:text-xl text-lg uppercase md:pt-10 pt-2">Deep Expertise</p>
+                  <p className="md:text-lg text-base text-start">
                     Our team rooted in extensive experience with cross-industry
                     knowledge. With a deep expertise in SAP ERP, we provide
                     top-notch consulting and implementation services for clients
@@ -97,12 +97,12 @@ export default function SolutionSection() {
                   <Image
                     alt=""
                     src={new_ideas_in_process_img}
-                    className="text-red-400 h-40"
+                    className="text-red-400 md:h-40 h-36"
                   />
-                  <p className="font-bold text-xl uppercase">
+                  <p className="font-bold md:text-xl text-lg uppercase md:pt-10 pt-2">
                     Customer’s Recognition
                   </p>
-                  <p className="text-lg text-start">
+                  <p className="md:text-lg text-base text-start">
                     Proven track record in project & change management, ensuring
                     successful project execution and seamless transitions, along
                     with client recognition for service quality
