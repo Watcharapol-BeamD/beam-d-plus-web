@@ -75,7 +75,7 @@ export default function Homepage() {
 
   const renderHomepage = () => {
     return (
-      <div className="xl:container mx-auto">
+      <div className="xl:container mx-auto min-h-screen">
         <div className="h-[40rem] bg-green-400"></div>
         <p className="text-center text-3xl">WE ARE</p>
         <p className="text-center text-3xl">PROUD PARTNER TO GREAT BRANDS</p>

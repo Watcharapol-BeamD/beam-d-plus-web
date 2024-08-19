@@ -3,7 +3,7 @@ import React from "react";
 export default function PerformanceSection() {
   const renderPerformance = () => {
     return (
-      <div className="h-60 w-full">
+      <div className="w-full bg-red-400">
         {/* ----------Desktop---------- */}
         <div className="md:grid hidden grid-cols-3 place-items-center pb-10">
           <div className="text-center text-2xl">
