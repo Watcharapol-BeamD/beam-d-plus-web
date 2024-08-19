@@ -130,5 +130,5 @@ export default function SolutionSection() {
     );
   };
 
-  return <div className=" p-2">{renderSolution()}</div>;
+  return <div className="p-2">{renderSolution()}</div>;
 }
