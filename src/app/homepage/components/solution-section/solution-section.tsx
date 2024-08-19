@@ -15,15 +15,18 @@ import { Navigation, Pagination } from "swiper/modules";
 
 import Image from "next/image";
 
-import solution_img1 from "@/app/assets/solution/close-up-businessman-with-digital-tablet.webp";
-import solution_img2 from "@/app/assets/solution/smiling-asian-businesswoman-showing-tablet-her-manager-meeting-office.webp";
+import solution_img1 from "@/app/assets/solution/smiling-asian-businesswoman-showing-tablet-her-manager-meeting-office.webp";
+import solution_img2 from "@/app/assets/solution/close-up-businessman-with-digital-tablet.webp";
 import solution_img3 from "@/app/assets/solution/business-people-shaking-hands-finishing-up-meeting-deals-business-concept.webp";
+import ribbon_img from "@/app/assets/solution/ribbon.svg";
+import services_img from "@/app/assets/solution/services.svg";
+import new_ideas_in_process_img from "@/app/assets/solution/new-ideas-in-process.svg";
 
 export default function SolutionSection() {
   const renderSolution = () => {
     const solutionCarousel = () => {
       return (
-        <div id="solution-carousel" className="w-[70rem]  ">
+        <div id="solution-carousel" className="w-full">
           <Swiper
             spaceBetween={30}
             // navigation={true}
@@ -39,47 +42,74 @@ export default function SolutionSection() {
             }}
           >
             <SwiperSlide>
-              <Image
-                alt=""
-                src={solution_img1}
-                className="object-cover object-center md:w-80  md:h-144 w-72 h-112 rounded-3xl shadow-lg"
-              />
-            </SwiperSlide> 
-            <SwiperSlide>
-              <Image
-                alt=""
-                src={solution_img2}
-                className="object-cover object-center md:w-80  md:h-144 w-72 h-112 rounded-3xl shadow-lg"
-              />
-            </SwiperSlide> 
-            <SwiperSlide>
-              <Image
-                alt=""
-                src={solution_img3}
-                className="object-cover object-center md:w-80  md:h-144 w-72 h-112 rounded-3xl shadow-lg"
-              />
-            </SwiperSlide>
-            {/* <SwiperSlide>
-              <Image
-                alt=""
-                src={solution_img1}
-                className="object-cover object-center w-80 h-144 rounded-3xl shadow-lg"
-              />
+              <div
+                className="bg-cover bg-center md:w-80 md:h-144 w-72 h-112 rounded-3xl overflow-hidden"
+                style={{ backgroundImage: `url(${solution_img1.src})` }}
+              >
+                <div className="bg-primary h-full w-full bg-opacity-60 text-white p-4">
+                  <Image
+                    alt=""
+                    src={ribbon_img}
+                    className="text-red-400 h-40"
+                  />
+                  <p className="font-bold text-xl uppercase">ONE-STOP-SERVCE</p>
+                  <p className="text-lg text-start">
+                    Our services encompass the entire end-to-end project cycle,
+                    including comprehensive tech support and change management
+                    to ensure smooth and successful project implementation
+                  </p>
+                </div>
+              </div>
+              {/* <Image
+               
+                  alt=""
+                  src={solution_img1}
+                  className="object-cover object-center md:w-80  md:h-144 w-72 h-112 rounded-3xl shadow-lg  bg-primary opacity-60 "
+                /> */}
             </SwiperSlide>
             <SwiperSlide>
-              <Image
-                alt=""
-                src={solution_img2}
-                className="object-cover object-center w-80 h-144 rounded-3xl shadow-lg"
-              />
+              <div
+                className="bg-cover bg-center md:w-80 md:h-144 w-72 h-112 rounded-3xl overflow-hidden"
+                style={{ backgroundImage: `url(${solution_img2.src})` }}
+              >
+                <div className="bg-primary h-full w-full bg-opacity-60 text-white p-4">
+                  <Image
+                    alt=""
+                    src={services_img}
+                    className="text-red-400 h-40"
+                  />
+                  <p className="font-bold text-xl uppercase">Deep Expertise</p>
+                  <p className="text-lg text-start">
+                    Our team rooted in extensive experience with cross-industry
+                    knowledge. With a deep expertise in SAP ERP, we provide
+                    top-notch consulting and implementation services for clients
+                    across various industries
+                  </p>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <Image
-                alt=""
-                src={solution_img3}
-                className="object-cover object-center w-80 h-144 rounded-3xl shadow-lg"
-              />
-            </SwiperSlide> */}
+              <div
+                className="bg-cover bg-center md:w-80 md:h-144 w-72 h-112 rounded-3xl overflow-hidden"
+                style={{ backgroundImage: `url(${solution_img3.src})` }}
+              >
+                <div className="bg-primary h-full w-full bg-opacity-60 text-white p-4">
+                  <Image
+                    alt=""
+                    src={new_ideas_in_process_img}
+                    className="text-red-400 h-40"
+                  />
+                  <p className="font-bold text-xl uppercase">
+                    Customer’s Recognition
+                  </p>
+                  <p className="text-lg text-start">
+                    Proven track record in project & change management, ensuring
+                    successful project execution and seamless transitions, along
+                    with client recognition for service quality
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
           </Swiper>
         </div>
       );
@@ -91,6 +121,11 @@ export default function SolutionSection() {
           TAILORED SOLUTIONS FOR UNIQUE CHALLENHES
         </p>
         <div className="flex w-full justify-center"> {solutionCarousel()}</div>
+        {/* <div
+          className="bg-cover bg-center h-92"
+          style={{ backgroundImage: `url(${solution_img1.src})` }}
+        >  
+        </div> */}
       </div>
     );
   };
