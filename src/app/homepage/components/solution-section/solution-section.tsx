@@ -6,11 +6,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 import "./solution-section.css";
 
 // import required modules
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 
 import Image from "next/image";
 
@@ -26,7 +27,8 @@ export default function SolutionSection() {
           <Swiper
             spaceBetween={30}
             // navigation={true}
-            modules={[Navigation]}
+            pagination={true}
+            modules={[Navigation, Pagination]}
             breakpoints={{
               0: {
                 slidesPerView: 1,
@@ -40,30 +42,44 @@ export default function SolutionSection() {
               <Image
                 alt=""
                 src={solution_img1}
-                className="object-cover object-center bg-yellow-300 w-76 h-112 rounded-3xl shadow-lg"
+                className="object-cover object-center md:w-80  md:h-144 w-72 h-112 rounded-3xl shadow-lg"
               />
-            </SwiperSlide>
+            </SwiperSlide> 
             <SwiperSlide>
               <Image
                 alt=""
+                src={solution_img2}
+                className="object-cover object-center md:w-80  md:h-144 w-72 h-112 rounded-3xl shadow-lg"
+              />
+            </SwiperSlide> 
+            <SwiperSlide>
+              <Image
+                alt=""
+                src={solution_img3}
+                className="object-cover object-center md:w-80  md:h-144 w-72 h-112 rounded-3xl shadow-lg"
+              />
+            </SwiperSlide>
+            {/* <SwiperSlide>
+              <Image
+                alt=""
                 src={solution_img1}
-                className="object-cover object-center bg-yellow-300 w-80 h-144 rounded-3xl shadow-lg"
+                className="object-cover object-center w-80 h-144 rounded-3xl shadow-lg"
               />
             </SwiperSlide>
             <SwiperSlide>
               <Image
                 alt=""
                 src={solution_img2}
-                className="object-cover object-center bg-yellow-300 w-80 h-144 rounded-3xl shadow-lg"
+                className="object-cover object-center w-80 h-144 rounded-3xl shadow-lg"
               />
             </SwiperSlide>
             <SwiperSlide>
               <Image
                 alt=""
                 src={solution_img3}
-                className="object-cover object-center bg-yellow-300 w-80 h-144 rounded-3xl shadow-lg"
+                className="object-cover object-center w-80 h-144 rounded-3xl shadow-lg"
               />
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
       );
