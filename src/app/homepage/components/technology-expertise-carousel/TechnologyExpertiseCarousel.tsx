@@ -17,7 +17,7 @@ import tailwind_img from "@/app/assets/technology/tailwind.png";
 import javaScript_img from "@/app/assets/technology/JavaScript-logo.png";
 import typeScript_img from "@/app/assets/technology/Typescript_logo_2020.svg.png";
 import ant_design_img from "@/app/assets/technology/ant-design-icon-2048x2046-dl3neb73.png";
-import express_img from "@/app/assets/technology/express.webp";
+import express_img from "@/app/assets/technology/express.png";
 import figma_img from "@/app/assets/technology/figma-logo-512.webp";
 import mui_img from "@/app/assets/technology/material-ui-icon-2048x1626-on580ia9.png";
 import nodejs_img from "@/app/assets/technology/Node.js_logo.svg";
@@ -72,10 +72,10 @@ export default function TechnologyExpertiseCarouselMobile() {
             className="h-80 w-86 bg-white rounded-3xl p-4 text-2xl "
           >
             <p>Backend</p>
-            <div className="flex flex-col justify-around gap-4 mt-10">
+            <div className="flex flex-col justify-around gap-4 mt-6">
               <div className="flex justify-around">
                 <Image alt="tech-img" src={nodejs_img} className="w-20" />
-                <Image alt="tech-img" src={express_img} className="w-24" />
+                <Image alt="tech-img" src={express_img} className="w-36" />
               </div>
               <div className="flex justify-around mt-5">
                 <Image alt="tech-img" src={postgresql_img} className="w-20 h-20" />

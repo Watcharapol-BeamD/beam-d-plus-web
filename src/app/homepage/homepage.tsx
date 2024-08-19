@@ -7,6 +7,7 @@ import TechnologyExpertiseSection from "./components/technology-expertise-sectio
 
 import ml_img from "@/app/assets/our-service/ml.svg";
 import Image from "next/image";
+import PerformanceSection from "./components/performance-section/performance-section";
 
 export default function Homepage() {
   const renderOurService = () => {
@@ -83,6 +84,7 @@ export default function Homepage() {
         {renderOurService()}
         {/* {renderOurTeamDesktop()} */}
         <TechnologyExpertiseSection />
+        <PerformanceSection/>
       </div>
     );
   };
