@@ -48,7 +48,7 @@
 #team-carousel .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #1a5edb;
+  /* background: #1a5edb; */
   /* height: 22.5rem; */
   /* Center slide text vertically */
   display: flex;
@@ -64,3 +64,31 @@
   }
 }
   */
+
+  /*  arrow size */
+#team-carousel .swiper-button-prev:after,
+#team-carousel .swiper-button-next:after {
+  font-size: 1.5rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
+}
+
+/* background arrow size */
+#team-carousel .swiper-button-prev,
+#team-carousel .swiper-button-next {
+  background-color: #cbc7cc;
+  opacity: 0.3;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 9999px;
+  color: black;
+  top: 45%;
+  
+}
+
+#partner-carousel .swiper-button-prev {
+  left: 0px;
+}
+
+#partner-carousel .swiper-button-next {
+  right: 0px;
+}

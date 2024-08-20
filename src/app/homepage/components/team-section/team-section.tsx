@@ -27,7 +27,7 @@ export default function TeamSection() {
             <Button title="View Our Team" />
           </div>
         </div>
-        <div className="w-1/2 h-full xl:px-20  px-1  flex justify-center bg-blue-400">
+        <div className="w-1/2 h-full xl:px-20 px-1 flex justify-center ">
           <TeamCarousel numberOfSlide={2} />
         </div>
       </div>

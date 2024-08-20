@@ -31,7 +31,7 @@ export default function SolutionSection() {
         <div id="solution-carousel" className="w-full ">
           <Swiper
             spaceBetween={5}
-            // navigation={true}
+            navigation={true}
             pagination={true}
             modules={[Navigation, Pagination]}
             breakpoints={{

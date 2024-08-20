@@ -6,11 +6,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/scrollbar";
+import "swiper/css/navigation";
 
 import "./TeamCarousel.css";
 
 // import required modules
-import { Scrollbar } from "swiper/modules";
+import { Scrollbar ,Navigation} from "swiper/modules";
 
 import man_image from "../../../assets/man.jpg";
 import Image from "next/image";
@@ -19,7 +20,7 @@ type TeamCarouselProps = {
   numberOfSlide: number;
 };
 
-export default function TeamCarousel({numberOfSlide}:TeamCarouselProps) {
+export default function TeamCarousel({ numberOfSlide }: TeamCarouselProps) {
   const personList = [
     {
       profilePic: man_image,
@@ -75,12 +76,13 @@ export default function TeamCarousel({numberOfSlide}:TeamCarouselProps) {
         }}
         slidesPerView={numberOfSlide}
         spaceBetween={10}
-        modules={[Scrollbar]}
+        // navigation={true}
+        modules={[Scrollbar,Navigation]}
       >
         {personList.map((item) => {
           return (
             <SwiperSlide>
-              <div className="h-full ml:p-6 p-4 flex flex-col items-center shadow-2xl border cursor-pointer bg-red-400">
+              <div className="h-full ml:p-6 p-4 flex flex-col items-center shadow-xl border cursor-pointer ">
                 <div className="  rounded-full overflow-hidden">
                   <Image alt="person" role="img" src={item.profilePic} />
                 </div>

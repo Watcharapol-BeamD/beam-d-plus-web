@@ -94,7 +94,7 @@ export default function Homepage() {
         <OurServiceSection />
         {/* {renderOurService()} */}
         {/* {renderOurTeamDesktop()} */}
-        <TeamSection />
+       <div className="py-4"> <TeamSection /></div>
         <TechnologyExpertiseSection />
         <PerformanceSection />
         <SolutionSection />
