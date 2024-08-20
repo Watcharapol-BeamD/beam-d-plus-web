@@ -13,13 +13,13 @@ import ContactUsSection from "./components/contact-us-section/contact-us-section
 import OurServiceSection from "./components/our-service-section/our-service-section";
 import TeamSection from "./components/team-section/team-section";
 import MainBannerSection from "./components/main-banner-section/main-banner-section";
-
+ 
 export default function Homepage() {
   const renderHomepage = () => {
     return (
       <div className="xl:container mx-auto min-h-screen">
+       
         <MainBannerSection />
- 
 
         <PartnerCarousel />
         <OurServiceSection />
