@@ -15,18 +15,20 @@ import TeamSection from "./components/team-section/team-section";
 import MainBannerSection from "./components/main-banner-section/main-banner-section";
 
 export default function Homepage() {
- 
   const renderHomepage = () => {
     return (
       <div className="xl:container mx-auto min-h-screen">
-        <div className="h-[40rem]  "><MainBannerSection/></div>
-        <p className="text-center text-3xl">WE ARE</p>
-        <p className="text-center text-3xl">PROUD PARTNER TO GREAT BRANDS</p>
+        <MainBannerSection />
+ 
+
         <PartnerCarousel />
         <OurServiceSection />
         {/* {renderOurService()} */}
         {/* {renderOurTeamDesktop()} */}
-       <div className="py-4"> <TeamSection /></div>
+        <div className="py-4">
+          {" "}
+          <TeamSection />
+        </div>
         <TechnologyExpertiseSection />
         <PerformanceSection />
         <SolutionSection />
