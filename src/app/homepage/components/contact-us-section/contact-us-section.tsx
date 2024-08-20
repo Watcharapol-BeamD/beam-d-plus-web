@@ -5,48 +5,49 @@ import india from "@/app/assets/contact-us/india.png";
 import singapore from "@/app/assets/contact-us/singapore.png";
 import Image from "next/image";
 import Button from "@/app/components/Button";
+import ContactUsForm from "../contact-us-form/ContactUsForm";
 
 export default function ContactUsSection() {
-  const renderContactForm = () => {
-    return (
-      <div className="border py-6 shadow-lg">
-        <p className="text-center text-3xl">LET'S CONNECT</p>
+  // const renderContactForm = () => {
+  //   return (
+  //     <div className="border py-6 shadow-lg">
+  //       <p className="text-center text-3xl">LET'S CONNECT</p>
 
-        <div className="flex justify-center flex-col items-center mt-6">
-          <div className="grid lg:grid-cols-2 grid-cols-1 gap-8">
-            <div>
-              <p className=" ">First Name</p>
-              <input className="py-2 outline-none border-b-2 border-black " />
-            </div>
-            <div>
-              <p className=" ">Last Name</p>
-              <input className="py-2 outline-none border-b-2 border-black " />
-            </div>
-            <div>
-              <p className=" ">Company Name</p>
-              <input className="py-2 outline-none border-b-2 border-black " />
-            </div>
-            <div>
-              <p className=" ">Company Email</p>
-              <input className="py-2 outline-none border-b-2 border-black " />
-            </div>
-            <div className="grid grid-col-1 gap-10">
-              <div>
-                <p className=" ">Phone Number</p>
-                <input className="py-2 outline-none border-b-2 border-black " />
-              </div>
-              <div>
-                <p className=" ">Leave A Message</p>
-                <input className="py-2 outline-none border-b-2 border-black " />
-              </div>
-            </div>
-          </div>
-          <div className="mt-4"> <Button title={"SENT MESSAGE"}  /></div>
+  //       <div className="flex justify-center flex-col items-center mt-6">
+  //         <div className="grid sm:grid-cols-2 grid-cols-1 gap-8">
+  //           <div>
+  //             <p className=" ">First Name</p>
+  //             <input className="py-2 outline-none border-b-2 border-black " />
+  //           </div>
+  //           <div>
+  //             <p className=" ">Last Name</p>
+  //             <input className="py-2 outline-none border-b-2 border-black " />
+  //           </div>
+  //           <div>
+  //             <p className=" ">Company Name</p>
+  //             <input className="py-2 outline-none border-b-2 border-black " />
+  //           </div>
+  //           <div>
+  //             <p className=" ">Company Email</p>
+  //             <input className="py-2 outline-none border-b-2 border-black " />
+  //           </div>
+  //           <div className="grid grid-col-1 gap-10">
+  //             <div>
+  //               <p className=" ">Phone Number</p>
+  //               <input className="py-2 outline-none border-b-2 border-black " />
+  //             </div>
+  //             <div>
+  //               <p className=" ">Leave A Message</p>
+  //               <input className="py-2 outline-none border-b-2 border-black " />
+  //             </div>
+  //           </div>
+  //         </div>
+  //         <div className="mt-4"> <Button title={"SENT MESSAGE"}  /></div>
          
-        </div>
-      </div>
-    );
-  };
+  //       </div>
+  //     </div>
+  //   );
+  // };
 
   const renderAddress = () => {
     return (
@@ -98,7 +99,7 @@ export default function ContactUsSection() {
         </p>
         <div className="flex mt-10 lg:flex-row flex-col">
           <div className="lg:w-1/2 w-full lg:block hidden ">{renderAddress()}</div>
-          <div className="lg:w-1/2 w-full ">{renderContactForm()}</div>
+          <div className="lg:w-1/2 w-full "><ContactUsForm/></div>
         </div>
       </div>
     );
