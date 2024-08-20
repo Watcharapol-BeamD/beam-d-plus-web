@@ -9,6 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
+        foo: "linear-gradient(  #a09c7c 0%, #a09c7c 50%, white 0%, white 50%  )",
+
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
@@ -48,10 +50,10 @@ const config: Config = {
         208: "52rem",
         210: "52.5rem",
         212: "53rem",
-        214:"53.5rem",
-        216:"54rem",
-        218:"54.5rem",
-        220:"55rem"
+        214: "53.5rem",
+        216: "54rem",
+        218: "54.5rem",
+        220: "55rem",
       },
       width: {
         "70%": "70%",
@@ -90,10 +92,10 @@ const config: Config = {
         208: "52rem",
         210: "52.5rem",
         212: "53rem",
-        214:"53.5rem",
-        216:"54rem",
-        218:"54.5rem",
-        220:"55rem"
+        214: "53.5rem",
+        216: "54rem",
+        218: "54.5rem",
+        220: "55rem",
       },
       lineClamp: {
         10: "10",

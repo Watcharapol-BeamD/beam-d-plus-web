@@ -39,7 +39,7 @@ export default function OurServiceSection() {
 
   const renderOurService = () => {
     return (
-      <div id="our-service" className=" h-218 md:h-160 lg:h-128 relative ">
+      <div id="our-service" className=" h-218 md:h-160 lg:h-128 relative bg-foo">
         <div className="absolute p-2 inset-0 py-4 md:py-6 grid grid-rows-[auto,1fr,auto] items-center justify-items-center">
           <p className="text-3xl font-bold">OUR SERVICES</p>
 
@@ -66,8 +66,8 @@ export default function OurServiceSection() {
           <Button title="View All Service" />
         </div>
 
-        <div className="bg-primary h-1/2"></div>
-        <div className="bg-neutral-200 h-1/2"></div>
+        {/* <div className="bg-primary h-1/2"></div>
+        <div className="bg-neutral-200 h-1/2"></div> */}
       </div>
     );
   };

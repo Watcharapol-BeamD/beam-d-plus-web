@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -24,7 +24,16 @@ import sg_airline from "../../../assets/sg_airline.jpg";
 import { useMediaQuery } from "@mui/material";
 
 export default function PartnerCarousel() {
-  const is640Screen = useMediaQuery('(min-width:640px)', { noSsr: true });
+  const is640Screen = useMediaQuery("(min-width:640px)", { noSsr: true });
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null; // Avoid mismatches during the initial render
+  }
 
   const breakpointsJson = JSON.stringify({
     768: {
@@ -45,7 +54,7 @@ export default function PartnerCarousel() {
   const breakpoints = JSON.parse(breakpointsJson);
 
   const renderCarousel = () => {
-    return ( 
+    return (
       <div className="h-96" id="partner-carousel">
         <Swiper
           // slidesPerView={5}
@@ -56,7 +65,7 @@ export default function PartnerCarousel() {
           //   pagination={{
           //     clickable: true,
           //   }}
-          navigation={is640Screen?true:false}
+          navigation={is640Screen}
           modules={[Grid, Pagination, Autoplay, Navigation]}
           loop={true}
           autoplay={{
