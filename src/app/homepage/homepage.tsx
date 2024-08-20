@@ -20,8 +20,16 @@ export default function Homepage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6  w-full justify-items-center items-center gap-2">
             <div className="h-60 w-40 bg-white rounded-xl p-4 shadow border-primary border">
-              <Image alt="icon" src={ml_img} height={45} className="text-red-400"/>
-              <p className="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, vel?</p>
+              <Image
+                alt="icon"
+                src={ml_img}
+                height={45}
+                className="text-red-400"
+              />
+              <p className="mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                vel?
+              </p>
             </div>
             <div className="h-60 w-40 bg-white rounded-xl"> </div>
             <div className="h-60 w-40 bg-white rounded-xl"> </div>
@@ -80,15 +88,15 @@ export default function Homepage() {
         <div className="h-[40rem] bg-green-400"></div>
         <p className="text-center text-3xl">WE ARE</p>
         <p className="text-center text-3xl">PROUD PARTNER TO GREAT BRANDS</p>
-        <div id="partner-carousel" className="bg-orange-400  ">
+        <div  >
           <PartnerCarousel />
         </div>
         {renderOurService()}
         {/* {renderOurTeamDesktop()} */}
         <TechnologyExpertiseSection />
-        <PerformanceSection/>
-        <SolutionSection/>
-        <ContactUsSection/>
+        <PerformanceSection />
+        <SolutionSection />
+        <ContactUsSection />
       </div>
     );
   };

@@ -42,8 +42,8 @@ export default function PartnerCarousel() {
   const breakpoints = JSON.parse(breakpointsJson);
 
   const renderCarousel = () => {
-    return (
-      <div className="h-96" id="partner-section">
+    return ( 
+      <div className="h-96" id="partner-carousel">
         <Swiper
           // slidesPerView={5}
           grid={{
@@ -53,6 +53,7 @@ export default function PartnerCarousel() {
           //   pagination={{
           //     clickable: true,
           //   }}
+          navigation={true}
           modules={[Grid, Pagination, Autoplay, Navigation]}
           loop={true}
           autoplay={{

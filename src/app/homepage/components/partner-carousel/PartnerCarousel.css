@@ -1,11 +1,11 @@
-#partner-section .swiper {
+#partner-carousel .swiper {
   width: 100%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-#partner-section .swiper-slide {
+#partner-carousel .swiper-slide {
   text-align: center;
   font-size: 18px;
   /* background: #fff; */
@@ -17,9 +17,36 @@
 }
 
 /* ------- */
-#partner-section .swiper-slide img {
+#partner-carousel .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+ 
+/*  arrow size */
+#partner-carousel .swiper-button-prev:after,
+#partner-carousel .swiper-button-next:after {
+  font-size: 1.5rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
+}
+
+/* background arrow size */
+#partner-carousel .swiper-button-prev,
+#partner-carousel .swiper-button-next {
+  background-color: #cbc7cc;
+  opacity: 0.3;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 9999px;
+  color: black;
+  top: 45%;
+}
+
+#partner-carousel .swiper-button-prev {
+  left: 0px;
+}
+
+#partner-carousel .swiper-button-next {
+  right: 0px;
 }
