@@ -10,6 +10,7 @@ import Image from "next/image";
 import PerformanceSection from "./components/performance-section/performance-section";
 import SolutionSection from "./components/solution-section/solution-section";
 import ContactUsSection from "./components/contact-us-section/contact-us-section";
+import OurServiceSection from "./components/our-service-section/our-service-section";
 
 export default function Homepage() {
   const renderOurService = () => {
@@ -88,10 +89,11 @@ export default function Homepage() {
         <div className="h-[40rem] bg-green-400"></div>
         <p className="text-center text-3xl">WE ARE</p>
         <p className="text-center text-3xl">PROUD PARTNER TO GREAT BRANDS</p>
-        <div  >
+        <div>
           <PartnerCarousel />
         </div>
-        {renderOurService()}
+        <OurServiceSection />
+        {/* {renderOurService()} */}
         {/* {renderOurTeamDesktop()} */}
         <TechnologyExpertiseSection />
         <PerformanceSection />
