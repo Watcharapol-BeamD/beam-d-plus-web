@@ -19,7 +19,7 @@ export default function TeamSection() {
   const renderOurTeamDesktop = () => {
     return (
       <div className=" lg:h-160 h-144 w-full flex">
-        <div className="w-1/2 flex items-center justify-center bg-blue-100">
+        <div className="w-1/2 flex items-center justify-center  ">
           <div className="text-center md:text-3xl text-2xl">
             <p className="uppercase">your trusted partner in</p>
             <p className="uppercase">business development,</p>
