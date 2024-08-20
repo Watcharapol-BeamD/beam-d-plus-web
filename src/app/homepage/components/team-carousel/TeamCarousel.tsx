@@ -15,8 +15,11 @@ import { Scrollbar } from "swiper/modules";
 import man_image from "../../../assets/man.jpg";
 import Image from "next/image";
 
-export default function TeamCarousel() {
-  
+type TeamCarouselProps = {
+  numberOfSlide: number;
+};
+
+export default function TeamCarousel({numberOfSlide}:TeamCarouselProps) {
   const personList = [
     {
       profilePic: man_image,
@@ -70,7 +73,7 @@ export default function TeamCarousel() {
         scrollbar={{
           hide: false,
         }}
-        slidesPerView={2}
+        slidesPerView={numberOfSlide}
         spaceBetween={10}
         modules={[Scrollbar]}
       >

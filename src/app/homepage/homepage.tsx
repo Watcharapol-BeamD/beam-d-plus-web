@@ -48,41 +48,41 @@ export default function Homepage() {
   //   );
   // };
 
-  const renderOurTeamDesktop = () => {
-    return (
-      <div className=" h-full w-full flex">
-        <div className="w-1/2 flex items-center justify-center bg-blue-100">
-          <div className="text-center md:text-3xl text-2xl">
-            <p className="uppercase">your trusted partner in</p>
-            <p className="uppercase">business development,</p>
-            <p className="uppercase my-20">Driven by expertise and passion</p>
-            <Button title="View Our Team" />
-          </div>
-        </div>
-        <div className="w-1/2 h-full py-6 flex justify-center">
-          <TeamCarousel />
-        </div>
-      </div>
-    );
-  };
+  // const renderOurTeamDesktop = () => {
+  //   return (
+  //     <div className=" h-full w-full flex">
+  //       <div className="w-1/2 flex items-center justify-center bg-blue-100">
+  //         <div className="text-center md:text-3xl text-2xl">
+  //           <p className="uppercase">your trusted partner in</p>
+  //           <p className="uppercase">business development,</p>
+  //           <p className="uppercase my-20">Driven by expertise and passion</p>
+  //           <Button title="View Our Team" />
+  //         </div>
+  //       </div>
+  //       <div className="w-1/2 h-full py-6 flex justify-center">
+  //         <TeamCarousel />
+  //       </div>
+  //     </div>
+  //   );
+  // };
 
-  const renderOurTeamMobile = () => {
-    return (
-      <div className="h-160 w-full flex">
-        <div className="w-1/2 flex items-center justify-center bg-blue-100">
-          <div className="text-center text-3xl">
-            <p className="uppercase">your trusted partner in</p>
-            <p className="uppercase">business development,</p>
-            <p className="uppercase my-20">Driven by expertise and passion</p>
-            <Button title="View Our Team" />
-          </div>
-        </div>
-        <div className="w-1/2 h-full py-6 flex justify-center bg-blue-400">
-          <TeamCarousel />
-        </div>
-      </div>
-    );
-  };
+  // const renderOurTeamMobile = () => {
+  //   return (
+  //     <div className="h-160 w-full flex">
+  //       <div className="w-1/2 flex items-center justify-center bg-blue-100">
+  //         <div className="text-center text-3xl">
+  //           <p className="uppercase">your trusted partner in</p>
+  //           <p className="uppercase">business development,</p>
+  //           <p className="uppercase my-20">Driven by expertise and passion</p>
+  //           <Button title="View Our Team" />
+  //         </div>
+  //       </div>
+  //       <div className="w-1/2 h-full py-6 flex justify-center bg-blue-400">
+  //         <TeamCarousel />
+  //       </div>
+  //     </div>
+  //   );
+  // };
 
   const renderHomepage = () => {
     return (
@@ -90,15 +90,15 @@ export default function Homepage() {
         <div className="h-[40rem] bg-green-400"></div>
         <p className="text-center text-3xl">WE ARE</p>
         <p className="text-center text-3xl">PROUD PARTNER TO GREAT BRANDS</p>
-        {/* <PartnerCarousel /> */}
-        {/* <OurServiceSection /> */}
+        <PartnerCarousel />
+        <OurServiceSection />
         {/* {renderOurService()} */}
         {/* {renderOurTeamDesktop()} */}
         <TeamSection />
-        {/* <TechnologyExpertiseSection />
+        <TechnologyExpertiseSection />
         <PerformanceSection />
         <SolutionSection />
-        <ContactUsSection /> */}
+        <ContactUsSection />
       </div>
     );
   };
