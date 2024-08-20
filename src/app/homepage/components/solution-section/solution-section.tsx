@@ -23,6 +23,8 @@ import services_img from "@/app/assets/solution/services.svg";
 import new_ideas_in_process_img from "@/app/assets/solution/new-ideas-in-process.svg";
 
 export default function SolutionSection() {
+
+  
   const renderSolution = () => {
     const solutionCarousel = () => {
       return (

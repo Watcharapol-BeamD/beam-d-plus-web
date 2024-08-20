@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import "./TechnologyExpertiseCarousel.css";
@@ -38,7 +39,8 @@ export default function TechnologyExpertiseCarouselMobile() {
         // pagination={{
         //   clickable: true,
         // }}
-        modules={[]}
+        pagination={true}
+        modules={[ Pagination]}
         className="mySwiper"
         breakpoints={{
           0: {
