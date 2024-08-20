@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer utilities {
   .clip-style-v1 {
     clip-path: inset(0% 0% 0% 0% round 60% 0% 30% 70%);
@@ -14,7 +12,7 @@
   .clip-style-v3 {
     clip-path: inset(0% 0% 0% 0% round 20% 0% 0% 40%);
   }
-} 
+}
 /* 
 :root {
   --foreground-rgb: 0, 0, 0;

@@ -40,7 +40,7 @@ export default function OurServiceSection() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6  w-full justify-items-center items-center gap-2">
             {items.map((item) => {
               return (
-                <div className="h-60 w-40 bg-white rounded-xl p-4 shadow border-primary border">
+                <div className="h-60 w-40 bg-white rounded-xl p-4 shadow border-gray-200 border">
                   <Image
                     alt="icon"
                     src={item.image}
