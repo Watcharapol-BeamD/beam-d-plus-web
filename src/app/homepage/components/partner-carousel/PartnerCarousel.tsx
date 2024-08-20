@@ -21,8 +21,11 @@ import { Grid, Pagination, Autoplay, Navigation } from "swiper/modules";
 import thai_airway from "../../../assets/thai_air_way.png";
 import join_img from "../../../assets/join.png";
 import sg_airline from "../../../assets/sg_airline.jpg";
+import { useMediaQuery } from "@mui/material";
 
 export default function PartnerCarousel() {
+  const is640Screen = useMediaQuery('(min-width:640px)', { noSsr: true });
+
   const breakpointsJson = JSON.stringify({
     768: {
       slidesPerView: 6,
@@ -53,7 +56,7 @@ export default function PartnerCarousel() {
           //   pagination={{
           //     clickable: true,
           //   }}
-          navigation={true}
+          navigation={is640Screen?true:false}
           modules={[Grid, Pagination, Autoplay, Navigation]}
           loop={true}
           autoplay={{
