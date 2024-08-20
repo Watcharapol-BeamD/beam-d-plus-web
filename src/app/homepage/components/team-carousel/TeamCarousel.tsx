@@ -16,6 +16,7 @@ import man_image from "../../../assets/man.jpg";
 import Image from "next/image";
 
 export default function TeamCarousel() {
+  
   const personList = [
     {
       profilePic: man_image,
@@ -64,7 +65,7 @@ export default function TeamCarousel() {
   ];
 
   return (
-    <div id="team-carousel" className="h-full w-160">
+    <div id="team-carousel" className="h-full w-full">
       <Swiper
         scrollbar={{
           hide: false,
@@ -76,8 +77,8 @@ export default function TeamCarousel() {
         {personList.map((item) => {
           return (
             <SwiperSlide>
-              <div className="h-full w-full p-6 flex flex-col items-center shadow-2xl border cursor-pointer bg-red-400">
-                <div className="h-44 w-44 rounded-full overflow-hidden">
+              <div className="h-full ml:p-6 p-4 flex flex-col items-center shadow-2xl border cursor-pointer bg-red-400">
+                <div className="  rounded-full overflow-hidden">
                   <Image alt="person" role="img" src={item.profilePic} />
                 </div>
                 <div className="mt-2">
