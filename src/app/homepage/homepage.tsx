@@ -12,82 +12,14 @@ import SolutionSection from "./components/solution-section/solution-section";
 import ContactUsSection from "./components/contact-us-section/contact-us-section";
 import OurServiceSection from "./components/our-service-section/our-service-section";
 import TeamSection from "./components/team-section/team-section";
+import MainBannerSection from "./components/main-banner-section/main-banner-section";
 
 export default function Homepage() {
-  // const renderOurService = () => {
-  //   return (
-  //     <div id="our-service" className=" h-218 md:h-160 lg:h-128 relative ">
-  //       <div className="absolute p-2 inset-0 py-4 md:py-6 grid grid-rows-[auto,1fr,auto] items-center justify-items-center">
-  //         <p className="text-3xl font-bold">OUR SERVICES</p>
-
-  //         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6  w-full justify-items-center items-center gap-2">
-  //           <div className="h-60 w-40 bg-white rounded-xl p-4 shadow border-primary border">
-  //             <Image
-  //               alt="icon"
-  //               src={ml_img}
-  //               height={45}
-  //               className="text-red-400"
-  //             />
-  //             <p className="mt-2">
-  //               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-  //               vel?
-  //             </p>
-  //           </div>
-  //           <div className="h-60 w-40 bg-white rounded-xl"> </div>
-  //           <div className="h-60 w-40 bg-white rounded-xl"> </div>
-  //           <div className="h-60 w-40 bg-white rounded-xl"> </div>
-  //           <div className="h-60 w-40 bg-white rounded-xl"> </div>
-  //           <div className="h-60 w-40 bg-white rounded-xl"> </div>
-  //         </div>
-  //         <Button title="View All Service" />
-  //       </div>
-
-  //       <div className="bg-primary h-1/2"></div>
-  //       <div className="bg-neutral-200 h-1/2"></div>
-  //     </div>
-  //   );
-  // };
-
-  // const renderOurTeamDesktop = () => {
-  //   return (
-  //     <div className=" h-full w-full flex">
-  //       <div className="w-1/2 flex items-center justify-center bg-blue-100">
-  //         <div className="text-center md:text-3xl text-2xl">
-  //           <p className="uppercase">your trusted partner in</p>
-  //           <p className="uppercase">business development,</p>
-  //           <p className="uppercase my-20">Driven by expertise and passion</p>
-  //           <Button title="View Our Team" />
-  //         </div>
-  //       </div>
-  //       <div className="w-1/2 h-full py-6 flex justify-center">
-  //         <TeamCarousel />
-  //       </div>
-  //     </div>
-  //   );
-  // };
-
-  // const renderOurTeamMobile = () => {
-  //   return (
-  //     <div className="h-160 w-full flex">
-  //       <div className="w-1/2 flex items-center justify-center bg-blue-100">
-  //         <div className="text-center text-3xl">
-  //           <p className="uppercase">your trusted partner in</p>
-  //           <p className="uppercase">business development,</p>
-  //           <p className="uppercase my-20">Driven by expertise and passion</p>
-  //           <Button title="View Our Team" />
-  //         </div>
-  //       </div>
-  //       <div className="w-1/2 h-full py-6 flex justify-center bg-blue-400">
-  //         <TeamCarousel />
-  //       </div>
-  //     </div>
-  //   );
-  // };
-
+ 
   const renderHomepage = () => {
     return (
       <div className="xl:container mx-auto min-h-screen">
-        <div className="h-[40rem] bg-green-400"></div>
+        <div className="h-[40rem]  "><MainBannerSection/></div>
         <p className="text-center text-3xl">WE ARE</p>
         <p className="text-center text-3xl">PROUD PARTNER TO GREAT BRANDS</p>
         <PartnerCarousel />

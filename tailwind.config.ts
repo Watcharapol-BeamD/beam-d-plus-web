@@ -108,6 +108,7 @@ const config: Config = {
       },
       colors: {
         primary: "#a09c7c",
+        "sub-main": "#706c5c",
       },
     },
   },
