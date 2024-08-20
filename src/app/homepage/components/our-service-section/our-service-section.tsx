@@ -7,33 +7,27 @@ export default function OurServiceSection() {
   const items = [
     {
       image: ml_img,
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                vel?`,
+      description: `SAP ERP & SAP HANA Consulting & Implementation`,
     },
     {
       image: ml_img,
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                  vel?`,
+      description: `Digital Solution Services`,
     },
     {
       image: ml_img,
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                  vel?`,
+      description: `Business-Tech Solution  & Change Management Landing`,
     },
     {
       image: ml_img,
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                  vel?`,
+      description: `360 Post Implementation Support`,
     },
     {
       image: ml_img,
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                  vel?`,
+      description: `Web App Development Services`,
     },
     {
       image: ml_img,
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                  vel?`,
+      description: `Mobile App Development`,
     },
   ];
 
