@@ -20,7 +20,7 @@ export default function PerformanceSection() {
           </div>
         </div>
         {/* ----------Mobile---------- */}
-        <div className=" md:hidden block h-60 w-full ">
+        <div className=" md:hidden block h-50 w-full ">
           <div className="flex flex-col items-center gap-10">
             <div className="text-center text-2xl order-1 w-full">
               <p className="font-bold">150</p>

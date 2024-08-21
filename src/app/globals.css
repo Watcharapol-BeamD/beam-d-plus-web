@@ -12,7 +12,14 @@
   .clip-style-v3 {
     clip-path: inset(0% 0% 0% 0% round 20% 0% 0% 40%);
   }
+  .clip-style-v4 {
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 78% 66%, 57% 76%, 37% 86%, 0 100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 65%, 64% 85%, 0 100%, 0% 50%); */
 }
+  }
+
+
+  
 /* 
 :root {
   --foreground-rgb: 0, 0, 0;
