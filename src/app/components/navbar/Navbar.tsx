@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useMediaQuery } from "@mui/material";
 import { useEffect, useState } from "react";
 import DrawerComponent from "../drawer";
+import beam_d_img from "@/app/assets/beamD-logo.png";
 
 export default function Navbar() {
   const [isMounted, setIsMounted] = useState(false);
@@ -22,10 +23,12 @@ export default function Navbar() {
 
   const renderNavbar = () => {
     return (
-      <div className=" fixed top-10 left-0 w-full z-50 h-24 flex items-center justify-center">
-        <div className="container mx-auto xl:w-[75%] lg:w-[80%] w-auto  h-24  bg-white flex justify-between items-center rounded-md shadow-2xl border-b px-4">
-          <Link href={"/"} className="w-16 h-16 bg-green-400"></Link>
-          <ol className="flex space-x-4 uppercase items-center text-base text-">
+      <div className=" fixed top-10 left-0 w-full z-50 h-24 flex items-center justify-center px-1">
+        <div className="lg:container mx-auto xl:w-[85%] lg:w-[90%] w-auto px-2 h-24  bg-white flex justify-between items-center rounded-md shadow-2xl border-b ">
+          <Link href={"/"} className=" ">
+            <Image alt="" src={beam_d_img} className="lg:h-16 lg:w-32 h-12 w-24  " />
+          </Link>
+          <ol className="flex space-x-4 uppercase items-center text-base ">
             <Link href={"/about-us"} className="cursor-pointer">
               About Us
             </Link>
@@ -39,7 +42,8 @@ export default function Navbar() {
               Our Teams
             </Link>
             <Link href={"/contact-us"}>
-              <Button title={"CONTACT US"} />
+              <button className="bg-primary px-6 py-4 rounded-full text-white">CONTACT US</button>
+              {/* <Button title={"CONTACT US"} /> */}
             </Link>
           </ol>
         </div>
