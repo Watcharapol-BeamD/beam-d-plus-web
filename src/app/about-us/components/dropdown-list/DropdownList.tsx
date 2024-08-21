@@ -52,7 +52,7 @@ export default function DropdownList() {
     },
     {
       id: 7,
-      title: "Latitude247.aero",
+      title: "Latitude247",
       description:
       "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
