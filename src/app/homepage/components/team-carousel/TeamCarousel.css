@@ -1,0 +1,94 @@
+#team-carousel .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+#team-carousel .swiper-slide img {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1080px) {
+ 
+  #team-carousel .swiper-slide img {
+    display: block;
+    width: 9rem;
+    height: 9rem;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+ 
+  #team-carousel .swiper-slide img {
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+ 
+  #team-carousel .swiper-slide img {
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+  }
+}
+
+/* #team-carousel .swiper-slide .swiper-slide-active {
+    background: #19c713;
+    width: 12px;
+} */
+
+#team-carousel .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #1a5edb; */
+  /* height: 22.5rem; */
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* @media only screen and (max-width: 1280px) {
+  #team-carousel .swiper {
+    width: 75%;
+    height: 100%;
+ 
+  }
+}
+  */
+
+  /*  arrow size */
+#team-carousel .swiper-button-prev:after,
+#team-carousel .swiper-button-next:after {
+  font-size: 1.5rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
+}
+
+/* background arrow size */
+#team-carousel .swiper-button-prev,
+#team-carousel .swiper-button-next {
+  background-color: #cbc7cc;
+  opacity: 0.3;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 9999px;
+  color: black;
+  top: 45%;
+  
+}
+
+#partner-carousel .swiper-button-prev {
+  left: 0px;
+}
+
+#partner-carousel .swiper-button-next {
+  right: 0px;
+}

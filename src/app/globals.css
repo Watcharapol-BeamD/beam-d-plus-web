@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .clip-style-v1 {
+    clip-path: inset(0% 0% 0% 0% round 60% 0% 30% 70%);
+  }
+  .clip-style-v2 {
+    clip-path: inset(0% 0% 0% 0% round 25% 0% 30% 70%);
+  }
+  .clip-style-v3 {
+    clip-path: inset(0% 0% 0% 0% round 20% 0% 0% 40%);
+  }
+}
+/* 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -30,4 +42,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
