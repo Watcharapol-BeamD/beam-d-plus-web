@@ -7,13 +7,13 @@ import ProjectSection from "./components/project-section/project-section";
 export default function AboutUs() {
   const renderDescription = () => {
     return (
-      <div className="py-10 px-2 md:text-lg text-base space-y-4">
+      <div className="py-10   md:text-lg text-base space-y-4">
         <p>
           SEA-Bangkok based leading technology consulting firm with solution
           development team from Bangalore India. With exceptional team of highly
           experienced professionals and expertise across multiple industries,
         </p>
-        <p>
+        <p className="md:block hidden">
           we are dedicated to assist clients in optimizing their business
           operations through the strategic utilization of Information
           Technology. By understanding the unique needs and challenges of each
@@ -26,10 +26,13 @@ export default function AboutUs() {
 
   const renderAboutUs = () => {
     return (
-      <div className="container mx-auto">
-        <AboutMainBanner />
+      <div className="container mx-auto ">
+      
+        <AboutMainBanner />  
+        <div className="px-2">
         {renderDescription()}
         <ProjectSection/>
+        </div>
       </div>
     );
   };

@@ -73,7 +73,7 @@ export default function DropdownList() {
 
   const renderDropdown = () => {
     return (
-      <div>
+     
         <div className="space-y-1 relative">
           {data.map((item) => (
             <div
@@ -112,9 +112,9 @@ export default function DropdownList() {
             </div>
           ))}
         </div>
-      </div>
+ 
     );
   };
 
-  return <div className="w-80">{renderDropdown()}</div>;
+  return <div className="sm:w-86 w-72">{renderDropdown()}</div>;
 }
