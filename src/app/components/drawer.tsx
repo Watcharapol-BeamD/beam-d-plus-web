@@ -13,7 +13,8 @@ import MailIcon from "@mui/icons-material/Mail";
 import MenuIcon from "@mui/icons-material/Menu";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 import Link from "next/link";
-
+import beam_d_img from "@/app/assets/beamD-logo.png";
+import Image from "next/image";
 export default function DrawerComponent() {
   const [open, setOpen] = React.useState(false);
 
@@ -44,13 +45,17 @@ export default function DrawerComponent() {
           "OUR STRENGTHES",
           "OUR TEAMS",
           "CONTACT US",
-        ].map((text, index) => (
+        ].map((text, index,array) => (
           <Link key={text} href={link[index]} passHref>
+            
             <ListItem disablePadding>
               <ListItemButton>
-                <ListItemText primary={text} sx={{ textAlign: "right" }} />
+           
+               {index+1 ===array.length? <div className="bg-primary px-4 py-2 rounded-full text-white">
+                  <ListItemText primary={text} sx={{ textAlign: "left" }} />
+                </div>:<ListItemText primary={text} sx={{ textAlign: "left" }} className="pl-4" />}
               </ListItemButton>
-            </ListItem>{" "}
+            </ListItem>
           </Link>
         ))}
       </List>
@@ -61,16 +66,16 @@ export default function DrawerComponent() {
     <div className="w-full h-18 flex items-center bg-primary">
       <div className="flex justify-between w-full px-2">
         <div className="h-10 w-10 "> </div>
-        <div className="h-10 w-10 bg-red-400">icon</div>
+        <Image alt="" src={beam_d_img} className="h-10 w-18" />
         <button onClick={toggleDrawer(true)}>
-          <MenuIcon fontSize="large" />
+          <MenuIcon fontSize="large" className="text-white" />
         </button>
       </div>
 
       <Drawer anchor="top" open={open} onClose={toggleDrawer(false)}>
         <div className="flex justify-between items-center h-18 w-full px-2 bg-primary ">
           <div className="h-10 w-10 "> </div>
-          <div className="h-10 w-10 bg-red-400">icon</div>
+          <Image alt="" src={beam_d_img} className="h-10 w-18" />
           <button onClick={toggleDrawer(false)}>
             <HighlightOffIcon fontSize="large" className="text-white" />
           </button>

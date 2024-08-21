@@ -11,7 +11,9 @@ export default function AboutMainBanner() {
         className="clip-style-v4 absolute lg:h-152 md:h-96 h-80 object-cover  "
       />
       <div className="md:hidden absolute h-full w-full z-20 flex items-center justify-center">
-        <p className="text-white text-5xl pb-20 font-bold drop-shadow-lg">ABOUT US</p>
+        <p className="text-white text-5xl pb-20 font-bold drop-shadow-lg">
+          ABOUT US
+        </p>
       </div>
     </div>
   );
