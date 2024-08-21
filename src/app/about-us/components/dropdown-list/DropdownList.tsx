@@ -2,97 +2,113 @@
 import React, { useState } from "react";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+
+type DataItem = {
+  id: number;
+  title: string;
+  description: string;
+};
 
 export default function DropdownList() {
-  const [showAnswerMap, setShowAnswerMap] = useState<boolean[]>([]);
+  const [showAnswerMap, setShowAnswerMap] = useState<number | null>(null);
 
-  const data = [
+  const data: DataItem[] = [
     {
       id: 1,
-      title: "ดาวน์โหลดแอพชำชำได้จากที่ไหน?",
+      title: "SAP",
       description:
-        "- ปัจจุบันยังจำกัดการเข้าถึงการใช้งาน หากมีการอัพเดทจะประกาศให้ทราบอีกครั้ง",
+        "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 2,
-      title: "จัดส่งพื้นที่ไหนบ้าง?",
+      title: "Xnapp Sales",
       description:
-        "- ปัจจุบันเราให้บริการในพื้นที่ภาคตะวันออกทั้งหมด 7 จังหวัด ประกอบไปด้วย ชลบุรี , ฉะเชิงเทรา , จันทบุรี , ตราด , ปราจีนบุรี , ระยอง และสระแก้ว",
+        "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 3,
-      title: "ระยะเวลาในการจัดส่งสินค้านานเพียงใด?",
-      description: "- ระยะเวลาในการจัดส่งสินค้าอยู่ระหว่าง 1-2 วันทำการ",
+      title: "Locus",
+      description:
+        "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 4,
-      title: "สามารถชำระเงินได้อย่างไร?",
+      title: "Magento",
       description:
-        "- ปัจจุบันเรามีบริการเก็บเงินปลายทาง และจะเพิ่มบริการช่องทางอื่นๆในอนาคตเร็วๆนี้",
+        "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 5,
-      title: "สามารถคืนสินค้าได้หรือไม่?",
+      title: "SAP Business ONE",
       description:
-        "- ทางบริษัทต้องขออภัย หากมีการตรวจรับสินค้าเรียบร้อย จะไม่สามารถยกเลิกหรือคืนสินค้าได้",
+        "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 6,
-      title: "มีค่าใช้จ่ายในการจัดส่งสินค้าหรือไม่?",
+      title: "Xlerate",
       description:
-        "- ปัจจุบันเราจัดส่งฟรีในพื้นที่บริการภาคตะวันออกทั้งหมด 7 จังหวัด โดยไม่มีขั้นต่ำ",
+        "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 7,
-      title: "หากพบปัญหาในการจัดส่งจะทำอย่างไร?",
+      title: "Latitude247.aero",
       description:
-        "- ท่านสามารถแจ้งฝ่ายบริการลูกค้า ผ่านทางไลน์ @ChumChum เพื่อติดตามแก้ไขปัญหา",
+      "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 8,
-      title: "หากต้องการยกเลิกคำสั่งซื้อต้องทำอย่างไร?",
+      title: "Chum Chum",
       description:
-        "- ท่านสามารถแจ้งฝ่ายบริการลูกค้า ผ่านทางไลน์ @ChumChum เพื่อดำเนินการยกเลิก",
-    },
-    {
-      id: 9,
-      title: "หากต้องการแก้ไขใบกำกับภาษีต้องทำอย่างไร?",
-      description:
-        "- ท่านสามารถแจ้งฝ่ายบริการลูกค้า ผ่านทางไลน์ @ChumChum เพื่อดำเนินการแก้ไขข้อมูล",
+      "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
   ];
+  const handleMouseEnter = (id: number) => {
+    setShowAnswerMap(id);
+  };
 
-  const toggleAnswer = (id: number) => {
-    setShowAnswerMap((prevState: boolean[]) => ({
-      ...prevState,
-      [id]: !prevState[id],
-    }));
+  const handleMouseLeave = () => {
+    setShowAnswerMap(null);
   };
 
   const renderDropdown = () => {
     return (
       <div>
-        <div className=" after: overflow-hidden space-y-1 relative">
+        <div className="space-y-1 relative">
           {data.map((item) => (
-            <div className="cursor-pointer" key={item.id}>
+            <div
+              className="cursor-pointer"
+              key={item.id}
+              onMouseEnter={() => handleMouseEnter(item.id)}
+              onMouseLeave={handleMouseLeave}
+            >
               <div
-                className={`w-full bg-primary p-2  border-b flex justify-between items-center`}
-                onMouseOver={() => toggleAnswer(item.id)}
+                className={`${
+                  showAnswerMap === item.id
+                    ? "bg-primary rounded-t-xl"
+                    : "bg-white"
+                } w-full p-2 border-b flex justify-between items-center`}
               >
                 <p>{item.title}</p>
-                {showAnswerMap[item.id] ? (
-                  <ExpandLessIcon />
-                ) : (
-                  <ExpandMoreIcon />
-                )}
+                <div>
+                  {showAnswerMap === item.id ? (
+                    <ExpandMoreIcon />
+                  ) : (
+                    <ChevronRightIcon />
+                  )}
+                </div>
               </div>
-              {showAnswerMap[item.id] && (
-                <div className="bg-gray-100 p-2 pt-4 pb-2 pl-4 shadow absolute">
+
+              {showAnswerMap === item.id && (
+                <div
+                  className={`rounded-b-xl bg-white border border-black p-2 pt-4 pb-2 pl-4 shadow absolute`}
+                >
                   <p>{item.description}</p>
-                  <p className="text-right text-xs pt-2 underline text-primary">Read More</p>
+                  <p className="text-right text-xs pt-2 underline text-primary">
+                    Read More
+                  </p>
                 </div>
               )}
-       
             </div>
           ))}
         </div>
