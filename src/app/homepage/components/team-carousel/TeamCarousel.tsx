@@ -79,9 +79,9 @@ export default function TeamCarousel({ numberOfSlide }: TeamCarouselProps) {
         // navigation={true}
         modules={[Scrollbar,Navigation]}
       >
-        {personList.map((item) => {
+        {personList.map((item,index) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={index}>
               <div className="h-full ml:p-6 p-4 flex flex-col items-center shadow-xl border cursor-pointer ">
                 <div className="  rounded-full overflow-hidden">
                   <Image alt="person" role="img" src={item.profilePic} />
