@@ -3,6 +3,6 @@ import DropdownList from '../dropdown-list/DropdownList'
 
 export default function ProjectSection() {
   return (
-    <div className=""> <DropdownList/></div>
+    <div className="flex w-full justify-end"> <DropdownList/></div>
   )
 }

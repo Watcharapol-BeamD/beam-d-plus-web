@@ -3,62 +3,61 @@ import React, { useState } from "react";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
- 
 export default function DropdownList() {
   const [showAnswerMap, setShowAnswerMap] = useState<boolean[]>([]);
 
   const data = [
     {
       id: 1,
-      question: "ดาวน์โหลดแอพชำชำได้จากที่ไหน?",
-      answer:
+      title: "ดาวน์โหลดแอพชำชำได้จากที่ไหน?",
+      description:
         "- ปัจจุบันยังจำกัดการเข้าถึงการใช้งาน หากมีการอัพเดทจะประกาศให้ทราบอีกครั้ง",
     },
     {
       id: 2,
-      question: "จัดส่งพื้นที่ไหนบ้าง?",
-      answer:
+      title: "จัดส่งพื้นที่ไหนบ้าง?",
+      description:
         "- ปัจจุบันเราให้บริการในพื้นที่ภาคตะวันออกทั้งหมด 7 จังหวัด ประกอบไปด้วย ชลบุรี , ฉะเชิงเทรา , จันทบุรี , ตราด , ปราจีนบุรี , ระยอง และสระแก้ว",
     },
     {
       id: 3,
-      question: "ระยะเวลาในการจัดส่งสินค้านานเพียงใด?",
-      answer: "- ระยะเวลาในการจัดส่งสินค้าอยู่ระหว่าง 1-2 วันทำการ",
+      title: "ระยะเวลาในการจัดส่งสินค้านานเพียงใด?",
+      description: "- ระยะเวลาในการจัดส่งสินค้าอยู่ระหว่าง 1-2 วันทำการ",
     },
     {
       id: 4,
-      question: "สามารถชำระเงินได้อย่างไร?",
-      answer:
+      title: "สามารถชำระเงินได้อย่างไร?",
+      description:
         "- ปัจจุบันเรามีบริการเก็บเงินปลายทาง และจะเพิ่มบริการช่องทางอื่นๆในอนาคตเร็วๆนี้",
     },
     {
       id: 5,
-      question: "สามารถคืนสินค้าได้หรือไม่?",
-      answer:
+      title: "สามารถคืนสินค้าได้หรือไม่?",
+      description:
         "- ทางบริษัทต้องขออภัย หากมีการตรวจรับสินค้าเรียบร้อย จะไม่สามารถยกเลิกหรือคืนสินค้าได้",
     },
     {
       id: 6,
-      question: "มีค่าใช้จ่ายในการจัดส่งสินค้าหรือไม่?",
-      answer:
+      title: "มีค่าใช้จ่ายในการจัดส่งสินค้าหรือไม่?",
+      description:
         "- ปัจจุบันเราจัดส่งฟรีในพื้นที่บริการภาคตะวันออกทั้งหมด 7 จังหวัด โดยไม่มีขั้นต่ำ",
     },
     {
       id: 7,
-      question: "หากพบปัญหาในการจัดส่งจะทำอย่างไร?",
-      answer:
+      title: "หากพบปัญหาในการจัดส่งจะทำอย่างไร?",
+      description:
         "- ท่านสามารถแจ้งฝ่ายบริการลูกค้า ผ่านทางไลน์ @ChumChum เพื่อติดตามแก้ไขปัญหา",
     },
     {
       id: 8,
-      question: "หากต้องการยกเลิกคำสั่งซื้อต้องทำอย่างไร?",
-      answer:
+      title: "หากต้องการยกเลิกคำสั่งซื้อต้องทำอย่างไร?",
+      description:
         "- ท่านสามารถแจ้งฝ่ายบริการลูกค้า ผ่านทางไลน์ @ChumChum เพื่อดำเนินการยกเลิก",
     },
     {
       id: 9,
-      question: "หากต้องการแก้ไขใบกำกับภาษีต้องทำอย่างไร?",
-      answer:
+      title: "หากต้องการแก้ไขใบกำกับภาษีต้องทำอย่างไร?",
+      description:
         "- ท่านสามารถแจ้งฝ่ายบริการลูกค้า ผ่านทางไลน์ @ChumChum เพื่อดำเนินการแก้ไขข้อมูล",
     },
   ];
@@ -73,16 +72,14 @@ export default function DropdownList() {
   const renderDropdown = () => {
     return (
       <div>
-        
-        <p className="font-bold text-lg">คำถามที่พบบ่อย</p>
-        <div className="rounded-lg overflow-hidden space-y-1">
+        <div className=" after: overflow-hidden space-y-1 relative">
           {data.map((item) => (
             <div className="cursor-pointer" key={item.id}>
               <div
-                className="w-full bg-gray-200 p-2 shadow flex justify-between items-center"
-                onClick={() => toggleAnswer(item.id)}
+                className={`w-full bg-primary p-2  border-b flex justify-between items-center`}
+                onMouseOver={() => toggleAnswer(item.id)}
               >
-                <p>{item.question}</p>
+                <p>{item.title}</p>
                 {showAnswerMap[item.id] ? (
                   <ExpandLessIcon />
                 ) : (
@@ -90,10 +87,12 @@ export default function DropdownList() {
                 )}
               </div>
               {showAnswerMap[item.id] && (
-                <div className="bg-gray-100 p-2 py-4 pl-4 shadow">
-                  <p>{item.answer}</p>
+                <div className="bg-gray-100 p-2 pt-4 pb-2 pl-4 shadow absolute">
+                  <p>{item.description}</p>
+                  <p className="text-right text-xs pt-2 underline text-primary">Read More</p>
                 </div>
               )}
+       
             </div>
           ))}
         </div>
