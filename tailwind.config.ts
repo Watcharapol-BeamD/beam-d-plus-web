@@ -15,6 +15,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      screens: {
+        "310px": "310px",
+        "370px": "370px",
+        "410px": "410px",
+        "480px": "480px",
+      },
       height: {
         13: "3.25rem",
         18: "4.5rem",
@@ -38,6 +44,7 @@ const config: Config = {
         92: "23rem",
         110: "27.5rem",
         112: "28rem",
+        119: "29.75rem",
         128: "32rem",
         144: "36rem",
         146: "36.5rem",
@@ -83,6 +90,7 @@ const config: Config = {
         92: "23rem",
         110: "27.5rem",
         112: "28rem",
+        119: "29.75rem",
         128: "32rem",
         144: "36rem",
         146: "36.5rem",
