@@ -19,7 +19,7 @@ export default function OurServiceMainBanner() {
   const renderDescription = () => {
     return (
       <div className="h-full w-full flex flex-col item-center justify-center md:py-0 py-10 ">
-        <div className="text-center px-10 space-y-2">
+        <div className="text-center sm:px-10 px-2 space-y-2">
           <p className="text-3xl">OUR SERVICES</p>
           <p>
             At BeamD, we excel in digital transformation, seamlessly integrate
