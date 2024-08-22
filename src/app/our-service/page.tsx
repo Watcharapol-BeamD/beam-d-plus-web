@@ -6,6 +6,7 @@ import TechnologyExpertiseSection from "../homepage/components/technology-expert
 import ProjectSection from "../about-us/components/project-section/project-section";
 import ProjectList from "../about-us/components/product-list/product-list";
 import DropdownList from "../about-us/components/dropdown-list/DropdownList";
+import ClientAchievementSection from "./components/client-achievementSection/client-achievement-section";
 
 export default function OurServicePage() {
   const renderProject = () => {
@@ -31,6 +32,7 @@ export default function OurServicePage() {
         </div>
         <TechnologyExpertiseSection />
         <div className="py-4 px-2">{renderProject()}</div>
+        <ClientAchievementSection/>
       </div>
     );
   };
