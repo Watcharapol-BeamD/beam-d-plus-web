@@ -6,7 +6,7 @@ export default function OurServicePage() {
   const renderOurService = () => {
     return (
       <div className="xl:container mx-auto ">
-        <div>
+        <div className="w-full h-full">
           <OurServiceMainBanner />
         </div>
       </div>
