@@ -89,7 +89,7 @@ export default function DropdownList() {
                     : "bg-white"
                 } w-full p-2 border-b flex justify-between items-center`}
               >
-                <p>{item.title}</p>
+                <p className= {`${showAnswerMap === item.id?" text-white ":"text-primary"} font-bold`}>{item.title}</p>
                 <div>
                   {showAnswerMap === item.id ? (
                     <ExpandMoreIcon />
