@@ -30,17 +30,20 @@ export default function AboutUsPage() {
 
   const renderAboutUs = () => {
     return (
-      <div className="container mx-auto ">
+      <div className="xl:container mx-auto ">
         <AboutMainBanner />
-      
-          {renderDescription()}
+
+        {renderDescription()}
         <div className="px-2">
-          <ProjectSection /></div>
-          <div className="py-6"> <PerformanceSection /></div>
-          <PartnerCarousel />
-          <TechnologyExpertiseSection />
-          <OurServiceSection />
-        
+          <ProjectSection />
+        </div>
+        <div className="py-6">
+      
+          <PerformanceSection />
+        </div>
+        <PartnerCarousel />
+        <TechnologyExpertiseSection />
+        <OurServiceSection />
       </div>
     );
   };

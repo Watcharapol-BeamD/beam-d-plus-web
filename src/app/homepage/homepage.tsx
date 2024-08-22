@@ -2,7 +2,7 @@ import React from "react";
 import PartnerCarousel from "./components/partner-carousel/PartnerCarousel";
 import TeamCarousel from "./components/team-carousel/TeamCarousel";
 import Button from "../components/Button";
-import ProductSection from "./components/ProductCarousel/ProductSection";
+
 import TechnologyExpertiseSection from "./components/technology-expertise-section/technology-expertise-section";
 
 import ml_img from "@/app/assets/our-service/ml.svg";

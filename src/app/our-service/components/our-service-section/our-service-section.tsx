@@ -77,11 +77,11 @@ export default function OurServiceSection() {
           return (
             <div
               key={index}
-              className="h-84  w-54 bg-white border shadow-sm rounded-lg p-2 m-4"
+              className="460px:h-84 460px:w-54 430px:h-74 430px:w-50 h-72 w-46 bg-white border shadow-sm rounded-lg p-2 m-4 "
             >
-              <Image alt="" src={item.icon} className="h-14 w-14" />
-              <p>{item.title}</p>
-              <ul className="list-disc list-inside text-sm">
+              <Image alt="" src={item.icon} className="460px:h-14 460px:w-14 h-10 w-10" />
+              <p className="460px:text-base text-sm">{item.title}</p>
+              <ul className="list-disc list-inside 460px:text-sm text-xs">
                 {item.description.map((des, index) => {
                   return <li key={index}>{des}</li>;
                 })}
@@ -95,13 +95,14 @@ export default function OurServiceSection() {
 
   const renderOurService = () => {
     return (
-      <div className="container mx-auto bg-orange-400 flex justify-center">
-        <div className="flex flex-wrap w-full bg-yellow-400 justify-center  ">
+      <div className="xl:container mx-auto flex justify-center xl:px-0 px-2">
+        {/* <div className="flex flex-wrap w-full bg-yellow-400 justify-center  "> */}
+        <div className="grid md:grid-cols-3 430px:grid-cols-2 grid-cols-1  lg:w-2/3 w-full  content-center place-items-center">
           {serviceCard()}
         </div>
       </div>
     );
   };
 
-  return <div className="bg-green-400 w-full ">{renderOurService()}</div>;
+  return <>{renderOurService()}</>;
 }
