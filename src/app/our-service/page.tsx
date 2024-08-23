@@ -15,7 +15,6 @@ export default function OurServicePage() {
         <div>
           <ProjectList />
         </div>
-
         <div>
           <DropdownList />
         </div>
@@ -32,7 +31,7 @@ export default function OurServicePage() {
         </div>
         <TechnologyExpertiseSection />
         <div className="py-4 px-2">{renderProject()}</div>
-        <ClientAchievementSection/>
+       <ClientAchievementSection /> 
       </div>
     );
   };
