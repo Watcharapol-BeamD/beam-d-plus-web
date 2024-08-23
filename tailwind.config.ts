@@ -25,6 +25,7 @@ const config: Config = {
         "480px": "480px",
         "550px": "550px",
         "810px": "810px",
+        "840px": "840px",
         "910px": "910px",
       },
       height: {
