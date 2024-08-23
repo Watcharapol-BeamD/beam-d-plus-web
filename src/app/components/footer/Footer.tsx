@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <hr />
+        <hr className="border border-gray-600" />
         <div className="h-20 bg-red-400 flex 840px:justify-between justify-around 840px:flex-row flex-col ">
           <div className="bg-yellow-400 flex 840px:justify-normal justify-center gap-2">
             <p>TERMS</p>
