@@ -57,7 +57,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <hr className="border border-gray-600 my-4" />
+        <hr className="border border-gray-400 my-4" />
         <div className="h-20  flex 840px:justify-between justify-around 840px:flex-row flex-col ">
           <div className=" flex 840px:justify-normal justify-center gap-2">
             <p>TERMS</p>
