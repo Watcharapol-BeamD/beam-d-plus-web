@@ -76,14 +76,14 @@ export default function OurServiceSection() {
         {serviceList.map((item, index) => {
           return (
             <div
-              key={index}
+              key={'service'+index}
               className="460px:h-84 460px:w-54 430px:h-74 430px:w-50 h-72 w-46 bg-white border shadow-sm rounded-lg p-2 m-4 "
             >
               <Image alt="" src={item.icon} className="460px:h-14 460px:w-14 h-10 w-10" />
               <p className="460px:text-base text-sm">{item.title}</p>
               <ul className="list-disc list-inside 460px:text-sm text-xs">
                 {item.description.map((des, index) => {
-                  return <li key={index}>{des}</li>;
+                  return <li key={'des'+index}>{des}</li>;
                 })}
               </ul>
             </div>
