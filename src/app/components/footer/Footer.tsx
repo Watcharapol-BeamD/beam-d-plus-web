@@ -75,5 +75,5 @@ export default function Footer() {
     );
   };
 
-  return <div className="bg-neutral-200">{renderFooter()}</div>;
+  return <div className="bg-neutral-200 px-1">{renderFooter()}</div>;
 }
