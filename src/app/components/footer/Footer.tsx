@@ -26,11 +26,13 @@ export default function Footer() {
 
           <div className="h-full lg:160 840px:w-192 w-full bg-yellow-600 flex items-center 840px:justify-start justify-center ">
             <div className="gap-2 bg-pink-400  840px:px-0 px-1">
-              <div className="w-full flex 840px:flex-ros flex-col 840px:items-start items-center">
-                <p>https://www.beamd.com</p>
-                <p>Email: sales@beamd.com</p>
-                <p>Tel:OUR STRENGTHES</p>
-                <p>OUR TEAMS</p>
+              <div className="w-full  flex 840px:flex-ros flex-col 840px:items-start items-center">
+                <div>
+                  <p>https://www.beamd.com</p>
+                  <p>Email: sales@beamd.com</p>
+                  <p>Tel:OUR STRENGTHES</p>
+                  <p>OUR TEAMS</p>
+                </div>
               </div>
               <div className="flex items-center gap-1 mt-2 flex-wrap w-full bg-red-400  840px:justify-start justify-center ">
                 <div className="flex items-center">
@@ -58,7 +60,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* <hr />
+        <hr />
         <div className="h-20 bg-red-400 flex 840px:justify-between justify-around 840px:flex-row flex-col ">
           <div className="bg-yellow-400 flex 840px:justify-normal justify-center gap-2">
             <p>TERMS</p>
@@ -68,7 +70,7 @@ export default function Footer() {
           <div className="bg-blue-400 flex 840px:justify-normal justify-center">
             <p>2007 - 2023 © ALL RIGHTS RESERVED</p>
           </div>
-        </div> */}
+        </div>
       </div>
     );
   };
