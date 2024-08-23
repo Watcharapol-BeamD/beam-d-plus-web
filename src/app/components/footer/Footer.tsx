@@ -10,7 +10,7 @@ export default function Footer() {
     return (
       <div className="xl:container mx-auto h-60 w-full flex flex-col">
         <div className="h-full w-full bg-green-400 flex items-center 840px:flex-row flex-col ">
-          <div className="h-full w-full flex flex-col justify-center 840px:items-start items-center bg-orange-400">
+          <div className="h-full w-full flex flex-col justify-center 840px:items-start items-center bg-orange-400 840px:py-0 py-4">
             <Image
               alt=""
               src={beam_d_img}
