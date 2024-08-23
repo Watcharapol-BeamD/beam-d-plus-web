@@ -8,7 +8,7 @@ import linked_in_img from "@/app/assets/footer/linkedin-big-logo.png";
 export default function Footer() {
   const renderFooter = () => {
     return (
-      <div className="xl:container mx-auto h-60 w-full flex flex-col">
+      <div className="xl:container mx-auto w-full flex flex-col py-4">
         <div className="h-full w-full bg-green-400 flex items-center 840px:flex-row flex-col ">
           <div className="h-full w-full flex flex-col justify-center 840px:items-start items-center bg-orange-400 840px:py-0 py-4">
             <Image
@@ -16,7 +16,7 @@ export default function Footer() {
               src={beam_d_img}
               className="lg:h-16 lg:w-32 h-12 w-24  "
             />
-            <div className="  gap-2 840px:flex hidden ">
+            <div className="gap-2 840px:flex hidden py-2">
               <p>ABOUT US</p>
               <p>OUR SERVICE</p>
               <p>OUR STRENGTHES</p>
