@@ -73,9 +73,9 @@ export default function TeamCarouselMobile() {
         spaceBetween={10}
         modules={[Scrollbar]}
       >
-        {personList.map((item) => {
+        {personList.map((item,index) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={index}>
               <div className="h-full w-full p-6 flex flex-col items-center shadow-2xl border cursor-pointer ">
                 <div className="h-44 w-44 rounded-full overflow-hidden">
                   <Image alt="person" role="img" src={item.profilePic} />

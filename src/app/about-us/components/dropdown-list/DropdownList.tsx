@@ -52,7 +52,7 @@ export default function DropdownList() {
     },
     {
       id: 7,
-      title: "Latitude247.aero",
+      title: "Latitude247",
       description:
       "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
@@ -89,7 +89,7 @@ export default function DropdownList() {
                     : "bg-white"
                 } w-full p-2 border-b flex justify-between items-center`}
               >
-                <p>{item.title}</p>
+                <p className= {`${showAnswerMap === item.id?" text-white ":"text-primary"} font-bold`}>{item.title}</p>
                 <div>
                   {showAnswerMap === item.id ? (
                     <ExpandMoreIcon />

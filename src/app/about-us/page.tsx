@@ -8,10 +8,10 @@ import PartnerCarousel from "../homepage/components/partner-carousel/PartnerCaro
 import OurServiceSection from "../homepage/components/our-service-section/our-service-section";
 import TechnologyExpertiseSection from "../homepage/components/technology-expertise-section/technology-expertise-section";
 
-export default function AboutUs() {
+export default function AboutUsPage() {
   const renderDescription = () => {
     return (
-      <div className="py-10   md:text-lg text-base space-y-4">
+      <div className="py-10 md:text-lg text-base space-y-4 px-2">
         <p>
           SEA-Bangkok based leading technology consulting firm with solution
           development team from Bangalore India. With exceptional team of highly
@@ -30,16 +30,20 @@ export default function AboutUs() {
 
   const renderAboutUs = () => {
     return (
-      <div className="container mx-auto ">
+      <div className="xl:container mx-auto ">
         <AboutMainBanner />
+
+        {renderDescription()}
         <div className="px-2">
-          {renderDescription()}
           <ProjectSection />
-          <div className="py-6"> <PerformanceSection /></div>
-          <PartnerCarousel />
-          <TechnologyExpertiseSection />
-          <OurServiceSection />
         </div>
+        <div className="py-6">
+      
+          <PerformanceSection />
+        </div>
+        <PartnerCarousel />
+        <TechnologyExpertiseSection />
+        <OurServiceSection />
       </div>
     );
   };
