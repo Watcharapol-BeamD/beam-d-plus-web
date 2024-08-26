@@ -9,7 +9,7 @@ export default function OurServiceMainBanner() {
         {/* <div className="relative lg:h-160 md:h-152 sm:h-128 min-[480px]:h-119 min-[400px]:h-110 h-96 flex w-full   "></div> */}
         <div className="clip-style-v5 absolute md:h-96 h-full md:w-96 w-full bg-gray-300 bottom-0"></div>
         <div className="clip-style-v5 absolute md:h-50 h-2/3 md:w-96 w-full bg-primary bottom-0"></div>
-        <div className="absolute  bottom-0    ">
+        <div className="absolute bottom-0">
           <Image alt="" src={our_service_banner_img} className=" " />
         </div>
       </div>
