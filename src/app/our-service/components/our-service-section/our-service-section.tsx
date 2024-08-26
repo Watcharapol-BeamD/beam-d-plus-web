@@ -82,7 +82,7 @@ export default function OurServiceSection() {
               <Image alt="" src={item.icon} className="460px:h-14 460px:w-14 h-10 w-10" />
               <p className="460px:text-base text-sm">{item.title}</p>
               <ul className="list-disc list-inside 460px:text-sm text-xs">
-                {item.description.map((des, index) => {
+                {item.description.map((des: string,index:number) => {
                   return <li key={index}>{des}</li>;
                 })}
               </ul>
