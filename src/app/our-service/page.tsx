@@ -31,8 +31,10 @@ export default function OurServicePage() {
         </div>
         <TechnologyExpertiseSection />
         <div className="py-4 px-2">{renderProject()}</div>
-        <div className="py-6">   <ClientAchievementSection /> </div>
-    
+        <div className="py-6">
+          {" "}
+          <ClientAchievementSection />{" "}
+        </div>
       </div>
     );
   };

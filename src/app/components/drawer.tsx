@@ -42,7 +42,7 @@ export default function DrawerComponent() {
           "HOME",
           "ABOUT US",
           "OUR SERVICE",
-          "OUR STRENGTHES",
+          "OUR STRENGTHS",
           "OUR TEAMS",
           "CONTACT US",
         ].map((text, index,array) => (
@@ -63,7 +63,7 @@ export default function DrawerComponent() {
   );
 
   return (
-    <div className="w-full h-18 flex items-center bg-primary">
+    <div className="w-full h-18 flex items-center bg-primary drop-shadow-md">
       <div className="flex justify-between w-full px-2">
         <div className="h-10 w-10 "> </div>
         <Image alt="" src={beam_d_img} className="h-10 w-18" />
