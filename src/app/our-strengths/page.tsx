@@ -10,8 +10,8 @@ export default function OurStrengths() {
         <OurStrengthsMainBanner />
         <div className="md:px-0 px-4 ">
           <SolutionSection />
-          <InnovativeApproachesAndStrategiesSection />
         </div>
+        <InnovativeApproachesAndStrategiesSection />
       </div>
     );
   };

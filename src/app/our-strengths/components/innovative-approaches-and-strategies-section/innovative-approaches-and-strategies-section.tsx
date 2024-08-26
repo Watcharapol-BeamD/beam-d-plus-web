@@ -56,26 +56,7 @@ export default function InnovativeApproachesAndStrategiesSection() {
 
   const renderInnovativeCardDesktop = (item: InnovativeCardProps) => {
     return (
-      <div className="h-110 w-72 m-1 space-y-2 p-4 bg-white md:rounded-none rounded-2xl">
-        <div className="flex justify-center w-full">
-          <Image alt="" src={item.image_name} className="w-72  " />
-        </div>
-
-        <p className="text-base font-semibold">{item.title}</p>
-
-        <ul className="list-disc list-inside 460px:text-sm text-xs">
-          <li className="list-none">Implement</li>
-          {item.description.map((des: string, index: number) => {
-            return <li key={index}>{des}</li>;
-          })}
-        </ul>
-      </div>
-    );
-  };
-
-  const renderInnovativeCardMobile = (item: InnovativeCardProps) => {
-    return (
-      <div className="h-110 max-w-72 m-1 space-y-2 p-4 bg-white rounded-2xl">
+      <div className="h-110 w-72 m-1 space-y-2 p-4   md:rounded-none rounded-2xl md:shadow-none shadow-xl  ">
         <div className="flex justify-center w-full">
           <Image alt="" src={item.image_name} className="w-72  " />
         </div>
@@ -93,7 +74,7 @@ export default function InnovativeApproachesAndStrategiesSection() {
   };
 
   return (
-    <div className="bg-neutral-200">
+    <div className="bg-neutral-200 px-2 pt-4 pb-10 text-primary space-y-4">
       <p className="uppercase text-2xl font-bold">
         Innovative Approaches and Strategies
       </p>
@@ -101,16 +82,13 @@ export default function InnovativeApproachesAndStrategiesSection() {
         Empowering your business with cutting-edge solutions and
         forward-thinking methods.
       </p>
-      <div className="flex justify-around flex-wrap">
-        {data.map((item: InnovativeCardProps) => {
-          return <>{renderInnovativeCardDesktop(item)}</>;
-        })}
-      </div>
-      {/* <div className="md:hidden flex flex-col items-center">
-        {data.map((item: InnovativeCardProps) => {
-          return <>{renderInnovativeCardMobile(item)}</>;
-        })}
-      </div> */}
+  
+        <div className="flex justify-around flex-wrap bg-white">
+          {data.map((item: InnovativeCardProps) => {
+            return <>{renderInnovativeCardDesktop(item)}</>;
+          })}
+        </div>
+     
     </div>
   );
 }
