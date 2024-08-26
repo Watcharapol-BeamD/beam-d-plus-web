@@ -42,7 +42,7 @@ export default function DrawerComponent() {
           "HOME",
           "ABOUT US",
           "OUR SERVICE",
-          "OUR STRENGTHES",
+          "OUR STRENGTHS",
           "OUR TEAMS",
           "CONTACT US",
         ].map((text, index,array) => (
