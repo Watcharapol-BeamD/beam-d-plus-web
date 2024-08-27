@@ -32,8 +32,7 @@ export default function OurServicePage() {
         <TechnologyExpertiseSection />
         <div className="py-4 px-2">{renderProject()}</div>
         <div className="py-6">
-          {" "}
-          <ClientAchievementSection />{" "}
+          <ClientAchievementSection />
         </div>
       </div>
     );
