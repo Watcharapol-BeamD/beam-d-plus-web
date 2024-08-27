@@ -9,16 +9,16 @@ export default function OurTeamMainBanner() {
   const renderOurTeamMainBanner = () => {
     return (
       <div
-        className="w-full h-160 bg-cover bg-center bg-opacity-25"
+        className="w-full md:h-160 h-96 bg-cover bg-center bg-opacity-25"
         style={{ backgroundImage: `url(${team_img.src})` }}
       >
-        <div className="bg-gray-300 bg-opacity-50 h-full w-full  flex justify-center items-center">
+        <div className="bg-gray-300 bg-opacity-50 h-full w-full flex justify-center items-center">
           <div>
-            <p className="text-white text-5xl drop-shadow-xl font-bold">
+            <p className="text-white md:text-5xl text-4xl drop-shadow-xl font-bold text-center">
               Highly Skilled and Experienced Team
             </p>
-            <div className="  flex justify-center gap-1 mt-4">
-              <div className="h-12 w-12  rounded-full  overflow-hidden bg-white object-cover border border-gray-500">
+            <div className="flex justify-center gap-1 mt-4">
+              <div className="h-12 w-12 rounded-full overflow-hidden bg-white object-cover border border-gray-500">
                 <Image
                   alt=""
                   src={thailand_img}
