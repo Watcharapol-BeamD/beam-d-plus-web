@@ -68,10 +68,10 @@ export default function PartnerCarousel() {
           navigation={is640Screen}
           modules={[Grid, Pagination, Autoplay, Navigation]}
           loop={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // }}
           // navigation={true}
           breakpoints={{
             0: {
@@ -145,7 +145,7 @@ export default function PartnerCarousel() {
         >
           {[...Array(18)].map((_, index) => (
             <SwiperSlide key={index}>
-              <div className="h-28">
+              <div className="md:h-28 h-20">
                 <Image
                   alt=""
                   role="img"
