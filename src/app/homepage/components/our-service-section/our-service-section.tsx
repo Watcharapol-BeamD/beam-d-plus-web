@@ -2,6 +2,7 @@ import Button from "@/app/components/Button";
 import Image from "next/image";
 import React from "react";
 import ml_img from "@/app/assets/our-service/ml.svg";
+import ButtonLink from "@/app/components/ButtonLink";
 
 export default function OurServiceSection() {
   const items = [
@@ -57,7 +58,7 @@ export default function OurServiceSection() {
             <div className="h-60 w-40 bg-white rounded-xl"> </div>
             <div className="h-60 w-40 bg-white rounded-xl"> </div> */}
           </div>
-          <Button title="View All Service" />
+          <ButtonLink title="View All Service" url="/our-service" />
         </div>
 
         {/* <div className="bg-primary h-1/2"></div>

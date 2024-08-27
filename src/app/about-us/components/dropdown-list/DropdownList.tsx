@@ -3,10 +3,12 @@ import React, { useState } from "react";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import Link from "next/link";
 
 type DataItem = {
   id: number;
   title: string;
+  url:string
   description: string;
 };
 
@@ -17,48 +19,56 @@ export default function DropdownList() {
     {
       id: 1,
       title: "SAP",
+      url:"sap",
       description:
         "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 2,
       title: "Xnapp Sales",
+      url:"xnapp-sales",
       description:
         "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 3,
       title: "Locus",
+      url:"locus",
       description:
         "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 4,
       title: "Magento",
+      url:"magento",
       description:
         "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 5,
       title: "SAP Business ONE",
+      url:"sap-business-one",
       description:
         "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 6,
       title: "Xlerate",
+      url:"xlerate",
       description:
         "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 7,
       title: "Latitude247",
+      url:"latitude247",
       description:
       "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 8,
       title: "Chum Chum",
+      url:"chum-chum",
       description:
       "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
@@ -104,9 +114,9 @@ export default function DropdownList() {
                   className={`rounded-b-xl bg-white border border-black p-2 pt-4 pb-2 pl-4 shadow absolute`}
                 >
                   <p>{item.description}</p>
-                  <p className="text-right text-xs pt-2 underline text-primary">
+                  <Link href={`/our-service/${item.url}`} className="text-right text-xs pt-2 underline text-primary">
                     Read More
-                  </p>
+                  </Link>
                 </div>
               )}
             </div>
