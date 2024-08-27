@@ -3,7 +3,7 @@ import OurStrengthsMainBanner from "./components/our-strengths-main-banner/our-s
 import SolutionSection from "../homepage/components/solution-section/solution-section";
 import InnovativeApproachesAndStrategiesSection from "./components/innovative-approaches-and-strategies-section/innovative-approaches-and-strategies-section";
 
-export default function OurStrengths() {
+export default function OurStrengthsPage() {
   const renderOurStrengths = () => {
     return (
       <div className="xl:container mx-auto">
