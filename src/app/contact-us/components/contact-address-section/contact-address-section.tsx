@@ -13,11 +13,10 @@ export default function ContactAddressSection() {
           <p className="text-lg">For Business Inquiries</p>
         </div>
 
-        <div className="flex justify-center md:flex-rows flex-cols gap-4">
-       
-          <div className=" ">
+        <div className="flex justify-center ite md:flex-row flex-col gap-4">
+          <div className="sm:text-base text-sm ">
             <div className="flex items-center gap-1">
-              <p className="text-lg font-bold">THAILAND </p>
+              <p className="sm:text-lg text-base font-bold">THAILAND </p>
               <Image alt="" src={thailand} className="w-12" />
             </div>
 
@@ -25,9 +24,9 @@ export default function ContactAddressSection() {
             <p>536 Ratchadapisek Rd., Samsennok,</p>
             <p>HuayKwang, Bangkok, Thailand 10310</p>
           </div>
-          <div className="">
+          <div className="sm:text-base text-sm">
             <div className="flex items-center gap-1">
-              <p className="text-lg font-bold">INDIA</p>
+              <p className="sm:text-lg text-base font-bold">INDIA</p>
               <Image alt="" src={india} className="w-12" />
             </div>
 
@@ -39,9 +38,9 @@ export default function ContactAddressSection() {
             <p>https://www.gyantechsolution.com</p>
             <p>CIN: U72900KL2017PTC051475</p>
           </div>
-          <div className="">
+          <div className="sm:text-base text-sm">
             <div className="flex items-center gap-1">
-              <p className="text-lg font-bold">SINGAPORE</p>
+              <p className="sm:text-lg text-base font-bold">SINGAPORE</p>
               <Image alt="" src={singapore} className="w-12" />
             </div>
             <p>Property Address: 770 Bedok</p>
