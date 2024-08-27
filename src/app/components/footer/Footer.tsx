@@ -25,7 +25,7 @@ export default function Footer() {
               <div className="w-full  flex 840px:flex-ros flex-col 840px:items-start items-center">
                 <div>
                   <p>https://www.beamd.com</p>
-                  <p>Email: sales@beamd.com</p>
+                  <span >Email:</span> <span className="underline">sales@beamd.com</span> 
                   <p>Tel:+66 61 546 3539 (24hrs)</p>
                   <p>Tel:+66 87 678 5862</p> 
                   <p>Tel:+66 2833 9621</p>
