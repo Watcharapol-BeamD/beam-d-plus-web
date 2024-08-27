@@ -13,78 +13,34 @@ export default function TeamListSection() {
     {
       image_name: kannika_img,
       full_name: "Kannika Angkurarat (May)",
-      position: "",
+      position: "Managing Director",
     },
     {
       image_name: kannika_img,
       full_name: "Kannika Angkurarat (May)",
-      position: "",
-    },
-    {
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "",
-    },
-    {
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "",
-    },
-    {
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "",
-    },
-    {
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "",
-    },{
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "",
-    },
-    {
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "",
-    },{
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "",
-    },
-    {
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "",
-    },{
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "",
-    },
-    {
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "",
+      position: "Managing Director",
     },
   ];
 
   const renderTeamCard = (item: TeamCardProps) => {
     return (
-      <div className="h-full w-56 rounded-tr-3xl rounded-bl-3xl overflow-hidden p-2 border border-primary">
-        <Image
-          alt=""
-          src={item.image_name}
-          className="h-full w-full  rounded-tr-3xl rounded-bl-3xl"
-        />
+      <div className="relative h-full w-68 flex   ">
+        <div className="h-full w-56 rounded-tr-3xl rounded-bl-3xl overflow-hidden p-2 border border-primary">
+          <Image
+            alt=""
+            src={item.image_name}
+            className="h-full w-full  rounded-tr-3xl rounded-bl-3xl"
+          />
+        </div>
+        <div className="absolute bg-white border bottom-4 right-0 py-1 px-2 rounded-xl shadow">
+          <p className="invisible text-base font-semibold">{item.full_name}</p>
+          <p className="invisible text-sm ">{item.position}</p>
+        </div>
+        <div className="absolute bg-white border bottom-6 right-2 py-1 px-2 rounded-xl shadow">
+          <p className="text-base font-semibold">{item.full_name}</p>
+          <p className="text-sm">{item.position}</p>
+        </div>
       </div>
-      // <div className="h-full w-56 rounded-tr-3xl rounded-bl-3xl overflow-hidden p-2 border border-primary">
-      //   <Image
-      //     alt=""
-      //     src={item.image_name}
-      //     className="h-full w-56 rounded-tr-3xl rounded-bl-3xl"
-      //   />
-      // </div>
     );
   };
 
