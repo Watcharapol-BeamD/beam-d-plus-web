@@ -9,7 +9,6 @@ export default function OurTeam() {
       <div className="xl:container mx-auto  ">
         <OurTeamMainBanner />
         <div className="lg:px-0 px-2 py-6">
-  
           <TeamListSection />
         </div>
       </div>

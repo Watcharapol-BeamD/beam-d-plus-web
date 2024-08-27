@@ -1,9 +1,21 @@
 import React from "react";
-import kannika_img from "@/app/assets/our-team/teammate/kannika_img.webp";
 import Image, { StaticImageData } from "next/image";
 import team_img from "@/app/assets/our-team/african-head-department-is-satisfied-with-work-staff-asian-male-student-trendy-shirt-telling-univers.webp";
+import Ratchtar_Karasuddhi_img from "@/app/assets/our-team/teammate/Ratchtar_Karasuddhi_img.webp";
+import Kannika_Angkurarat_img from "@/app/assets/our-team/teammate/Kannika_Angkurarat_img.webp";
+import Rujinun_Smarnond_img from "@/app/assets/our-team/teammate/Rujinun_Smarnond_img.webp";
+import Pongtorn_Raktiprakorn_img from "@/app/assets/our-team/teammate/Pongtorn_Raktiprakorn_img.webp";
+import Nuttapon_Wongkongmunsakul_img from "@/app/assets/our-team/teammate/Nuttapon_Wongkongmunsakul_img.webp";
+import Watcharapol_Numpaya_img from "@/app/assets/our-team/teammate/Watcharapol_Numpaya_img.webp";
+import Deepak_VV_img from "@/app/assets/our-team/teammate/Deepak_VV_img.webp";
+import Parvathi_JS_img from "@/app/assets/our-team/teammate/Parvathi_JS_img.webp";
+import Ullas_U_img from "@/app/assets/our-team/teammate/Ullas_U_img.webp";
+import Ratnisa_Boonhenglee_img from "@/app/assets/our-team/teammate/Ratnisa_Boonhenglee_img.webp";
+import Suphitcha_Jirivipakorn_img from "@/app/assets/our-team/teammate/Suphitcha_Jirivipakorn_img.webp";
+import Theeraphat_Aksaranan_img from "@/app/assets/our-team/teammate/Theeraphat_Aksaranan_img.webp";
 
 type TeamCardProps = {
+  id: number;
   image_name: StaticImageData;
   full_name: string;
   position: string;
@@ -11,64 +23,76 @@ type TeamCardProps = {
 export default function TeamListSection() {
   const data: TeamCardProps[] = [
     {
-      image_name: kannika_img,
+      id: 1,
+      image_name: Ratchtar_Karasuddhi_img,
+      full_name: "Ratchtar Karasuddhi (Jack)",
+      position: "Board of director",
+    },
+    {
+      id: 2,
+      image_name: Kannika_Angkurarat_img,
       full_name: "Kannika Angkurarat (May)",
       position: "Managing Director",
     },
     {
-      image_name: kannika_img,
+      id: 3,
+      image_name: Rujinun_Smarnond_img,
+      full_name: "Rujinun Smarnond (oil)",
+      position: "Head of Program Management",
+    },
+    {
+      id: 4,
+      image_name: Pongtorn_Raktiprakorn_img,
+      full_name: "Pongtorn Raktiprakorn (Gade)",
+      position: "MDM & Business Process Lead",
+    },
+    {
+      id: 5,
+      image_name: Nuttapon_Wongkongmunsakul_img,
       full_name: "Nuttapon Wongkongmunsakul (Nut)",
       position: "Solution Development Head",
     },
     {
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "Managing Director",
+      id: 6,
+      image_name: Watcharapol_Numpaya_img,
+      full_name: "Watcharapol Numpaya (Bew)",
+      position: "Application Developer",
     },
     {
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "Managing Director",
+      id: 7,
+      image_name: Deepak_VV_img,
+      full_name: "Deepak VV",
+      position: "DMS/ERP/SAP Implementation Head",
     },
     {
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "Managing Director",
+      id: 8,
+      image_name: Parvathi_JS_img,
+      full_name: "Parvathi J S",
+      position: "React/Angular Developer",
     },
     {
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "Managing Director",
+      id: 9,
+      image_name: Ullas_U_img,
+      full_name: "Ullas U",
+      position: "JAVA Backend Stack Developer",
     },
     {
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "Managing Director",
+      id: 10,
+      image_name: Ratnisa_Boonhenglee_img,
+      full_name: "Ratnisa Boonhenglee (Ise)",
+      position: "Functional Consultant",
     },
     {
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "Managing Director",
+      id: 11,
+      image_name: Suphitcha_Jirivipakorn_img,
+      full_name: "Suphitcha Jirivipakorn (Dear)",
+      position: "Functional Consultant",
     },
     {
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "Managing Director",
-    },
-    {
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "Managing Director",
-    },
-    {
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "Managing Director",
-    },
-    {
-      image_name: kannika_img,
-      full_name: "Kannika Angkurarat (May)",
-      position: "Managing Director",
+      id: 12,
+      image_name: Theeraphat_Aksaranan_img,
+      full_name: "Theeraphat Aksaranan (Top)",
+      position: "Full Stack Developer",
     },
   ];
 
