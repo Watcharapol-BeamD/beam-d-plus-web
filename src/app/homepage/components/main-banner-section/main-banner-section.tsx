@@ -2,6 +2,8 @@ import React from "react";
 import banner from "@/app/assets/main/multiethnicbusinessteamhavingabrainstorming_preview-ezgif.com-video-to-webp-converter.webp";
 import Image from "next/image";
 import Button from "@/app/components/Button";
+import Link from "next/link";
+import ButtonLink from "@/app/components/ButtonLink";
 
 export default function MainBannerSection() {
   const renderBanner = () => {
@@ -19,7 +21,7 @@ export default function MainBannerSection() {
             <p>Technology Partner</p>
           </div>
           <div className="py-2">
-            <Button title={"HOW IT WORK?"} />
+            <ButtonLink title={"HOW IT WORK?"} url={"/about-us"} />
           </div>
         </div>
       </div>
@@ -28,7 +30,7 @@ export default function MainBannerSection() {
 
   return (
     <div className="h-full w-full ">
-        {renderBanner()}
+      {renderBanner()}
       <div className="xl:my-20 sm:mt-52 sm:my-20 mt-60 mb-20">
         <p className="text-center text-3xl">WE ARE</p>
         <p className="text-center text-3xl">PROUD PARTNER TO GREAT BRANDS</p>
