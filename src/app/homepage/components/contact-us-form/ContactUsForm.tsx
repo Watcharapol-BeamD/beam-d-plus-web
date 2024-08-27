@@ -4,7 +4,7 @@ import React from "react";
 export default function ContactUsForm() {
   const renderContactForm = () => {
     return (
-      <div className="border py-6 shadow-md">
+      <div className="border py-6 shadow-md bg-white w-full">
         <p className="text-center text-3xl">LET'S CONNECT</p>
 
         <div className="flex justify-center flex-col items-center mt-6">
