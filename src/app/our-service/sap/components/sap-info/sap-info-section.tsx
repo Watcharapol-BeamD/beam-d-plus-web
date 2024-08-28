@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SapInfo() {
+export default function SapInfoSection() {
   return (
     <div className="space-y-4 ">
       <p className="">

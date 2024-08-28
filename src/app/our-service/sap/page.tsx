@@ -1,18 +1,18 @@
 import React from "react";
 import SapMainBanner from "./components/sap-main-banner/sap-main-banner";
-import SapInfo from "./components/sap-info/sap-info";
-
+import SapInfoSection from "./components/sap-info/sap-info-section";
+import ResourcePlanningSection from "./components/resource-planning-section/resource-planning-section";
+ 
 export default function SapPage() {
-
-
-
-
   const renderSap = () => {
     return (
       <div className="xl:container mx-auto">
         <SapMainBanner />
-        <div className="lg:px-0 px-2 py-4"><SapInfo/></div>
-         
+        <div className=" px-2 py-4 space-y-4">
+          <SapInfoSection/>  
+          <ResourcePlanningSection/>
+        </div>
+      
       </div>
     );
   };
