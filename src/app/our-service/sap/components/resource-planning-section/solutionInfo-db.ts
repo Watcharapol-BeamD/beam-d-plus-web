@@ -1,4 +1,5 @@
-import procure_img from "@/app/assets/our-service/sap/person-paying-using-nfc-technology.jpg";
+import procure_img from "@/app/assets/our-service/sap/person-paying-using-nfc-technology.webp";
+import order_to_cash_img from "@/app/assets/our-service/sap/high-angle-customer-paying-with-nfc-device.webp";
 import { StaticImageData } from "next/image";
 
 type Info = {
@@ -116,7 +117,7 @@ export const solutionInfo: Solution[] = [
   },   {
     id: 3,
     title: "Order to Cash",
-    banner: procure_img,
+    banner: order_to_cash_img,
     info_list: [
       {
         info_id: 1,

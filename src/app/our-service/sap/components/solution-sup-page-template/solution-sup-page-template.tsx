@@ -37,7 +37,7 @@ export default function SolutionSupPageTemplate({ data, onClose }: any) {
 
   const renderContent = () => {
     return (
-      <div className="space-y-4 mt-4">
+      <div className="space-y-4 mt-4  ">
         {data.info_list.map((item:any) => (
           <div key={item.info_id}>
             <p className="text-lg font-semibold">{item.header}</p>
@@ -51,7 +51,7 @@ export default function SolutionSupPageTemplate({ data, onClose }: any) {
   const renderInformation = () => {
     return (
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-        <div className="relative w-5/6 h-5/6 p-4 bg-white rounded-lg shadow-lg animate-slide-in">
+        <div className="relative w-5/6 h-5/6 p-4 bg-white rounded-lg shadow-lg animate-slide-in overflow-y-scroll">
           {banner()}
           {renderContent()}
         </div>
