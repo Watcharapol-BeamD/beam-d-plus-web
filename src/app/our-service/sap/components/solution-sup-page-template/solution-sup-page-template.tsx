@@ -4,6 +4,12 @@ import CloseIcon from "@mui/icons-material/Close";
 
 export default function SolutionSupPageTemplate({ data, onClose }: any) {
  
+ 
+const handleContentClick = (e: any) => {
+  e.stopPropagation(); // Prevents the click event from bubbling up to the outer div
+};
+
+
   const banner = () => {
     return (
       <div
@@ -50,8 +56,8 @@ export default function SolutionSupPageTemplate({ data, onClose }: any) {
 
   const renderInformation = () => {
     return (
-      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-        <div className="relative w-5/6 h-5/6 p-4 bg-white rounded-lg shadow-lg animate-slide-in overflow-y-scroll">
+      <div  onClick={onClose} className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+        <div onClick={handleContentClick} className="relative w-5/6 h-5/6 p-4 bg-white rounded-lg shadow-lg animate-slide-in overflow-y-scroll">
           {banner()}
           {renderContent()}
         </div>
