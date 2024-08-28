@@ -3,7 +3,7 @@ import procure_img from "@/app/assets/our-service/sap/person-paying-using-nfc-te
 import CloseIcon from "@mui/icons-material/Close";
 
 export default function SolutionSupPageTemplate({ data, onClose }: any) {
-  console.log(data);
+ 
   const banner = () => {
     return (
       <div
