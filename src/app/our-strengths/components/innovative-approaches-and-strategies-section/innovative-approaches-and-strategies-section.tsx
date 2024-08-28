@@ -83,7 +83,7 @@ export default function InnovativeApproachesAndStrategiesSection() {
         forward-thinking methods.
       </p>
   
-        <div className="flex justify-around flex-wrap bg-white">
+        <div className="flex justify-around flex-wrap bg-white py-4">
           {data.map((item: InnovativeCardProps) => {
             return <>{renderInnovativeCardDesktop(item)}</>;
           })}
