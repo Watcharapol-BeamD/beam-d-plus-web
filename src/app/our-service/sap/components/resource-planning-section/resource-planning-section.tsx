@@ -30,6 +30,14 @@ export default function ResourcePlanningSection() {
     },
   ];
 
+  const solutionList  =[
+    {}
+  ]
+
+
+
+  
+
   const renderPlanCard = () => {
     return (
       <>
