@@ -3,12 +3,9 @@ import procure_img from "@/app/assets/our-service/sap/person-paying-using-nfc-te
 import CloseIcon from "@mui/icons-material/Close";
 
 export default function SolutionSupPageTemplate({ data, onClose }: any) {
- 
- 
-const handleContentClick = (e: any) => {
-  e.stopPropagation(); // Prevents the click event from bubbling up to the outer div
-};
-
+  const handleContentClick = (e: any) => {
+    e.stopPropagation(); // Prevents the click event from bubbling up to the outer div
+  };
 
   const banner = () => {
     return (
@@ -44,10 +41,10 @@ const handleContentClick = (e: any) => {
   const renderContent = () => {
     return (
       <div className="space-y-4 mt-4  ">
-        {data.info_list.map((item:any) => (
+        {data.info_list.map((item: any) => (
           <div key={item.info_id}>
             <p className="text-lg font-semibold">{item.header}</p>
-            <p>{item.description}</p>
+            <p className="text-base">{item.description}</p>
           </div>
         ))}
       </div>
@@ -56,8 +53,14 @@ const handleContentClick = (e: any) => {
 
   const renderInformation = () => {
     return (
-      <div  onClick={onClose} className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-        <div onClick={handleContentClick} className="relative w-5/6 h-5/6 p-4 bg-white rounded-lg shadow-lg animate-slide-in overflow-y-scroll">
+      <div
+        onClick={onClose}
+        className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+      >
+        <div
+          onClick={handleContentClick}
+          className="relative w-5/6 h-5/6 p-4 bg-white rounded-lg shadow-lg animate-slide-in overflow-y-scroll"
+        >
           {banner()}
           {renderContent()}
         </div>
