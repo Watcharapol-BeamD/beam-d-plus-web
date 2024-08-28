@@ -1,9 +1,31 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import SolutionSupPageTemplate from "../solution-sup-page-template/solution-sup-page-template";
- 
+
+type SolutionProps = {
+  id: number;
+  title: string;
+  description: string;
+};
+
+type Info = {
+  info_id: number;
+  header: string;
+  description: string;
+};
+
+type Solution = {
+  id: number;
+  title: string;
+  info_list: Info[];
+};
+
 export default function ResourcePlanningSection() {
-  const data = [
+  const [solutionInfo, setSolutionInfo] = useState<string>("");
+  const [isShow, setIsShow] = useState<boolean>(false);
+
+  const data: SolutionProps[] = [
     {
       id: 1,
       title: "Procure to Pay",
@@ -30,13 +52,41 @@ export default function ResourcePlanningSection() {
     },
   ];
 
-  const solutionList  =[
-    {}
-  ]
+  const solutionList: Solution[] = [
+    {
+      id: 1,
+      title: "Procure to Pay",
+      info_list: [
+        {
+          info_id: 1,
+          header:
+            "Quickly maximize cost savings with SAP ERP Procure to Pay processes",
+          description: `Manage purchases with greater efficiency and productivity by using a centralized ERP Procure to Pay system. 
+        Realize your purchasing power, enforce vendor choices, and optimize buying patterns. Negotiate quotes, contracts, 
+        and conditions better and minimize stock and unused space. Increase visibility into purchase orders, contract management, 
+        and invoice handling Reduce costs by lowering inventory levels and consolidating shipments Maintain high levels of supplier and customer 
+        satisfaction Optimize basic business processes - from requisitioning to invoicing for simple procurement Improve processes for procurement, inbound,
+         outbound, warehouse, and transportation management`,
+        },
+        {
+          info_id: 2,
+          header: "Sourcing and Contract Management",
+          description: `Streamline sourcing and contract processes on a comprehensive platform which allows for continuous evolution.
+           Identify savings opportunities and manage the contract lifecycle effectively Utilize SAP software to tie sourcing and contract processes tightly 
+          together Develop a standardized contract-authoring process that meets your company’s needs`,
+        },
+      ],
+    },
+  ];
 
+  const handleShowReadMore = (title: string) => {
+    setSolutionInfo(title);
+    setIsShow(true);
+  };
 
-
-  
+  const handleClosePopup = () => {
+    setIsShow(false);
+  };
 
   const renderPlanCard = () => {
     return (
@@ -49,7 +99,10 @@ export default function ResourcePlanningSection() {
             >
               <p className="text-lg font-semibold">{item.title}</p>
               <p>{item.description}</p>
-              <span className="font-semibold cursor-pointer hover:underline">
+              <span
+                className="font-semibold cursor-pointer hover:underline"
+                onClick={() => handleShowReadMore(item.title)}
+              >
                 Read More...
               </span>
             </div>
@@ -58,8 +111,6 @@ export default function ResourcePlanningSection() {
       </>
     );
   };
-
- 
 
   const renderResourcePlanning = () => {
     return (
@@ -79,7 +130,12 @@ export default function ResourcePlanningSection() {
   return (
     <>
       {renderResourcePlanning()}
-      {<SolutionSupPageTemplate/>}
+      {isShow && (
+        <SolutionSupPageTemplate
+          data={solutionList}
+          onClose={handleClosePopup}
+        />
+      )}
     </>
   );
 }

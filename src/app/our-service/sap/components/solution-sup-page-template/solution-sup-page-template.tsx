@@ -2,7 +2,8 @@ import React from "react";
 import procure_img from "@/app/assets/our-service/sap/person-paying-using-nfc-technology.jpg";
 import CloseIcon from "@mui/icons-material/Close";
 
-export default function SolutionSupPageTemplate() {
+export default function SolutionSupPageTemplate({data,onClose}:any) {
+  console.log(data)
   const banner = () => {
     return (
       <div
@@ -11,7 +12,7 @@ export default function SolutionSupPageTemplate() {
       >
         <div className="relative bg-gray-300 bg-opacity-50 h-full w-full flex justify-center items-center">
           <div className="absolute top-0 left-0 p-4">
-            <CloseIcon fontSize="large" className="cursor-pointer text-white" />
+            <CloseIcon onClick={onClose} fontSize="large" className="cursor-pointer text-white" />
           </div>
 
           <p className="text-white md:text-5xl text-3xl font-semibold">
