@@ -1,4 +1,5 @@
 import React from "react";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 export default function ResourcePlanningSection() {
   const data = [
@@ -35,10 +36,14 @@ export default function ResourcePlanningSection() {
           return (
             <div
               key={item.id}
-              className="bg-white  md:h-92 h-auto md:w-92 w-auto rounded-2xl p-4  drop-shadow-lg border"
+              className="bg-white md:h-100 h-auto md:w-92 w-auto rounded-2xl p-4 drop-shadow-lg border"
             >
               <p className="text-lg font-semibold">{item.title}</p>
               <p>{item.description}</p>
+              <span className="font-semibold cursor-pointer hover:underline">
+                Read More...
+              </span>
+        
             </div>
           );
         })}
@@ -49,9 +54,10 @@ export default function ResourcePlanningSection() {
   const renderResourcePlanning = () => {
     return (
       <div className="space-y-4">
-        <p className="border-l-4 border-primary pl-1 text-base font-semibold">Solutions for Enterprise Resource Planning from SAP</p>
+        <p className="border-l-4 border-primary pl-1 text-base font-semibold">
+          Solutions for Enterprise Resource Planning from SAP
+        </p>
         <div className="flex justify-center">
-        
           <div className="grid md:grid-cols-2 grid-cols-1 place-items-center content-center gap-4  ">
             {renderPlanCard()}
           </div>
