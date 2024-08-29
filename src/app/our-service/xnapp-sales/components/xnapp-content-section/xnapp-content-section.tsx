@@ -46,7 +46,11 @@ export default function XnappContentSection() {
             </p>
           </div>
           <div className="md:w-1/2 w-full">
-            <Image alt="" src={Xnapp_img} className="" />
+            <Image
+              alt=""
+              src={Xnapp_img}
+              className="sm:h-112 h-60 w-full object-cover"
+            />
           </div>
         </div>
         {/* ----------------------------------------------- */}
@@ -64,7 +68,11 @@ export default function XnappContentSection() {
             </p>
           </div>
           <div className="md:w-1/2 w-full">
-            <Image alt="" src={still_img} className="" />
+            <Image
+              alt=""
+              src={still_img}
+              className="sm:h-112 h-60 w-full object-cover"
+            />
           </div>
         </div>
         {/* ----------------------------------------------- */}
@@ -83,7 +91,11 @@ export default function XnappContentSection() {
             </p>
           </div>
           <div className="md:w-1/2 w-full">
-            <Image alt="" src={data_img} className="" />
+            <Image
+              alt=""
+              src={data_img}
+              className="sm:h-112 h-60 w-full object-cover"
+            />
           </div>
         </div>
         {/* ----------------------------------------------- */}
@@ -100,7 +112,11 @@ export default function XnappContentSection() {
             </p>
           </div>
           <div className="md:w-1/2 w-full">
-            <Image alt="" src={route_img} className="" />
+            <Image
+              alt=""
+              src={route_img}
+              className="sm:h-112 h-60 w-full object-cover"
+            />
           </div>
         </div>
         {/* ----------------------------------------------- */}
@@ -118,7 +134,11 @@ export default function XnappContentSection() {
             </p>
           </div>
           <div className="md:w-1/2 w-full">
-            <Image alt="" src={monitor_img} className="" />
+            <Image
+              alt=""
+              src={monitor_img}
+              className="sm:h-112 h-60 w-full object-cover"
+            />
           </div>
         </div>
         {/* ----------------------------------------------- */}
@@ -142,7 +162,11 @@ export default function XnappContentSection() {
             </ul>
           </div>
           <div className="md:w-1/2 w-full">
-            <Image alt="" src={color_coded_img} className="" />
+            <Image
+              alt=""
+              src={color_coded_img}
+              className="sm:h-112 h-60 w-full object-cover"
+            />
           </div>
         </div>
         {/* ----------------------------------------------- */}
@@ -169,7 +193,11 @@ export default function XnappContentSection() {
             </ul>
           </div>
           <div className="md:w-1/2 w-full">
-            <Image alt="" src={promo_img} className="" />
+            <Image
+              alt=""
+              src={promo_img}
+              className="sm:h-112 h-60 w-full object-cover"
+            />
           </div>
         </div>
         {/* ----------------------------------------------- */}
@@ -187,7 +215,11 @@ export default function XnappContentSection() {
             </p>
           </div>
           <div className="md:w-1/2 w-full">
-            <Image alt="" src={race_img} className="" />
+            <Image
+              alt=""
+              src={race_img}
+              className="sm:h-112 h-60 w-full object-cover"
+            />
           </div>
         </div>
         {/* ----------------------------------------------- */}
@@ -217,7 +249,11 @@ export default function XnappContentSection() {
             </p>
           </div>
           <div className="md:w-1/2 w-full">
-            <Image alt="" src={roi_img} className="" />
+            <Image
+              alt=""
+              src={roi_img}
+              className="sm:h-112 h-60 w-full object-cover"
+            />
           </div>
         </div>
         {/* ----------------------------------------------- */}
@@ -237,7 +273,11 @@ export default function XnappContentSection() {
             </p>
           </div>
           <div className="md:w-1/2 w-full">
-            <Image alt="" src={collaboration_img} className="" />
+            <Image
+              alt=""
+              src={collaboration_img}
+              className="sm:h-112 h-60 w-full object-cover"
+            />
           </div>
         </div>
       </div>
