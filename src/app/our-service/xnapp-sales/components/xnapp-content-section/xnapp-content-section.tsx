@@ -221,7 +221,7 @@ export default function XnappContentSection() {
           </div>
         </div>
         {/* ----------------------------------------------- */}
-        <p className="text-center font-bold text-lg">Collaboration</p>
+        <p className="text-center font-bold text-lg uppercase">Collaboration</p>
         {/* ----------------------------------------------- */}
         <div className="flex md:flex-row-reverse flex-col">
           <div className="md:w-1/2 w-full">
