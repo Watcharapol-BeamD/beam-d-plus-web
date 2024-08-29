@@ -134,7 +134,9 @@ const config: Config = {
       },
       colors: {
         primary: "#a09c7c",
+        secondary :"E5E5E5",
         "sub-main": "#706c5c",
+        
       },
     },
   },
