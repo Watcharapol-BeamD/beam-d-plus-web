@@ -7,7 +7,7 @@ export default function XnappSalePage() {
     return (
       <div className="xl:container mx-auto">
         <XnappSalesBanner />
-        <div className="my-4">
+        <div className="px-2 my-4">
           <ContentSection />
         </div>
       </div>

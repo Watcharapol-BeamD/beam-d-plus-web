@@ -30,10 +30,10 @@ export default function XnappContentSection() {
 
   const renderXnappContentSection = () => {
     return (
-      <div className="space-y-4">
+      <div className="space-y-6">
         {renderVision()}
         <p className="text-center font-bold text-lg">SALES</p>
-        <div className="flex md:flex-row flex-col">
+        <div className="flex md:flex-row flex-col gap-4">
           <div className="md:w-1/2 w-full">
             <p className="uppercase font-bold text-lg">XnappSales v/s OOS</p>
             <p className="text-base">
@@ -54,7 +54,7 @@ export default function XnappContentSection() {
           </div>
         </div>
         {/* ----------------------------------------------- */}
-        <div className="flex md:flex-row-reverse flex-col">
+        <div className="flex md:flex-row-reverse flex-col gap-4">
           <div className="md:w-1/2 w-full">
             <p className="uppercase font-bold text-lg">
               Brand + Variant + Size
@@ -76,7 +76,7 @@ export default function XnappContentSection() {
           </div>
         </div>
         {/* ----------------------------------------------- */}
-        <div className="flex md:flex-row flex-col">
+        <div className="flex md:flex-row flex-col gap-4">
           <div className="md:w-1/2 w-full">
             <p className="uppercase font-bold text-lg">
               XnappSales for your Data
@@ -99,7 +99,7 @@ export default function XnappContentSection() {
           </div>
         </div>
         {/* ----------------------------------------------- */}
-        <div className="flex md:flex-row-reverse flex-col">
+        <div className="flex md:flex-row-reverse flex-col gap-4">
           <div className="md:w-1/2 w-full">
             <p className="uppercase font-bold text-lg">
               XnappSales for the Journey
@@ -122,7 +122,7 @@ export default function XnappContentSection() {
         {/* ----------------------------------------------- */}
         <p className="text-center font-bold text-lg uppercase">Salesforce</p>
         {/* ----------------------------------------------- */}
-        <div className="flex md:flex-row-reverse flex-col">
+        <div className="flex md:flex-row-reverse flex-col gap-4">
           <div className="md:w-1/2 w-full">
             <p className="uppercase font-bold text-lg">
               XnappSales & your SalesForce
@@ -143,7 +143,7 @@ export default function XnappContentSection() {
         </div>
         {/* ----------------------------------------------- */}
 
-        <div className="flex md:flex-row flex-col">
+        <div className="flex md:flex-row flex-col gap-4">
           <div className="md:w-1/2 w-full">
             <p className="uppercase font-bold text-lg">XnappSales & KPIs</p>
             <p>
@@ -172,7 +172,7 @@ export default function XnappContentSection() {
         {/* ----------------------------------------------- */}
         <p className="text-center font-bold text-lg">PROMOTIONS</p>
         {/* ----------------------------------------------- */}
-        <div className="flex md:flex-row flex-col">
+        <div className="flex md:flex-row flex-col gap-4">
           <div className="md:w-1/2 w-full">
             <p className="uppercase font-bold text-lg">
               XnappSales & Promotions
@@ -201,7 +201,7 @@ export default function XnappContentSection() {
           </div>
         </div>
         {/* ----------------------------------------------- */}
-        <div className="flex md:flex-row-reverse flex-col">
+        <div className="flex md:flex-row-reverse flex-col gap-4">
           <div className="md:w-1/2 w-full">
             <p className="uppercase font-bold text-lg">
               XnappSales to Stay Ahead…
@@ -225,7 +225,7 @@ export default function XnappContentSection() {
         {/* ----------------------------------------------- */}
         <p className="text-center font-bold text-lg Collaboration">ROI</p>
         {/* ----------------------------------------------- */}
-        <div className="flex md:flex-row flex-col">
+        <div className="flex md:flex-row flex-col gap-4">
           <div className="md:w-1/2 w-full">
             <p className="uppercase font-bold text-lg">ROI with XnappSales</p>
             <p className="text-base">How it works</p>
@@ -259,7 +259,7 @@ export default function XnappContentSection() {
         {/* ----------------------------------------------- */}
         <p className="text-center font-bold text-lg uppercase">Collaboration</p>
         {/* ----------------------------------------------- */}
-        <div className="flex md:flex-row-reverse flex-col">
+        <div className="flex md:flex-row-reverse flex-col gap-4">
           <div className="md:w-1/2 w-full">
             <p className="uppercase font-bold text-lg">
               Collaboration for Secondary Sales
