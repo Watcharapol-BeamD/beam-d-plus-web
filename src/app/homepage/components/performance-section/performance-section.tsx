@@ -15,7 +15,7 @@ export default function PerformanceSection() {
             <p className="text-lg">Project Around The World</p>
           </div>
           <div className="text-center text-2xl">
-            <p>150</p>
+            <p className="font-bold">150</p>
             <p className="text-lg">Client</p>
           </div>
         </div>

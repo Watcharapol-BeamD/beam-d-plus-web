@@ -4,6 +4,7 @@ import Image from "next/image";
 import line_img from "@/app/assets/footer/line.png";
 import facebook_img from "@/app/assets/footer/facebook.png";
 import linked_in_img from "@/app/assets/footer/linkedin-big-logo.png";
+import Link from "next/link";
 
 export default function Footer() {
   const renderFooter = () => {
@@ -13,10 +14,10 @@ export default function Footer() {
           <div className="h-full w-full flex flex-col justify-center 840px:items-start items-center 0 840px:py-0 py-4">
             <Image alt="" src={beam_d_img} className="h-16 w-32" />
             <div className="gap-2 840px:flex hidden py-2">
-              <p>ABOUT US</p>
-              <p>OUR SERVICE</p>
-              <p>OUR STRENGTHES</p>
-              <p>OUR TEAMS</p>
+              <Link href={"/about-us"} >ABOUT US</Link>
+              <Link href={"/our-service"}>OUR SERVICE</Link>
+              <Link href={"/our-strengths"}>OUR STRENGTHES</Link>
+              <Link href={"/our-teams"}>OUR TEAMS</Link>
             </div>
           </div>
 
