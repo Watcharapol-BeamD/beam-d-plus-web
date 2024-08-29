@@ -1,9 +1,6 @@
 import React from "react";
 import Xlerate_img from "@/app/assets/our-service/xlerate/business-woman-hand-with-financial-charts-laptop-table.webp";
-import Industry_img from "@/app/assets/our-service/xlerate/asian-guy-is-playing-jenga-wood-blocks-tower-game.webp";
-import Hassle_img from "@/app/assets/our-service/xlerate/male-asian-caucasian-engineer-professional-having-discussion-standing-consult-machine-factory-two-expert-coworker-brainstorm-expl.webp";
-import Efficient_img from "@/app/assets/our-service/xlerate/modern-equipped-computer-lab.webp";
-
+ 
 export default function XlerateMainBanner() {
   const renderXlerateMainBanner = () => {
     return (
