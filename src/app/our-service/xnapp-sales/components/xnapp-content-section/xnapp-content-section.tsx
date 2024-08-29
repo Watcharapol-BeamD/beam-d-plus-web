@@ -237,7 +237,7 @@ export default function XnappContentSection() {
             </p>
           </div>
           <div className="md:w-1/2 w-full">
-            <Image alt="" src={roi_img} className="" />
+            <Image alt="" src={collaboration_img} className="" />
           </div>
         </div>
       </div>
