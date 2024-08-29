@@ -30,7 +30,7 @@ export default function XnappContentSection() {
 
   const renderXnappContentSection = () => {
     return (
-      <div className="space-y-6">
+      <div className="md:space-y-12 space-y-6">
         {renderVision()}
         <p className="text-center font-bold text-lg">SALES</p>
         <div className="flex md:flex-row flex-col gap-4">
