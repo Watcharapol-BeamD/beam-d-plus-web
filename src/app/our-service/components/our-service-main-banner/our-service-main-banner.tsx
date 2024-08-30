@@ -1,5 +1,5 @@
 import React from "react";
-import our_service_banner_img from "@/app/assets/our-service-page/showing-business-document-colleague-removebg-cap.png";
+import our_service_banner_img from "@/app/assets/our-service/showing-business-document-colleague-removebg-cap.png";
 import Image from "next/image";
 
 export default function OurServiceMainBanner() {
