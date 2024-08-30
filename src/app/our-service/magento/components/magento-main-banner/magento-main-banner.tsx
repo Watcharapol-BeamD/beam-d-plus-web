@@ -1,5 +1,5 @@
 import React from "react";
-import banner_img from "@/app/assets/our-service/magento/portrait-beautiful-young-asian-b-mirror.webp";
+import banner_img from "@/app/assets/our-service/magento/portrait-beautiful-young-asian-business-woman-with-headphone-call-center-mirror.webp";
 
 export default function MargentoMainBanner() {
   return (
