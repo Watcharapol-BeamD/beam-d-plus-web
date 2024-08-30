@@ -49,7 +49,7 @@ export default function TeamSection() {
           <TeamCarousel numberOfSlide={1} />
         </div>
         <div>
-          <Button title="View Our Team" />
+        <ButtonLink title="View Our Team" url="/our-teams"/>
         </div>
       </div>
     );

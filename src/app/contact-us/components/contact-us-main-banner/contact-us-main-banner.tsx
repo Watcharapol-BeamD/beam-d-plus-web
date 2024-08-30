@@ -1,5 +1,5 @@
 import React from "react";
-import team_img from "@/app/assets/contact-us/smiling-asian-businesswoman-showing-tablet-her-manager-meeting-office.webp";
+import team_img from "@/app/assets/contact-us/smiling-asian-businesswoman-showing-tablet-her-manager-meeting-office-_1_.webp";
 import thailand_img from "@/app/assets/contact-us/thailand.png";
 import india_img from "@/app/assets/contact-us/india.png";
 import singapore_img from "@/app/assets/contact-us/singapore.png";

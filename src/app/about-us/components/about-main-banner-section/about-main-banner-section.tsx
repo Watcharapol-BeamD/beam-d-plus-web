@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import meeting_img from "@/app/assets/about-us/millennial-group-young-businesspeople-asia-businessman-businesswoman-celebrate-giving-five-after-dealing-feeling-happy-signing-contract-a.jpg";
+import meeting_img from "@/app/assets/about-us/millennial-group-young-businesspeople-asia-businessman-businesswoman-celebrate-giving-five-after-dea.webp";
 
 export default function AboutMainBanner() {
   return (
