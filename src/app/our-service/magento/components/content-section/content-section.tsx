@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-import adobe_commerce1 from "@/app/assets/our-service/magento/image-157.png";
-import adobe_commerce2 from "@/app/assets/our-service/magento/image-158.png";
-import adobe_commerce3 from "@/app/assets/our-service/magento/image-159.png";
+import adobe_commerce1 from "@/app/assets/our-service/magento/image-157.jpg";
+import adobe_commerce2 from "@/app/assets/our-service/magento/image-158.jpg";
+import adobe_commerce3 from "@/app/assets/our-service/magento/image-159.jpg";
  
 
 export default function ContentSection() {
