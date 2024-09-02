@@ -6,6 +6,7 @@ import innovative_img3 from "@/app/assets/our-strengths/image-37.png";
 import innovative_img4 from "@/app/assets/our-strengths/image-38.png";
 
 type InnovativeCardProps = {
+  id: number;
   image_name: StaticImageData;
   title: string;
   description: string[];
@@ -14,6 +15,7 @@ type InnovativeCardProps = {
 export default function InnovativeApproachesAndStrategiesSection() {
   const data: InnovativeCardProps[] = [
     {
+      id: 1,
       image_name: innovative_img2,
       title: "Digitized Demand Generation",
       description: [
@@ -24,6 +26,7 @@ export default function InnovativeApproachesAndStrategiesSection() {
       ],
     },
     {
+      id: 2,
       image_name: innovative_img2,
       title: "Digitized Demand Capture",
       description: [
@@ -34,6 +37,7 @@ export default function InnovativeApproachesAndStrategiesSection() {
       ],
     },
     {
+      id: 3,
       image_name: innovative_img2,
       title: "Digitized Demand Fulfilment",
       description: [
@@ -44,6 +48,7 @@ export default function InnovativeApproachesAndStrategiesSection() {
       ],
     },
     {
+      id: 4,
       image_name: innovative_img2,
       title: "Personalized After Sales Services",
       description: [
@@ -82,13 +87,14 @@ export default function InnovativeApproachesAndStrategiesSection() {
         Empowering your business with cutting-edge solutions and
         forward-thinking methods.
       </p>
-  
-        <div className="flex justify-around flex-wrap bg-white py-4">
-          {data.map((item: InnovativeCardProps) => {
-            return <>{renderInnovativeCardDesktop(item)}</>;
-          })}
-        </div>
-     
+
+      <div className="flex justify-around flex-wrap bg-white py-4">
+        {data.map((item: InnovativeCardProps) => {
+          return (
+            <React.Fragment key={item.id}>{renderInnovativeCardDesktop(item)}</React.Fragment>
+          );
+        })}
+      </div>
     </div>
   );
 }
