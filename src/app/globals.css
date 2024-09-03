@@ -3,54 +3,23 @@
 @tailwind utilities;
 
 @layer utilities {
-  .clip-style-v1 {
-    clip-path: inset(0% 0% 0% 0% round 60% 0% 30% 70%);
+    .clip-style-v1 {
+      clip-path: inset(0% 0% 0% 0% round 60% 0% 30% 70%);
+    }
+    .clip-style-v2 {
+      clip-path: inset(0% 0% 0% 0% round 25% 0% 30% 70%);
+    }
+    .clip-style-v3 {
+      clip-path: inset(0% 0% 0% 0% round 20% 0% 0% 40%);
+    }
+    .clip-style-v4 {
+      clip-path: polygon(0 0, 100% 0, 100% 60%, 78% 66%, 57% 76%, 37% 86%, 0 100%);
+      /* clip-path: polygon(0 0, 100% 0, 100% 65%, 64% 85%, 0 100%, 0% 50%); */
   }
-  .clip-style-v2 {
-    clip-path: inset(0% 0% 0% 0% round 25% 0% 30% 70%);
+    .clip-style-v5 {
+    clip-path: inset(0 0 0 0 round 0% 20% 0% 0%);
+   
   }
-  .clip-style-v3 {
-    clip-path: inset(0% 0% 0% 0% round 20% 0% 0% 40%);
-  }
-  .clip-style-v4 {
-    clip-path: polygon(0 0, 100% 0, 100% 60%, 78% 66%, 57% 76%, 37% 86%, 0 100%);
-    /* clip-path: polygon(0 0, 100% 0, 100% 65%, 64% 85%, 0 100%, 0% 50%); */
-}
-  .clip-style-v5 {
-  clip-path: inset(0 0 0 0 round 0% 20% 0% 0%);
- 
-}
-  }
-
- 
+    }
   
-/* 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
+   

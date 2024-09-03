@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter,Raleway } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const raleway = Raleway({
+  subsets: ['latin'], // Choose subsets if necessary
+  weight: ['400', '500', '700'], // Specify font weights you need
+  style: 'normal', // You can specify style if needed
+  variable: '--font-raleway', // This sets a custom CSS variable
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,11 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className+"bg-red-400"}>
-        <Navbar />
+      <body className={raleway.className}>
+        <Navbar/>
         {children}
         <Footer/>
-      </body>
+        </body>
     </html>
   );
 }
