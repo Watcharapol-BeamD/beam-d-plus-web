@@ -77,7 +77,7 @@ export default function OurServiceSection() {
           return (
             <div
               key={index}
-              className="470px:h-84 470px:w-54 440px:h-76 440px:w-50 360px:h-full 360px:w-full h-76 w-50  bg-white border shadow-sm rounded-lg p-2 m-4 "
+              className="470px:h-84 470px:w-54 460px:h-86 460px:w-50 360px:h-74 360px:w-full h-76 w-50  bg-white border shadow-sm rounded-lg p-2 sm:m-4 m-0 "
             >
                 {/* <div
               key={index}
