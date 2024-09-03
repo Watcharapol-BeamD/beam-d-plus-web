@@ -2,7 +2,7 @@
 
 const nextConfig = {
   output: "export",
-  // exportTrailingSlash: true,
+  trailingSlash: true,
   images: {
     unoptimized: true,
     // loader: "akamai",
