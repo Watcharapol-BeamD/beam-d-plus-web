@@ -18,7 +18,7 @@ export default function OurServiceMainBanner() {
 
   const renderDescription = () => {
     return (
-      <div className="h-full w-full flex flex-col item-center justify-center md:py-0 py-10 ">
+      <div className="h-full w-full flex flex-col item-center justify-center md:py-0 py-6 ">
         <div className="text-center sm:px-10 px-2 space-y-2">
           <p className="text-3xl">OUR SERVICES</p>
           <p>
@@ -34,7 +34,7 @@ export default function OurServiceMainBanner() {
 
   return (
     <div>
-      <div className="flex w-full h-full md:flex-row flex-col  ">
+      <div className="flex w-full h-full md:flex-row flex-col">
         <div className="md:w-1/2 w-full">{renderOurServiceMainBanner()}</div>
         <div className="md:w-1/2 w-full">{renderDescription()}</div>
       </div>

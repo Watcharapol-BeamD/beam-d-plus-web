@@ -26,7 +26,7 @@ export default function OurServicePage() {
     return (
       <div className="xl:container mx-auto w-full h-full">
         <OurServiceMainBanner />
-        <div className="md:py-10">
+        <div className="py-6">
           <OurServiceSection />
         </div>
         <TechnologyExpertiseSection />
