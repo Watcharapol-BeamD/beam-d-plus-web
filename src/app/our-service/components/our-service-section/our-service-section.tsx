@@ -77,8 +77,12 @@ export default function OurServiceSection() {
           return (
             <div
               key={index}
-              className="460px:h-84 460px:w-54 430px:h-74 430px:w-50 h-72 w-46 bg-white border shadow-sm rounded-lg p-2 m-4 "
+              className="470px:h-84 470px:w-54 440px:h-76 440px:w-50 360px:h-full 360px:w-full h-76 w-50  bg-white border shadow-sm rounded-lg p-2 m-4 "
             >
+                {/* <div
+              key={index}
+              className="470px:h-84 470px:w-54 440px:h-74 440px:w-50 410px:h-72 410px:w-46 360px:h-70 w-42 h-72 bg-white border shadow-sm rounded-lg p-2 m-4 "
+            > */}
               <Image alt="" src={item.icon} className="460px:h-14 460px:w-14 h-10 w-10" />
               <p className="460px:text-base text-sm">{item.title}</p>
               <ul className="list-disc list-inside 460px:text-sm text-xs">
@@ -97,7 +101,7 @@ export default function OurServiceSection() {
     return (
       <div className="xl:container mx-auto flex justify-center xl:px-0 px-2">
         {/* <div className="flex flex-wrap w-full bg-yellow-400 justify-center  "> */}
-        <div className="grid md:grid-cols-3 430px:grid-cols-2 grid-cols-1  lg:w-2/3 w-full  content-center place-items-center">
+        <div className="grid md:grid-cols-3 360px:grid-cols-2 grid-cols-1 lg:w-2/3 gap-1 w-full content-center place-items-center">
           {serviceCard()}
         </div>
       </div>
