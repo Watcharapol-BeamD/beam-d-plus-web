@@ -28,24 +28,28 @@ export default function Navbar() {
           <Link href={"/"} className=" ">
             <Image alt="" src={beam_d_img} className="lg:h-16 lg:w-32 h-12 w-24  " />
           </Link>
-          <ol className="flex space-x-4 uppercase items-center text-base ">
-            <Link href={"/about-us"} className="cursor-pointer">
-              About Us
-            </Link>
-            <Link href={"/our-service"} className="cursor-pointer">
-              Our Service
-            </Link>
-            <Link href={"/our-strengths"} className="cursor-pointer">
-              Our Strengths
-            </Link>
-            <Link href={"/our-teams"} className="cursor-pointer">
-              Our Teams
-            </Link>
-            <Link href={"/contact-us"}>
-              <button className="bg-primary px-6 py-4 rounded-full text-white">CONTACT US</button>
-              {/* <Button title={"CONTACT US"} /> */}
-            </Link>
-          </ol>
+          <ol className="flex space-x-4 uppercase items-center text-base">
+  <Link href="/about-us" className="cursor-pointer relative group">
+    <span className="relative z-10">About Us</span>
+    <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+  </Link>
+  <Link href="/our-service" className="cursor-pointer relative group">
+    <span className="relative z-10">Our Service</span>
+    <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+  </Link>
+  <Link href="/our-strengths" className="cursor-pointer relative group">
+    <span className="relative z-10">Our Strengths</span>
+    <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+  </Link>
+  <Link href="/our-teams" className="cursor-pointer relative group">
+    <span className="relative z-10">Our Teams</span>
+    <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+  </Link>
+  <Link href="/contact-us">
+    <button className="bg-primary px-6 py-4 rounded-full text-white">CONTACT US</button>
+  </Link>
+</ol>
+
         </div>
       </div>
     );
