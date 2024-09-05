@@ -32,7 +32,7 @@ export default function MainBannerSection() {
   return (
     <div className="h-full w-full ">
       {renderBanner()}
-      <div className=" sm:my-10 my-4 px-1">
+      <div className="sm:my-10 my-4 px-1">
         <p className="text-center lg:text-3xl text-2xl">WE ARE</p>
         <p className="text-center lg:text-3xl text-2xl">PROUD PARTNER TO GREAT BRANDS</p>
       </div>
