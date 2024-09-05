@@ -19,6 +19,7 @@ import "./PartnerCarousel.css";
 import Image from "next/image";
 import { Grid, Pagination, Autoplay, Navigation } from "swiper/modules";
 import { useMediaQuery } from "@mui/material";
+
 import thai_airway from "../../../assets/about-us/partner/thai_air_way.png";
 import sg_airline from "../../../assets/about-us/partner/sg_airline.jpg";
 import cp_img from "../../../assets/about-us/partner/c.p._intertrade_co._ltd.jpg";
@@ -29,14 +30,46 @@ import pttep_img from "../../../assets/about-us/partner/logo-pttep-250.png";
 import scg_img from "../../../assets/about-us/partner/Scg.png";
 import uniliver_img from "../../../assets/about-us/partner/Unilever.png";
 import osotspa_img from "../../../assets/about-us/partner/osotspa.png";
-
+import gtx_img from "@/app/assets/about-us/partner/gtxLogo.webp";
+import spx_img from "@/app/assets/about-us/partner/logo-SPX.png";
+import beiersdorf_img from "@/app/assets/about-us/partner/Beiersdorf_Logo.svg.png";
+import smartrac_img from "@/app/assets/about-us/partner/SMARTRAC_Logo.png";
+import levis_img from "@/app/assets/about-us/partner/levis.png";
+import esso_img from "@/app/assets/about-us/partner/Esso-logo-073F2C0D97-seeklogo.com.png";
+import ttm_img from "@/app/assets/about-us/partner/TTM_Logo_Big-removebg-preview.png";
+import bat_img from "@/app/assets/about-us/partner/bat.png";
+import pcs_img from "@/app/assets/about-us/partner/pcs-logo.png";
+import chula_img from "@/app/assets/about-us/partner/chula.png";
+import netlock_img from "@/app/assets/about-us/partner/logo_netlock_2019_black.png";
 
 export default function PartnerCarousel() {
   const is640Screen = useMediaQuery("(min-width:640px)", { noSsr: true });
   const [isMounted, setIsMounted] = useState(false);
 
+  const data = [
+    { id: 1, image_name: thai_airway },
+    { id: 2, image_name: sg_airline },
+    { id: 3, image_name: cp_img },
+    { id: 4, image_name: cat_img },
+    { id: 5, image_name: HomePro_img },
+    { id: 6, image_name: index_img },
+    { id: 7, image_name: pttep_img },
+    { id: 8, image_name: scg_img },
+    { id: 9, image_name: uniliver_img },
+    { id: 10, image_name: osotspa_img },
+    { id: 11, image_name: beiersdorf_img },
+    { id: 12, image_name: smartrac_img },
+    { id: 13, image_name: levis_img },
+    { id: 14, image_name: esso_img },
+    { id: 15, image_name: ttm_img },
+    { id: 16, image_name: bat_img },
+    { id: 17, image_name: pcs_img },
+    { id: 18, image_name: chula_img },
+    { id: 19, image_name: netlock_img },
+    { id: 20, image_name: gtx_img },
+    { id: 21, image_name: spx_img }
+  ];
 
-  
   useEffect(() => {
     setIsMounted(true);
   }, []);
@@ -77,11 +110,11 @@ export default function PartnerCarousel() {
           //   }}
           navigation={is640Screen}
           modules={[Grid, Pagination, Autoplay, Navigation]}
-          loop={true}
-          // autoplay={{
-          //   delay: 2500,
-          //   disableOnInteraction: false,
-          // }}
+          loop={false}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           // navigation={true}
           breakpoints={{
             0: {
@@ -153,13 +186,13 @@ export default function PartnerCarousel() {
 
           // breakpoints={breakpoints}
         >
-          {[...Array(18)].map((_, index) => (
+          {data.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="md:h-28 h-20">
+              <div className="md:h-28 h-20 md:w-40 w-36">
                 <Image
                   alt=""
                   role="img"
-                  src={index % 2 === 0 ? thai_airway : sg_airline}
+                  src={item.image_name}
                 />
               </div>
             </SwiperSlide>
