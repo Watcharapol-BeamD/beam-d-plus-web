@@ -98,7 +98,7 @@ export default function PartnerCarousel() {
 
   const renderCarousel = () => {
     return (
-      <div className="h-96" id="partner-carousel">
+      <div className="h-96 p-1" id="partner-carousel"  >
         <Swiper
           // slidesPerView={5}
           grid={{
@@ -187,7 +187,7 @@ export default function PartnerCarousel() {
           // breakpoints={breakpoints}
         >
           {data.map((item, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className="">
               <div className="md:h-28 h-20 md:w-40 w-36">
                 <Image
                   alt=""
