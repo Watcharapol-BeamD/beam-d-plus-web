@@ -8,7 +8,7 @@ import ButtonLink from "@/app/components/ButtonLink";
 export default function MainBannerSection() {
   const renderBanner = () => {
     return (
-      <div className="h-full w-full relative  bg-gray-200   ">
+      <div className="h-full w-full relative bg-gray-200   ">
         <div className="flex justify-end h-full w-full">
           <div className="clip-style-v3 h-full w-214 bg-primary absolute"></div>
           <div className="clip-style-v2 h-full w-208 bg-sub-main absolute"></div>
@@ -31,7 +31,7 @@ export default function MainBannerSection() {
   return (
     <div className="h-full w-full ">
       {renderBanner()}
-      <div className="xl:my-20 sm:mt-52 sm:my-20 mt-60 mb-20">
+      <div className="xl:my-20 sm:mt-52 sm:my-20 mt-60 mb-10">
         <p className="text-center text-3xl">WE ARE</p>
         <p className="text-center text-3xl">PROUD PARTNER TO GREAT BRANDS</p>
       </div>
