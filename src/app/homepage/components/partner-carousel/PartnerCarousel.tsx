@@ -18,14 +18,57 @@ import "./PartnerCarousel.css";
 // import required modules
 import Image from "next/image";
 import { Grid, Pagination, Autoplay, Navigation } from "swiper/modules";
-import thai_airway from "../../../assets/thai_air_way.png";
-import join_img from "../../../assets/join.png";
-import sg_airline from "../../../assets/sg_airline.jpg";
 import { useMediaQuery } from "@mui/material";
+
+import thai_airway from "../../../assets/about-us/partner/thai_air_way.webp";
+import sg_airline from "../../../assets/about-us/partner/sg_airline.webp";
+import cp_img from "../../../assets/about-us/partner/c.p._intertrade_co._ltd.webp";
+import cat_img from "../../../assets/about-us/partner/CATTelecom_Logo.webp";
+import HomePro_img from "../../../assets/about-us/partner/HomePro_Logo.webp";
+import index_img from "../../../assets/about-us/partner/logo_black.webp";
+import pttep_img from "../../../assets/about-us/partner/logo-pttep-250.webp";
+import scg_img from "../../../assets/about-us/partner/Scg.webp";
+import uniliver_img from "../../../assets/about-us/partner/Unilever.webp";
+import osotspa_img from "../../../assets/about-us/partner/osotspa.webp";
+import gtx_img from "@/app/assets/about-us/partner/gtxLogo.webp";
+import spx_img from "@/app/assets/about-us/partner/logo-SPX.webp";
+import beiersdorf_img from "@/app/assets/about-us/partner/Beiersdorf_Logo.webp";
+import smartrac_img from "@/app/assets/about-us/partner/SMARTRAC_Logo.webp";
+import levis_img from "@/app/assets/about-us/partner/levis.webp";
+import esso_img from "@/app/assets/about-us/partner/Esso-logo-073F2C0D97-seeklogo.com.webp";
+import ttm_img from "@/app/assets/about-us/partner/TTM_Logo_Big-removebg-preview.webp";
+import bat_img from "@/app/assets/about-us/partner/bat.webp";
+import pcs_img from "@/app/assets/about-us/partner/pcs-logo.webp";
+import chula_img from "@/app/assets/about-us/partner/chula.webp";
+import netlock_img from "@/app/assets/about-us/partner/logo_netlock_2019_black.webp";
 
 export default function PartnerCarousel() {
   const is640Screen = useMediaQuery("(min-width:640px)", { noSsr: true });
   const [isMounted, setIsMounted] = useState(false);
+
+  const data = [
+    { id: 1, image_name: thai_airway },
+    { id: 2, image_name: sg_airline },
+    { id: 3, image_name: cp_img },
+    { id: 4, image_name: cat_img },
+    { id: 5, image_name: HomePro_img },
+    { id: 6, image_name: index_img },
+    { id: 7, image_name: pttep_img },
+    { id: 8, image_name: scg_img },
+    { id: 9, image_name: uniliver_img },
+    { id: 10, image_name: osotspa_img },
+    { id: 11, image_name: beiersdorf_img },
+    { id: 12, image_name: smartrac_img },
+    { id: 13, image_name: levis_img },
+    { id: 14, image_name: esso_img },
+    { id: 15, image_name: ttm_img },
+    { id: 16, image_name: bat_img },
+    { id: 17, image_name: pcs_img },
+    { id: 18, image_name: chula_img },
+    { id: 19, image_name: netlock_img },
+    { id: 20, image_name: gtx_img },
+    { id: 21, image_name: spx_img }
+  ];
 
   useEffect(() => {
     setIsMounted(true);
@@ -55,7 +98,7 @@ export default function PartnerCarousel() {
 
   const renderCarousel = () => {
     return (
-      <div className="h-96" id="partner-carousel">
+      <div className="h-96 p-1" id="partner-carousel"  >
         <Swiper
           // slidesPerView={5}
           grid={{
@@ -67,11 +110,11 @@ export default function PartnerCarousel() {
           //   }}
           navigation={is640Screen}
           modules={[Grid, Pagination, Autoplay, Navigation]}
-          loop={true}
-          // autoplay={{
-          //   delay: 2500,
-          //   disableOnInteraction: false,
-          // }}
+          loop={false}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           // navigation={true}
           breakpoints={{
             0: {
@@ -143,13 +186,13 @@ export default function PartnerCarousel() {
 
           // breakpoints={breakpoints}
         >
-          {[...Array(18)].map((_, index) => (
-            <SwiperSlide key={index}>
-              <div className="md:h-28 h-20">
+          {data.map((item, index) => (
+            <SwiperSlide key={index} className="">
+              <div className="md:h-28 h-20 md:w-40 w-36">
                 <Image
                   alt=""
                   role="img"
-                  src={index % 2 === 0 ? thai_airway : sg_airline}
+                  src={item.image_name}
                 />
               </div>
             </SwiperSlide>
