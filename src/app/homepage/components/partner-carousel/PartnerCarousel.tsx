@@ -18,15 +18,25 @@ import "./PartnerCarousel.css";
 // import required modules
 import Image from "next/image";
 import { Grid, Pagination, Autoplay, Navigation } from "swiper/modules";
-import thai_airway from "../../../assets/thai_air_way.png";
-import join_img from "../../../assets/join.png";
-import sg_airline from "../../../assets/sg_airline.jpg";
 import { useMediaQuery } from "@mui/material";
+import thai_airway from "../../../assets/about-us/partner/thai_air_way.png";
+import sg_airline from "../../../assets/about-us/partner/sg_airline.jpg";
+import cp_img from "../../../assets/about-us/partner/c.p._intertrade_co._ltd.jpg";
+import cat_img from "../../../assets/about-us/partner/CATTelecom_Logo.webp";
+import HomePro_img from "../../../assets/about-us/partner/HomePro_Logo.svg.png";
+import index_img from "../../../assets/about-us/partner/logo_black.png";
+import pttep_img from "../../../assets/about-us/partner/logo-pttep-250.png";
+import scg_img from "../../../assets/about-us/partner/Scg.png";
+import uniliver_img from "../../../assets/about-us/partner/Unilever.png";
+import osotspa_img from "../../../assets/about-us/partner/osotspa.png";
+
 
 export default function PartnerCarousel() {
   const is640Screen = useMediaQuery("(min-width:640px)", { noSsr: true });
   const [isMounted, setIsMounted] = useState(false);
 
+
+  
   useEffect(() => {
     setIsMounted(true);
   }, []);
