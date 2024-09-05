@@ -7,12 +7,13 @@
 
 @media only screen and (max-width: 768px) {
  
-  /* #partner-carousel .swiper {
-    width: 80%;
-    height: 80%;
+  #partner-carousel .swiper {
+    /* width: 80%; */
+    height: 16rem;
     margin-left: auto;
     margin-right: auto;
-  } */
+  }
+  
 }
 
 

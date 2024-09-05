@@ -19,7 +19,10 @@ export default function Homepage() {
     return (
       <div className="xl:container mx-auto min-h-screen">
         <MainBannerSection />
-        <PartnerCarousel />
+        <div className="lg:py-10 py-4 ">  
+           <PartnerCarousel />
+           </div>
+     
         <OurServiceSection />
         {/* {renderOurService()} */}
         {/* {renderOurTeamDesktop()} */}
