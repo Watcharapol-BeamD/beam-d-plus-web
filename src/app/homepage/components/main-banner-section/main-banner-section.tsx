@@ -10,7 +10,7 @@ export default function MainBannerSection() {
     return (
       <div className="h-full w-full static xl:relative bg-gray-200 xl:block flex xl:flex-row flex-col-reverse ">
         
-        <div className="p-10 xl:absolute xl:bottom-0">
+        <div className="md:py-10 md:px-10 px-4 py-10 xl:absolute xl:bottom-0">
           <div className="lg:text-4xl text-3xl font-bold">
             <p>Your Awesome </p>
             <p>Technology Partner</p>
