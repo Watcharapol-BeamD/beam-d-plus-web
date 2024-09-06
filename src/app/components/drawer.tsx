@@ -45,15 +45,21 @@ export default function DrawerComponent() {
           "OUR STRENGTHS",
           "OUR TEAMS",
           "CONTACT US",
-        ].map((text, index,array) => (
+        ].map((text, index, array) => (
           <Link key={text} href={link[index]} passHref>
-            
             <ListItem disablePadding>
               <ListItemButton>
-           
-               {index+1 ===array.length? <div className="bg-primary px-4 py-2 rounded-full text-white">
-                  <ListItemText primary={text} sx={{ textAlign: "left" }} />
-                </div>:<ListItemText primary={text} sx={{ textAlign: "left" }} className="pl-4" />}
+                {index + 1 === array.length ? (
+                  <div className="bg-primary px-4 py-2 rounded-full text-white">
+                    <ListItemText primary={text} sx={{ textAlign: "left" }} />
+                  </div>
+                ) : (
+                  <ListItemText
+                    primary={text}
+                    sx={{ textAlign: "left" }}
+                    className="pl-4"
+                  />
+                )}
               </ListItemButton>
             </ListItem>
           </Link>
@@ -66,7 +72,10 @@ export default function DrawerComponent() {
     <div className="w-full h-18 flex items-center bg-primary drop-shadow-md">
       <div className="flex justify-between w-full px-2">
         <div className="h-10 w-10 "> </div>
-        <Image alt="" src={beam_d_img} className="h-10 w-18" />
+        <Link href={"/"} className=" ">
+          <Image alt="" src={beam_d_img} className="h-10 w-18" />
+        </Link>
+
         <button onClick={toggleDrawer(true)}>
           <MenuIcon fontSize="large" className="text-white" />
         </button>
