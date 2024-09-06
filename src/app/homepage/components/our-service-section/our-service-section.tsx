@@ -1,8 +1,15 @@
 import Button from "@/app/components/Button";
 import Image from "next/image";
 import React from "react";
-import ml_img from "@/app/assets/our-service/ml.svg";
 import ButtonLink from "@/app/components/ButtonLink";
+
+ 
+import ml_img from "@/app/assets/our-service/ml.svg";
+import data_management_img from "@/app/assets/our-service/data-management.svg";
+import mobile_dev_img from "@/app/assets/our-service/mobile-development.svg";
+import silhouette_img from "@/app/assets/our-service/multiple-users-silhouette.svg";
+import thinking_img from "@/app/assets/our-service/thinking.svg";
+import development_img from "@/app/assets/our-service/web-development.svg";
 
 export default function OurServiceSection() {
   const items = [
@@ -11,23 +18,23 @@ export default function OurServiceSection() {
       description: `SAP ERP & SAP HANA Consulting & Implementation`,
     },
     {
-      image: ml_img,
+      image: thinking_img,
       description: `Digital Solution Services`,
     },
     {
-      image: ml_img,
+      image: data_management_img,
       description: `Business-Tech Solution  & Change Management Landing`,
     },
     {
-      image: ml_img,
+      image: silhouette_img,
       description: `360 Post Implementation Support`,
     },
     {
-      image: ml_img,
+      image: development_img,
       description: `Web App Development Services`,
     },
     {
-      image: ml_img,
+      image: mobile_dev_img,
       description: `Mobile App Development`,
     },
   ];
@@ -41,12 +48,12 @@ export default function OurServiceSection() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6  w-full justify-items-center items-center gap-2">
             {items.map((item,index) => {
               return (
-                <div key={index} className="h-60 w-40 bg-white rounded-xl p-4 shadow border-gray-200 border">
+                <div key={index} className="h-60 w-full max-w-44 bg-white rounded-xl p-4 shadow border-gray-200 border">
                   <Image
                     alt="icon"
                     src={item.image}
                     height={45}
-                    className="text-red-400"
+                    className=""
                   />
                   <p className="mt-2">{item.description}</p>
                 </div>
