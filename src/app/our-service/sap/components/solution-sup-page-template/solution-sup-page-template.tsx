@@ -59,7 +59,7 @@ export default function SolutionSupPageTemplate({ data, onClose }: any) {
       >
         <div
           onClick={handleContentClick}
-          className="relative w-5/6 h-5/6 p-4 bg-white rounded-lg shadow-lg animate-slide-in overflow-y-scroll"
+          className="relative w-5/6 h-5/6 p-4 bg-white rounded-lg shadow-lg animate-slide-in-right overflow-y-scroll"
         >
           {banner()}
           {renderContent()}

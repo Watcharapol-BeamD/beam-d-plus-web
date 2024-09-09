@@ -9,25 +9,32 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        two_tone: "linear-gradient(  #a09c7c 0%, #a09c7c 50%, #f5f5f5 0%, #f5f5f5 50%  )",
+        two_tone:
+          "linear-gradient(  #a09c7c 0%, #a09c7c 50%, #f5f5f5 0%, #f5f5f5 50%  )",
 
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        "slide-in-right": "slide-to-right 0.5s ease-out forwards",
+        "slide-in-left": "slide-to-left 0.5s ease-out forwards",
+      },
       keyframes: {
-        "slide-in": {
+        "slide-to-right": {
           "0%": { transform: "translateX(-100%)", opacity: "0" },
           "100%": { transform: "translateX(0)", opacity: "1" },
         },
+        "slide-to-left": {
+          "0%": { transform: "translateX(100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
       },
-      animation: {
-        "slide-in": "slide-in 0.5s ease-out forwards",
-      },
+
       screens: {
         xs: "480px",
         "310px": "310px",
-        "360px":"360px",
+        "360px": "360px",
         "370px": "370px",
         "375px": "375px",
         "390px": "390px",
@@ -35,7 +42,7 @@ const config: Config = {
         "430px": "430px",
         "440px": "440px",
         "460px": "460px",
-        "470px":"470px",
+        "470px": "470px",
         "480px": "480px",
         "550px": "550px",
         "810px": "810px",
