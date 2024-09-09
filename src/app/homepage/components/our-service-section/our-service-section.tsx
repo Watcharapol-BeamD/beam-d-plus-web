@@ -41,7 +41,7 @@ export default function OurServiceSection() {
 
   const renderOurService = () => {
     return (
-      <div id="our-service" className=" h-218 md:h-160 lg:h-128 relative bg-foo">
+      <div id="our-service" className=" h-218 md:h-160 lg:h-128 relative bg-two_tone">
         <div className="absolute p-2 inset-0 py-4 md:py-6 grid grid-rows-[auto,1fr,auto] items-center justify-items-center">
           <p className="text-3xl font-bold text-white">OUR SERVICES</p>
 
