@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
@@ -14,6 +14,7 @@ type DataItem = {
 
 export default function DropdownList() {
   const [showAnswerMap, setShowAnswerMap] = useState<number | null>(null);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   const data: DataItem[] = [
     {
@@ -73,13 +74,40 @@ export default function DropdownList() {
       "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
   ];
-  const handleMouseEnter = (id: number) => {
-    setShowAnswerMap(id);
-  };
 
-  const handleMouseLeave = () => {
-    setShowAnswerMap(null);
-  };
+    // Detect screen size
+    useEffect(() => {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth < 768); // Assume mobile if width is less than 768px
+      };
+  
+      handleResize(); // Check screen size on component mount
+      window.addEventListener("resize", handleResize); // Listen for resize events
+  
+      return () => {
+        window.removeEventListener("resize", handleResize); // Clean up listener on unmount
+      };
+    }, []);
+  
+    const handleToggleDropdown = (id: number) => {
+      if (isMobile) {
+        setShowAnswerMap(showAnswerMap === id ? null : id); // Toggle on click for mobile
+      }
+    };
+  
+    const handleMouseEnter = (id: number) => {
+      if (!isMobile) {
+        setShowAnswerMap(id); // Open on hover for desktop
+      }
+    };
+  
+    const handleMouseLeave = () => {
+      if (!isMobile) {
+        setShowAnswerMap(null); // Close on hover out for desktop
+      }
+    };
+  
+
 
   const renderDropdown = () => {
     return (
@@ -89,6 +117,7 @@ export default function DropdownList() {
             <div
               className="cursor-pointer"
               key={item.id}
+              onClick={() => handleToggleDropdown(item.id)}
               onMouseEnter={() => handleMouseEnter(item.id)}
               onMouseLeave={handleMouseLeave}
             >
@@ -102,7 +131,7 @@ export default function DropdownList() {
                 <p className= {`${showAnswerMap === item.id?" text-white ":"text-primary"} font-bold`}>{item.title}</p>
                 <div>
                   {showAnswerMap === item.id ? (
-                    <ExpandMoreIcon />
+                    <ExpandMoreIcon className="text-white"/>
                   ) : (
                     <ChevronRightIcon />
                   )}
