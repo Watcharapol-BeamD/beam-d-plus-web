@@ -9,13 +9,13 @@ export default function ProjectSection() {
         <div>
           <ProjectList />
         </div>
-        <div className="md:hidden block">
+        {/* <div className="md:hidden block">
           we are dedicated to assist clients in optimizing their business
           operations through the strategic utilization of Information
           Technology. By understanding the unique needs and challenges of each
           client, we can tailor our services to deliver custom-made solutions
           that address specific requirements.
-        </div>
+        </div> */}
         <div>
           <DropdownList />
         </div>

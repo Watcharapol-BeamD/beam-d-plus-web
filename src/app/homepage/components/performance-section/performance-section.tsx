@@ -38,7 +38,7 @@ export default function PerformanceSection() {
             </div>
           </div>
         </div> 
-        <p className="text-center">
+        {/* <p className="text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
           magni distinctio amet modi obcaecati harum beatae impedit voluptatem
           sit! Provident minima modi repellendus cum porro iure dicta temporibus
@@ -47,7 +47,7 @@ export default function PerformanceSection() {
           reiciendis ipsum. Quo, quae! A perferendis, deleniti corrupti labore
           ut error consequatur molestias quod quisquam dicta ad itaque est enim
           quo. Dignissimos eius esse fuga.
-        </p>
+        </p> */}
       </div>
     );
   };
