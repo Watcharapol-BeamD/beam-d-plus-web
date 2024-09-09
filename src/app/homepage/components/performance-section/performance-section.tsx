@@ -11,11 +11,11 @@ export default function PerformanceSection() {
             <p className="text-lg">Year In Business</p>
           </div>
           <div className="text-center text-2xl">
-            <p className="font-bold">150 </p>
+            <p className="font-bold">100+</p>
             <p className="text-lg">Project Around The World</p>
           </div>
           <div className="text-center text-2xl">
-            <p className="font-bold">150</p>
+            <p className="font-bold">50+</p>
             <p className="text-lg">Client</p>
           </div>
         </div>
@@ -23,7 +23,7 @@ export default function PerformanceSection() {
         <div className=" md:hidden block h-50 w-full ">
           <div className="flex flex-col items-center gap-10">
             <div className="text-center text-2xl order-1 w-full">
-              <p className="font-bold">150</p>
+              <p className="font-bold">100+</p>
               <p className="text-lg">Project Around The World</p>
             </div>
             <div className="flex justify-between w-full  order-2  ">
@@ -32,7 +32,7 @@ export default function PerformanceSection() {
                 <p className="text-lg">Year In Business</p>
               </div>
               <div className="text-center text-2xl flex-1">
-                <p className="font-bold">150</p>
+                <p className="font-bold">50+</p>
                 <p className="text-lg">Client</p>
               </div>
             </div>
