@@ -7,7 +7,7 @@ import ButtonLink from "@/app/components/ButtonLink";
 import { useVisibilityOnScroll } from "@/app/hooks/useVisibilityOnScroll";
 
 export default function MainBannerSection() {
-  const isVisible = useVisibilityOnScroll("ABOUT");
+ 
 
   const renderBanner = () => {
     return (
