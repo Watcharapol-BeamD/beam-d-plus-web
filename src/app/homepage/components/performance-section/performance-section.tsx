@@ -98,7 +98,7 @@ export default function PerformanceSection() {
     return (
       <div id="performance-section" className="w-full">
         {/* ----------Desktop---------- */}
-        <div className="md:grid hidden grid-cols-3 place-items-center pb-10">
+        <div className="md:grid hidden grid-cols-3 place-items-center">
           <div className="text-center text-2xl">
             <p className="font-bold text-4xl">{storeCount.toLocaleString("en-US")} +</p>
             <p className="text-lg">Year In Business</p>

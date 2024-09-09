@@ -30,7 +30,9 @@ export default function Homepage() {
           <TeamSection />
         </div>
         <TechnologyExpertiseSection />
+        <div className="py-4">
         <PerformanceSection />
+        </div>
         <SolutionSection />
         <ContactUsSection />
       </div>
