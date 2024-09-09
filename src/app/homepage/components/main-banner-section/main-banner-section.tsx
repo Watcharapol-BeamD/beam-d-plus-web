@@ -4,8 +4,11 @@ import Image from "next/image";
 import Button from "@/app/components/Button";
 import Link from "next/link";
 import ButtonLink from "@/app/components/ButtonLink";
+import { useVisibilityOnScroll } from "@/app/hooks/useVisibilityOnScroll";
 
 export default function MainBannerSection() {
+  const isVisible = useVisibilityOnScroll("ABOUT");
+
   const renderBanner = () => {
     return (
       <div className="h-full w-full static xl:relative bg-gray-200 xl:block flex xl:flex-row flex-col-reverse ">
