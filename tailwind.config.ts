@@ -9,25 +9,42 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        foo: "linear-gradient(  #a09c7c 0%, #a09c7c 50%, #f5f5f5 0%, #f5f5f5 50%  )",
+        two_tone:
+          "linear-gradient(  #a09c7c 0%, #a09c7c 50%, #f5f5f5 0%, #f5f5f5 50%  )",
 
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      keyframes: {
-        "slide-in": {
+      animation: {   
+        "slide-in-left": "slide-to-left 0.5s ease-out forwards",
+        "slide-in-right": "slide-to-right 0.5s ease-out forwards",
+        "slide-up": "slide-to-up 0.5s ease-out forwards",
+        "slide-down": "slide-to-down 0.5s ease-out forwards",
+      },
+      keyframes: {     
+        "slide-to-left": {
+          "0%": { transform: "translateX(100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        "slide-to-right": {
           "0%": { transform: "translateX(-100%)", opacity: "0" },
           "100%": { transform: "translateX(0)", opacity: "1" },
         },
+        "slide-to-up": {
+          "0%": { transform: "translateY(100%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        "slide-to-down": {
+          "0%": { transform: "translateY(-100%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
       },
-      animation: {
-        "slide-in": "slide-in 0.5s ease-out forwards",
-      },
+
       screens: {
         xs: "480px",
         "310px": "310px",
-        "360px":"360px",
+        "360px": "360px",
         "370px": "370px",
         "375px": "375px",
         "390px": "390px",
@@ -35,7 +52,7 @@ const config: Config = {
         "430px": "430px",
         "440px": "440px",
         "460px": "460px",
-        "470px":"470px",
+        "470px": "470px",
         "480px": "480px",
         "550px": "550px",
         "810px": "810px",
@@ -45,6 +62,9 @@ const config: Config = {
       height: {
         13: "3.25rem",
         18: "4.5rem",
+        19:"4.75rem",
+        22:"5.5rem",
+        26:"6.5rem",
         30: "7.5rem",
         34: "8.5rem",
         38: "9.5rem",
@@ -93,6 +113,9 @@ const config: Config = {
         "30%": "30%",
         13: "3.25rem",
         18: "4.5rem",
+        19:"4.75rem",
+        22:"5.5rem",
+        26:"6.5rem",
         30: "7.5rem",
         34: "8.5rem",
         38: "9.5rem",
@@ -146,6 +169,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-animated')],
 };
 export default config;
