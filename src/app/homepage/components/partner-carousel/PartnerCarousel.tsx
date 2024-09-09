@@ -47,28 +47,28 @@ export default function PartnerCarousel() {
   const [isMounted, setIsMounted] = useState(false);
 
   const data = [
-    { id: 1, image_name: thai_airway },
-    { id: 2, image_name: sg_airline },
-    { id: 3, image_name: cp_img },
-    { id: 4, image_name: cat_img },
-    { id: 5, image_name: HomePro_img },
-    { id: 6, image_name: index_img },
-    { id: 7, image_name: pttep_img },
-    { id: 8, image_name: scg_img },
-    { id: 9, image_name: uniliver_img },
-    { id: 10, image_name: osotspa_img },
-    { id: 11, image_name: beiersdorf_img },
-    { id: 12, image_name: smartrac_img },
-    { id: 13, image_name: levis_img },
-    { id: 14, image_name: esso_img },
-    { id: 15, image_name: ttm_img },
-    { id: 16, image_name: bat_img },
-    { id: 17, image_name: pcs_img },
-    { id: 18, image_name: chula_img },
-    { id: 19, image_name: netlock_img },
-    { id: 20, image_name: gtx_img },
-    { id: 21, image_name: spx_img }
-  ];
+    { id: 1, image_name: beiersdorf_img },   
+    { id: 2, image_name: uniliver_img },   
+    { id: 3, image_name: osotspa_img },
+    { id: 4, image_name: pttep_img },
+    { id: 5, image_name: scg_img },
+    { id: 6, image_name: HomePro_img },
+    { id: 7, image_name: esso_img },
+    { id: 8, image_name: sg_airline },
+    { id: 9, image_name: gtx_img },
+    { id: 10, image_name: spx_img },
+    { id: 11, image_name: index_img },
+    { id: 12, image_name: netlock_img },
+    { id: 13, image_name: pcs_img },
+    { id: 14, image_name: chula_img },
+    { id: 15, image_name: bat_img },    
+    { id: 16, image_name: cat_img },
+    { id: 17, image_name: cp_img },
+    { id: 18, image_name: ttm_img },
+    { id: 19, image_name: thai_airway },
+    { id: 20, image_name: smartrac_img },
+    { id: 21, image_name: levis_img },
+ ];
 
   useEffect(() => {
     setIsMounted(true);
