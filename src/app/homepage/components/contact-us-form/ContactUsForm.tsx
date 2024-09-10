@@ -1,10 +1,14 @@
+"use client"
 import Button from "@/app/components/Button";
+import { useVisibilityOnScroll } from "@/app/hooks/useVisibilityOnScroll";
 import React from "react";
 
 export default function ContactUsForm() {
+  const isVisible = useVisibilityOnScroll("contact-us-section")
+
   const renderContactForm = () => {
     return (
-      <div className="border py-6 shadow-md bg-white w-full">
+      <div id="contact-us-section" className={`border py-6 shadow-md bg-white w-full ${isVisible?"animate-fade-up":""}`}>
         <p className="text-center text-3xl">LET'S CONNECT</p>
 
         <div className="flex justify-center flex-col items-center mt-6">
