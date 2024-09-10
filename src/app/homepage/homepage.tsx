@@ -31,7 +31,7 @@ export default function Homepage() {
         </div>
         <TechnologyExpertiseSection />
         <div className="py-4">
-        <PerformanceSection />
+        <PerformanceSection bgColor="bg-white" textColor="text-black"/>
         </div>
         <SolutionSection />
         <ContactUsSection />

@@ -1,7 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-export default function PerformanceSection() {
+type PerformanceSectionProps ={
+  bgColor?:string,
+  textColor?:string
+}
+
+
+export default function PerformanceSection({bgColor,textColor}:PerformanceSectionProps) {
   const [isVisible, setIsVisible] = useState(false);
   const [countStarted, setCountStarted] = useState(false);
   const [storeCount, setYearCount] = useState(0);
@@ -99,17 +105,17 @@ export default function PerformanceSection() {
       <div id="performance-section" className="w-full">
         {/* ----------Desktop---------- */}
         <div className="md:grid hidden grid-cols-3 place-items-center">
-          <div className="text-center text-2xl">
+          <div className="text-center text-2xl space-y-4">
             <p className="font-bold text-4xl">{storeCount.toLocaleString("en-US")} +</p>
             <p className="text-lg">Year In Business</p>
           </div>
-          <div className="text-center text-2xl">
+          <div className="text-center text-2xl space-y-4">
             <p  className="font-semibold text-4xl">
               {provinceCount.toLocaleString("en-US")} +
             </p>
             <p className="text-lg">Project Around The World</p>
           </div>
-          <div className="text-center text-2xl">
+          <div className="text-center text-2xl space-y-4">
             <p  className="font-semibold text-4xl">{areaCount.toLocaleString("en-US")} +</p>
             <p className="text-lg">Client</p>
           </div>
@@ -117,20 +123,20 @@ export default function PerformanceSection() {
         {/* ----------Mobile---------- */}
         <div className=" md:hidden block h-50 w-full ">
           <div className="flex flex-col items-center gap-10">
-            <div className="text-center text-2xl order-1 w-full">
+            <div className="text-center text-2xl order-1 w-full space-y-4">
               <p className="font-bold text-3xl">
                 {provinceCount.toLocaleString("en-US")} +
               </p>
               <p className="text-lg">Project Around The World</p>
             </div>
-            <div className="flex justify-between w-full  order-2  ">
+            <div className="flex justify-between w-full order-2 space-y-4">
               <div className="text-center text-2xl flex-1">
                 <p className="font-bold text-3xl">
                   {storeCount.toLocaleString("en-US")} +
                 </p>
                 <p className="text-lg">Year In Business</p>
               </div>
-              <div className="text-center text-2xl flex-1">
+              <div className="text-center text-2xl flex-1 space-y-4">
                 <p className="font-bold text-3xl">
                   {areaCount.toLocaleString("en-US")} +
                 </p>
@@ -153,5 +159,5 @@ export default function PerformanceSection() {
     );
   };
 
-  return <div className="md:p-8 p-2">{renderPerformance()}</div>;
+  return <div className={`md:p-8 p-2  ${bgColor} ${textColor}`}>{renderPerformance()}</div>;
 }
