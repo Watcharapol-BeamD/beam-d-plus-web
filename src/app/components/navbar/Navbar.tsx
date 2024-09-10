@@ -25,7 +25,7 @@ export default function Navbar() {
     return (
       <div className="absolute top-10 left-0 w-full z-50 h-24 flex items-center justify-center px-1">
         <div className="lg:container mx-auto xl:w-[75%] lg:w-[90%] w-auto px-2 h-24  bg-white flex justify-between items-center rounded-md shadow-xl border ">
-          <Link href={"/"} className=" ">
+          <Link href={"/"} className="mr-2 ">
             <Image
               alt=""
               src={beam_d_img}

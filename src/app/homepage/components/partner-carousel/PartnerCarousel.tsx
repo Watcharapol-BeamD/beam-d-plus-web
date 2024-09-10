@@ -188,7 +188,7 @@ export default function PartnerCarousel() {
         >
           {data.map((item, index) => (
             <SwiperSlide key={index} className=" ">
-              <div className="md:h-26 md:w-38 h-20  w-36">
+              <div className="lg:h-26 lg:w-38 h-20  w-36">
                 <Image alt="" role="img" src={item.image_name} />
               </div>
             </SwiperSlide>
