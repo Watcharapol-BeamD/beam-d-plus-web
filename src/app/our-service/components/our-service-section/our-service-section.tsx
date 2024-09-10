@@ -49,7 +49,7 @@ export default function OurServiceSection() {
     },
     {
       icon: Artificial_img,
-      title: "SAP ERP & SAP HANA Consulting & Implementation",
+      title: "SAP S/4 Hana and SAP B1 consulting & implementation",
       description: [
         "Financial Accounting (FI) & Controlling (CO)",
         "Sales and Distribution (SD)",
