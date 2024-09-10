@@ -41,11 +41,9 @@ export default function TechnologyExpertiseSection() {
         <div className="text-white mb-10  ">
           <p className="text-center text-3xl">Technology Expertise</p>
           <p className="text-center text-base pt-10">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            quam hic culpa quasi ea necessitatibus iure, nemo est? Enim aliquid
-            veritatis molestias praesentium dicta magnam voluptatem maxime in!
-            Itaque recusandae sint ex voluptate qui eveniet quasi consequuntur
-            odio pariatur rerum.
+          We don't want to be a jack of all trades and master of none. 
+          We are a custom mobile app development company specializing in select technologies, 
+          allowing us to provide exceptionally highly skilled developers in our area of expertise.
           </p>
         </div>
         <TechnologyExpertiseCarousel />
