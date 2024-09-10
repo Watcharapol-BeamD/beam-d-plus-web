@@ -23,6 +23,7 @@ export default function ContactAddressSection() {
             <p>karnthanawat Building Floor5.</p>
             <p>536 Ratchadapisek Rd., Samsennok,</p>
             <p>HuayKwang, Bangkok, Thailand 10310</p>
+            <p>Tel +66615463539</p>
           </div>
           <div className="sm:text-base text-sm">
             <div className="flex items-center gap-1">
@@ -30,13 +31,13 @@ export default function ContactAddressSection() {
               <Image alt="" src={india} className="w-12" />
             </div>
 
-            <p>SreshtGyan Tech Solutions Pvt Ltd, Devi Krishna,</p>
+            {/* <p>SreshtGyan Tech Solutions Pvt Ltd, Devi Krishna,</p> */}
             <p>Near Technocity, Pallippuram, Thiruvananthapuram</p>
             <p> 695 316, Kerala, India</p>
             <p>India Tel: +91 86062 24377</p>
-            <p>gopakumar.krishnamma@gyantechsolution.com</p>
+            {/* <p>gopakumar.krishnamma@gyantechsolution.com</p>
             <p>https://www.gyantechsolution.com</p>
-            <p>CIN: U72900KL2017PTC051475</p>
+            <p>CIN: U72900KL2017PTC051475</p> */}
           </div>
           <div className="sm:text-base text-sm">
             <div className="flex items-center gap-1">
