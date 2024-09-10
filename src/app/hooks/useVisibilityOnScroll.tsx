@@ -1,13 +1,15 @@
 "use client"
 import { useState, useEffect } from "react";
 
-export function useVisibilityOnScroll(sectionId:string) {
-  const [isVisible, setIsVisible] = useState(true);
+
+
+export function useVisibilityOnScroll(sectionId: string, triggerOnce: boolean = false) {
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const section = document.getElementById(sectionId);
-      if (!section) return;
+      if (!section || (triggerOnce && isVisible)) return; // Skip if visible and triggerOnce is true
 
       const sectionTop = section.getBoundingClientRect().top;
       const sectionBottom = section.getBoundingClientRect().bottom;
@@ -19,17 +21,20 @@ export function useVisibilityOnScroll(sectionId:string) {
         sectionBottom > windowHeight * 0.25
       ) {
         setIsVisible(true);
-      } else {
-        setIsVisible(false);
+      } else if (!triggerOnce) {
+        setIsVisible(false); // Reset visibility when it's not visible and triggerOnce is false
       }
     };
 
     // Attach scroll event listener
     window.addEventListener("scroll", handleScroll);
 
+    // Check initial visibility on component mount
+    handleScroll();
+
     // Remove the event listener on component unmount
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [sectionId]);
+  }, [sectionId, isVisible, triggerOnce]); // Add dependencies for isVisible and triggerOnce
 
   return isVisible;
 }
