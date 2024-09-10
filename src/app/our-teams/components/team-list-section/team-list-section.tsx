@@ -125,7 +125,7 @@ export default function TeamListSection() {
           <Image
             alt=""
             src={item.image_name}
-            className="h-full w-full  rounded-tr-3xl rounded-bl-3xl object-contain"
+            className="h-full w-full  rounded-tr-3xl rounded-bl-3xl object-cover"
           />
         </div>
         <div className="absolute bg-white border bottom-4 right-0 py-1 px-2 rounded-xl shadow">
