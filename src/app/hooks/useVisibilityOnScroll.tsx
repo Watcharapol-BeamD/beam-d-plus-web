@@ -1,9 +1,10 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 
-
-
-export function useVisibilityOnScroll(sectionId: string, triggerOnce: boolean = false) {
+export function useVisibilityOnScroll(
+  sectionId: string,
+  triggerOnce: boolean = false
+) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
