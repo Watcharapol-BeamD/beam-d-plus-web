@@ -39,7 +39,7 @@ export default function OurServiceSection() {
     },
     {
       image: mobile_dev_img,
-      description: `Mobile App Development`,
+      description: `Custom Mobile App Development`,
     },
   ];
 
@@ -57,7 +57,7 @@ export default function OurServiceSection() {
               return (
                 <div
                   key={index}
-                  className={`h-60 w-full max-w-44 bg-white rounded-xl p-4 shadow border-gray-200 border ${
+                  className={`h-60 w-full max-w-44 bg-white cursor-default rounded-xl p-4 shadow border-gray-200 border ${
                     isVisible ?  `animate-fade-up animate-duration-500`  : ""
                   }`}
                 >
