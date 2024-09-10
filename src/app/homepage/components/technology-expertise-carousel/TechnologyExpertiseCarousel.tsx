@@ -1,3 +1,4 @@
+"use client"
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -27,8 +28,12 @@ import nextjs_img from "@/app/assets/technology/nextjs-icon-2048x1234-pqycciiu.p
 import postgresql_img from "@/app/assets/technology/postgresql-logo-transparent.png";
 import react_img from "@/app/assets/technology/react_logo-512.webp";
 import redux_img from "@/app/assets/technology/redux.png";
+import { useVisibilityOnScroll } from '@/app/hooks/useVisibilityOnScroll';
 
 export default function TechnologyExpertiseCarouselMobile() {
+const isVisible= useVisibilityOnScroll("technology-expertise")
+
+
   return (
     <div
       id="technology-expertise"
@@ -51,7 +56,7 @@ export default function TechnologyExpertiseCarouselMobile() {
           },
         }}
       >
-        <SwiperSlide>
+        <SwiperSlide className={`${isVisible?"animate-cus-slide-up-800":""}` }>
           <div
             id="frontend"
             className="h-80 w-86 bg-white rounded-3xl p-4 text-2xl "
@@ -76,7 +81,7 @@ export default function TechnologyExpertiseCarouselMobile() {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className={`${isVisible?"animate-cus-slide-up-900":""}` }>
           <div
             id="backend"
             className="h-80 w-86 bg-white rounded-3xl p-4 text-2xl "
@@ -98,7 +103,7 @@ export default function TechnologyExpertiseCarouselMobile() {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className={`${isVisible?"animate-cus-slide-up-1000":""}` }>
           <div
             id="tool"
             className="h-80 w-86 bg-white rounded-3xl p-4 text-2xl "
