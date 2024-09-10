@@ -29,12 +29,17 @@ export default function OurServiceSection() {
     {
       icon: Google_Code_img,
       title: "Web App Development Services",
-      description: [],
+      description: [
+        `We help you design and develop custom web apps for your business based on your specific needs and requirements, 
+        with high quality, fast delivery, and affordable prices.`,
+      ],
     },
     {
       icon: Developer_Mode_img,
-      title: "Mobile App Development",
-      description: [],
+      title: "Custom Mobile App Development",
+      description: [`We help you design and develop custom mobile apps for your business based on your specific needs and requirements, 
+        with high quality, fast delivery, and affordable prices.
+`],
     },
     {
       icon: Home_Office_img,
@@ -79,14 +84,18 @@ export default function OurServiceSection() {
               key={index}
               className="470px:h-84 470px:w-54 460px:h-86 460px:w-50 360px:h-74 360px:w-full h-76 w-50  bg-white border shadow-sm rounded-lg p-2 sm:m-4 m-0 "
             >
-                {/* <div
+              {/* <div
               key={index}
               className="470px:h-84 470px:w-54 440px:h-74 440px:w-50 410px:h-72 410px:w-46 360px:h-70 w-42 h-72 bg-white border shadow-sm rounded-lg p-2 m-4 "
             > */}
-              <Image alt="" src={item.icon} className="460px:h-14 460px:w-14 h-10 w-10" />
+              <Image
+                alt=""
+                src={item.icon}
+                className="460px:h-14 460px:w-14 h-10 w-10"
+              />
               <p className="460px:text-base text-sm">{item.title}</p>
               <ul className="list-disc list-inside 460px:text-sm text-xs">
-                {item.description.map((des: string,index:number) => {
+                {item.description.map((des: string, index: number) => {
                   return <li key={index}>{des}</li>;
                 })}
               </ul>
