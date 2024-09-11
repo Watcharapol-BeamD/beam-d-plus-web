@@ -8,7 +8,7 @@ import Link from "next/link";
 type DataItem = {
   id: number;
   title: string;
-  url:string
+  url: string;
   description: string;
 };
 
@@ -20,137 +20,150 @@ export default function DropdownList() {
     {
       id: 1,
       title: "SAP",
-      url:"sap",
+      url: "sap",
       description:
         "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 2,
       title: "Xnapp Sales",
-      url:"xnapp-sales",
+      url: "xnapp-sales",
       description:
         "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 3,
       title: "Locus",
-      url:"locus",
+      url: "locus",
       description:
         "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 4,
       title: "Magento",
-      url:"magento",
+      url: "magento",
       description:
         "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 5,
       title: "SAP Business ONE",
-      url:"sap-business-one",
+      url: "sap-business-one",
       description:
         "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 6,
       title: "Xlerate",
-      url:"xlerate",
+      url: "xlerate",
       description:
         "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 7,
       title: "Latitude247",
-      url:"latitude247",
+      url: "latitude247",
       description:
-      "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
+        "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
     {
       id: 8,
       title: "ChumChum",
-      url:"chumchum",
+      url: "chumchum",
       description:
-      "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
+        "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
+    },
+    {
+      id: 9,
+      title: "SAPB1",
+      url: "sapb1",
+      description:
+        "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
   ];
 
-    // Detect screen size
-    useEffect(() => {
-      const handleResize = () => {
-        setIsMobile(window.innerWidth < 768); // Assume mobile if width is less than 768px
-      };
-  
-      handleResize(); // Check screen size on component mount
-      window.addEventListener("resize", handleResize); // Listen for resize events
-  
-      return () => {
-        window.removeEventListener("resize", handleResize); // Clean up listener on unmount
-      };
-    }, []);
-  
-    const handleToggleDropdown = (id: number) => {
-      if (isMobile) {
-        setShowAnswerMap(showAnswerMap === id ? null : id); // Toggle on click for mobile
-      }
+  // Detect screen size
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // Assume mobile if width is less than 768px
     };
-  
-    const handleMouseEnter = (id: number) => {
-      if (!isMobile) {
-        setShowAnswerMap(id); // Open on hover for desktop
-      }
-    };
-  
-    const handleMouseLeave = () => {
-      if (!isMobile) {
-        setShowAnswerMap(null); // Close on hover out for desktop
-      }
-    };
-  
 
+    handleResize(); // Check screen size on component mount
+    window.addEventListener("resize", handleResize); // Listen for resize events
+
+    return () => {
+      window.removeEventListener("resize", handleResize); // Clean up listener on unmount
+    };
+  }, []);
+
+  const handleToggleDropdown = (id: number) => {
+    if (isMobile) {
+      setShowAnswerMap(showAnswerMap === id ? null : id); // Toggle on click for mobile
+    }
+  };
+
+  const handleMouseEnter = (id: number) => {
+    if (!isMobile) {
+      setShowAnswerMap(id); // Open on hover for desktop
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (!isMobile) {
+      setShowAnswerMap(null); // Close on hover out for desktop
+    }
+  };
 
   const renderDropdown = () => {
     return (
-     
-        <div className="space-y-1 relative z-20">
-          {data.map((item) => (
+      <div className="space-y-1 relative z-20">
+        {data.map((item) => (
+          <div
+            className="cursor-pointer"
+            key={item.id}
+            onClick={() => handleToggleDropdown(item.id)}
+            onMouseEnter={() => handleMouseEnter(item.id)}
+            onMouseLeave={handleMouseLeave}
+          >
             <div
-              className="cursor-pointer"
-              key={item.id}
-              onClick={() => handleToggleDropdown(item.id)}
-              onMouseEnter={() => handleMouseEnter(item.id)}
-              onMouseLeave={handleMouseLeave}
+              className={`${
+                showAnswerMap === item.id
+                  ? "bg-primary rounded-t-xl"
+                  : "bg-white"
+              } w-full p-2 border-b flex justify-between items-center`}
             >
-              <div
+              <p
                 className={`${
-                  showAnswerMap === item.id
-                    ? "bg-primary rounded-t-xl"
-                    : "bg-white"
-                } w-full p-2 border-b flex justify-between items-center`}
+                  showAnswerMap === item.id ? " text-white " : "text-primary"
+                } font-bold`}
               >
-                <p className= {`${showAnswerMap === item.id?" text-white ":"text-primary"} font-bold`}>{item.title}</p>
-                <div>
-                  {showAnswerMap === item.id ? (
-                    <ExpandMoreIcon className="text-white"/>
-                  ) : (
-                    <ChevronRightIcon />
-                  )}
-                </div>
+                {item.title}
+              </p>
+              <div>
+                {showAnswerMap === item.id ? (
+                  <ExpandMoreIcon className="text-white" />
+                ) : (
+                  <ChevronRightIcon />
+                )}
               </div>
-
-              {showAnswerMap === item.id && (
-                <div
-                  className={`rounded-b-xl bg-white border border-black p-2 pt-4 pb-2 pl-4 shadow absolute`}
-                >
-                  <p>{item.description}</p>
-                  <Link href={`/our-service/${item.url}`} className="text-right text-xs pt-2 underline text-primary">
-                    Read More
-                  </Link>
-                </div>
-              )}
             </div>
-          ))}
-        </div>
+
+            {showAnswerMap === item.id && (
+              <div
+                className={`rounded-b-xl bg-white border border-black p-2 pt-4 pb-2 pl-4 shadow absolute`}
+              >
+                <p>{item.description}</p>
+                <Link
+                  href={`/our-service/${item.url}`}
+                  className="text-right text-xs pt-2 underline text-primary"
+                >
+                  Read More
+                </Link>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
     );
   };
 

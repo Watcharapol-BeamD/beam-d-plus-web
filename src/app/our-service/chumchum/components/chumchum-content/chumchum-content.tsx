@@ -1,14 +1,14 @@
 import Image from "next/image";
 import React from "react";
 
-import image_1 from "@/app/assets/our-service/chumchum/DSCF0502.jpg";
-import image_2 from "@/app/assets/our-service/chumchum/DSCF0970.jpg";
+import image_1 from "@/app/assets/our-service/chumchum/DSCF0502.webp";
+import image_2 from "@/app/assets/our-service/chumchum/DSCF0970.webp";
 
 export default function ChumchumContent() {
   return (
     <div className="w-full">
-      <div className="flex justify-center w-full  ">
-        <div className="w-1/2 p-4">
+      <div className="flex justify-center w-full md:flex-row flex-col-reverse md:pt-0 pt-4">
+        <div className="md:w-1/2 w-full md:p-4 p-2">
           <p className="text-primary font-bold text-2xl">
             ADVANCED RETAIL AND WHOLESALE SOLUTIONS
           </p>
@@ -25,17 +25,27 @@ export default function ChumchumContent() {
             efficiency and drive growth.
           </p>
         </div>
-        <div className="w-1/2 overflow-hidden ">
-          <Image alt="img" role="img" src={image_1} className="hover:scale-110 duration-500"/>
+        <div className="md:w-1/2 w-full overflow-hidden ">
+          <Image
+            alt="img"
+            role="img"
+            src={image_1}
+            className="hover:scale-110 duration-500"
+          />
         </div>
       </div>
 
-      <div className="flex">
-        <div className="w-1/2 overflow-hidden">
-          <Image alt="img" role="img" src={image_2} className="hover:scale-110 duration-500"/>
+      <div className="flex justify-center w-full md:flex-row flex-col  ">
+        <div className="md:w-1/2 w-full overflow-hidden">
+          <Image
+            alt="img"
+            role="img"
+            src={image_2}
+            className="hover:scale-110 duration-500"
+          />
         </div>
 
-        <div className="w-1/2 p-4">
+        <div className="md:w-1/2 w-full md:p-4 p-2">
           <p className="text-primary font-bold text-2xl">
             How We Benefit Our Clients
           </p>
