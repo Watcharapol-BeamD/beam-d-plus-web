@@ -25,14 +25,14 @@ export default function ChumchumContent() {
             efficiency and drive growth.
           </p>
         </div>
-        <div className="w-1/2">
-          <Image alt="img" role="img" src={image_1} />
+        <div className="w-1/2 overflow-hidden ">
+          <Image alt="img" role="img" src={image_1} className="hover:scale-110 duration-500"/>
         </div>
       </div>
 
       <div className="flex">
-        <div className="w-1/2">
-          <Image alt="img" role="img" src={image_2} />
+        <div className="w-1/2 overflow-hidden">
+          <Image alt="img" role="img" src={image_2} className="hover:scale-110 duration-500"/>
         </div>
 
         <div className="w-1/2 p-4">
