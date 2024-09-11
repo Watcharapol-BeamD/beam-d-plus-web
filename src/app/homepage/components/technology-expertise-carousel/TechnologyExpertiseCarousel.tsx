@@ -30,7 +30,7 @@ import react_img from "@/app/assets/technology/react_logo-512.webp";
 import redux_img from "@/app/assets/technology/redux.png";
 import { useVisibilityOnScroll } from '@/app/hooks/useVisibilityOnScroll';
 
-export default function TechnologyExpertiseCarouselMobile() {
+export default function TechnologyExpertiseCarousel() {
 const isVisible= useVisibilityOnScroll("technology-expertise")
 
 
