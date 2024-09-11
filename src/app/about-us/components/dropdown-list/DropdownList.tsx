@@ -73,13 +73,7 @@ export default function DropdownList() {
       description:
         "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
-    {
-      id: 9,
-      title: "SAPB1",
-      url: "sapb1",
-      description:
-        "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
-    },
+ 
   ];
 
   // Detect screen size
