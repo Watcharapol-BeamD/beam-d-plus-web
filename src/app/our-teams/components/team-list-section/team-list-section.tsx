@@ -13,6 +13,10 @@ import Ullas_U_img from "@/app/assets/our-team/teammate/Ullas_U_img.webp";
 import Ratnisa_Boonhenglee_img from "@/app/assets/our-team/teammate/Ratnisa_Boonhenglee_img.webp";
 import Suphitcha_Jirivipakorn_img from "@/app/assets/our-team/teammate/Suphitcha_Jirivipakorn_img.webp";
 import Theeraphat_Aksaranan_img from "@/app/assets/our-team/teammate/Theeraphat_Aksaranan_img.webp";
+import Anulatha_Padmakumari_img from "@/app/assets/our-team/teammate/Anulatha_Padmakumari_img.webp";
+import Gopakumar_Krishnamma_GK_img from "@/app/assets/our-team/teammate/Gopakumar_Krishnamma_GK_img.webp";
+import Prasanth_Kumar_D_img from "@/app/assets/our-team/teammate/Prasanth_Kumar_D_img.webp";
+
 
 type TeamCardProps = {
   id: number;
@@ -93,17 +97,35 @@ export default function TeamListSection() {
       image_name: Theeraphat_Aksaranan_img,
       full_name: "Theeraphat Aksaranan (Top)",
       position: "Full Stack Developer",
+    },   {
+      id: 14,
+      image_name:Anulatha_Padmakumari_img  ,
+      full_name: "Anulatha Padmakumari",
+      position: "Functional Consultant",
+    },
+    {
+      id: 13,
+      image_name: Gopakumar_Krishnamma_GK_img,
+      full_name: "Gopakumar Krishnamma (GK)",
+      position: "Project Manager",
+    },
+ 
+    {
+      id: 15,
+      image_name: Prasanth_Kumar_D_img,
+      full_name: "Prasanth Kumar D",
+      position: "Software Architect ",
     },
   ];
 
   const renderTeamCard = (item: TeamCardProps) => {
     return (
-      <div className="relative h-full w-68     ">
-        <div className="h-full w-56 rounded-tr-3xl rounded-bl-3xl overflow-hidden p-2 border border-primary">
+      <div className="relative h-full w-68">
+        <div className="h-80 w-56 rounded-tr-3xl rounded-bl-3xl overflow-hidden p-2 border border-primary">
           <Image
             alt=""
             src={item.image_name}
-            className="h-full w-full  rounded-tr-3xl rounded-bl-3xl"
+            className="h-full w-full  rounded-tr-3xl rounded-bl-3xl object-cover"
           />
         </div>
         <div className="absolute bg-white border bottom-4 right-0 py-1 px-2 rounded-xl shadow">

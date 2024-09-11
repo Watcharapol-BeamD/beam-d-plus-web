@@ -4,9 +4,11 @@ import React from "react";
 import vscode_img from "@/app/assets/technology/Visual_Studio_Code_1.35_icon.svg.png";
 import { useMediaQuery } from "@mui/material";
 import TechnologyExpertiseCarousel from "../technology-expertise-carousel/TechnologyExpertiseCarousel";
+import { useVisibilityOnScroll } from "@/app/hooks/useVisibilityOnScroll";
 
 export default function TechnologyExpertiseSection() {
   const is768pxScreen = useMediaQuery("(min-width:768px)");
+  const isVisible= useVisibilityOnScroll("technology-expertise-section")
 
   const renderTechnologyFlex = () => {
     return (
@@ -37,18 +39,16 @@ export default function TechnologyExpertiseSection() {
 
   const renderTechnologyExpertiseSection = () => {
     return (
-      <div className="bg-primary min-h-96 px-4 py-10">
+      <div id="technology-expertise-section" className="bg-primary min-h-96 px-4 py-10">
         <div className="text-white mb-10  ">
           <p className="text-center text-3xl">Technology Expertise</p>
           <p className="text-center text-base pt-10">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            quam hic culpa quasi ea necessitatibus iure, nemo est? Enim aliquid
-            veritatis molestias praesentium dicta magnam voluptatem maxime in!
-            Itaque recusandae sint ex voluptate qui eveniet quasi consequuntur
-            odio pariatur rerum.
+          We don't want to be a jack of all trades and master of none. 
+          We are a custom mobile app development company specializing in select technologies, 
+          allowing us to provide exceptionally highly skilled developers in our area of expertise.
           </p>
         </div>
-        <TechnologyExpertiseCarousel />
+        <TechnologyExpertiseCarousel isVisible={isVisible}/>
       </div>
     );
   };

@@ -4,10 +4,12 @@ import TeamCarousel from "../team-carousel/TeamCarousel";
 import Button from "@/app/components/Button";
 import { useMediaQuery } from "@mui/material";
 import ButtonLink from "@/app/components/ButtonLink";
+import { useVisibilityOnScroll } from "@/app/hooks/useVisibilityOnScroll";
 
 export default function TeamSection() {
   const [isMounted, setIsMounted] = useState(false);
   const is768Screen = useMediaQuery("(min-width:768px)");
+const isVisible = useVisibilityOnScroll("team-section",true)
 
   useEffect(() => {
     setIsMounted(true);
@@ -21,7 +23,7 @@ export default function TeamSection() {
     return (
       <div className="lg:h-160 h-144 w-full flex">
         <div className="w-1/2 flex items-center justify-center  ">
-          <div className="text-center md:text-3xl text-2xl">
+          <div className={`text-center md:text-3xl text-2xl  ${isVisible?"animate-jump-in":""}`} >
             <p className="uppercase">your trusted partner in</p>
             <p className="uppercase">business development,</p>
             <p className="uppercase my-20">Driven by expertise and passion</p>
@@ -37,7 +39,7 @@ export default function TeamSection() {
 
   const renderOurTeamMobile = () => {
     return (
-      <div className="h-full w-full flex flex-col items-center space-y-10 my-10">
+      <div  className="h-full w-full flex flex-col items-center space-y-10 my-10">
         <div className="text-center md:text-3xl text-lg  ">
           <p className="uppercase">Driven by expertise and passion</p>
           <p className="uppercase text-base">
@@ -55,5 +57,5 @@ export default function TeamSection() {
     );
   };
 
-  return <>{is768Screen ? renderOurTeamDesktop() : renderOurTeamMobile()}</>;
+  return <div id="team-section">{is768Screen ? renderOurTeamDesktop() : renderOurTeamMobile()}</div>;
 }
