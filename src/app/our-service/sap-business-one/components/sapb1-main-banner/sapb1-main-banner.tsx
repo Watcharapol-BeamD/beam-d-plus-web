@@ -1,5 +1,5 @@
 import React from "react";
-import sapb1_main_banner from "@/app/assets/our-service/sapb1/group-diverse-people-having-business-meeting.webp";
+import sapb1_main_banner from "@/app/assets/our-service/sap-business-one/group-diverse-people-having-business-meeting.webp";
 
 export default function Sapb1MainBanner() {
   return (
