@@ -68,8 +68,8 @@ export default function DropdownList() {
     },
     {
       id: 8,
-      title: "Chum Chum",
-      url:"chum-chum",
+      title: "ChumChum",
+      url:"chumchum",
       description:
       "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
     },
