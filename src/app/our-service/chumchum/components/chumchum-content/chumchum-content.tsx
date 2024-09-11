@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 
-import image_1 from "@/app/assets/our-service/chumchum/DSCF0502.jpg";
-import image_2 from "@/app/assets/our-service/chumchum/DSCF0970.jpg";
+import image_1 from "@/app/assets/our-service/chumchum/DSCF0502.webp";
+import image_2 from "@/app/assets/our-service/chumchum/DSCF0970.webp";
 
 export default function ChumchumContent() {
   return (
