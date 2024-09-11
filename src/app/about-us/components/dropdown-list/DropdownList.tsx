@@ -112,7 +112,7 @@ export default function DropdownList() {
   const renderDropdown = () => {
     return (
      
-        <div className="space-y-1 relative">
+        <div className="space-y-1 relative z-20">
           {data.map((item) => (
             <div
               className="cursor-pointer"
