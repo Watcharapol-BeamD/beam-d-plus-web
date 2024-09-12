@@ -100,8 +100,8 @@ export default function TeamCarousel({ numberOfSlide }: TeamCarouselProps) {
                   <Image alt="person" role="img" src={item.profilePic} className="object-top"/>
                 </div>
                 <div className="mt-2">
-                  <p>{item.fullName}</p>
-                  <p>{item.position}</p>
+                  <p className="text-lg">{item.fullName}</p>
+                  <p className="text-base ">{item.position}</p>
                 </div>
                 {/* <div className="w-64 h-20 mt-10 text-center bg-red-500  overflow-hidden">
                   <p className="text-ellipsis  ">
