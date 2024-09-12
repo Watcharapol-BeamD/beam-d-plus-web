@@ -24,7 +24,7 @@ export default function OurServicePage() {
  
   const renderOurService = () => {
     return (
-      <div className="xl:container mx-auto w-full h-full">
+      <div className="xl:container mx-auto w-full h-full ">
         <OurServiceMainBanner />
         <div className="py-6">
           <OurServiceSection />
