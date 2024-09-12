@@ -33,11 +33,11 @@ export default function OurServiceMainBanner() {
   };
 
   return (
-    <div>
-      <div className="flex w-full h-full md:flex-row flex-col">
+     
+      <div className="flex w-full h-full md:flex-row flex-col bg-gray-300">
         <div className="md:w-1/2 w-full">{renderOurServiceMainBanner()}</div>
         <div className="md:w-1/2 w-full">{renderDescription()}</div>
       </div>
-    </div>
+ 
   );
 }
