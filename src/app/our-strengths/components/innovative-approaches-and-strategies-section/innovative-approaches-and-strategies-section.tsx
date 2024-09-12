@@ -16,7 +16,7 @@ export default function InnovativeApproachesAndStrategiesSection() {
   const data: InnovativeCardProps[] = [
     {
       id: 1,
-      image_name: innovative_img2,
+      image_name: innovative_img1,
       title: "Digitized Demand Generation",
       description: [
         "Social media communication",
@@ -38,7 +38,7 @@ export default function InnovativeApproachesAndStrategiesSection() {
     },
     {
       id: 3,
-      image_name: innovative_img2,
+      image_name: innovative_img3,
       title: "Digitized Demand Fulfilment",
       description: [
         "Dynamic warehouse management",
@@ -49,7 +49,7 @@ export default function InnovativeApproachesAndStrategiesSection() {
     },
     {
       id: 4,
-      image_name: innovative_img2,
+      image_name: innovative_img4,
       title: "Personalized After Sales Services",
       description: [
         "CRM solution",
