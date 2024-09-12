@@ -142,7 +142,7 @@ export default function TeamListSection() {
 
   const renderCardList = () => {
     return (
-      <div className="h-full w-full flex justify-center flex-wrap gap-8  ">
+      <div className="h-full w-full flex justify-center flex-wrap gap-8 animate-cus-slide-in-left-700  ">
         {data.map((item: TeamCardProps, index: number) => {
           return (
             <React.Fragment key={index}>{renderTeamCard(item)}</React.Fragment>

@@ -24,7 +24,7 @@ export default function OurServicePage() {
  
   const renderOurService = () => {
     return (
-      <div className="xl:container mx-auto w-full h-full">
+      <div className="xl:container mx-auto w-full h-full ">
         <OurServiceMainBanner />
         <div className="py-6">
           <OurServiceSection />
@@ -39,5 +39,5 @@ export default function OurServicePage() {
     );
   };
 
-  return <div className="flex-1">{renderOurService()}</div>;
+  return <div className="flex-1 animate-fade">{renderOurService()}</div>;
 }

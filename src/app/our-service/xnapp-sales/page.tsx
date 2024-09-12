@@ -14,5 +14,5 @@ export default function XnappSalePage() {
     );
   };
 
-  return <div className="flex-1">{renderXnappSalePage()}</div>;
+  return <div className="flex-1 animate-fade">{renderXnappSalePage()}</div>;
 }

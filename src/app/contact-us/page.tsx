@@ -18,5 +18,5 @@ export default function ContactUsPage() {
     );
   };
 
-  return <div className="flex-1">{renderContactUs()}</div>;
+  return <div className="flex-1 animate-fade">{renderContactUs()}</div>;
 }

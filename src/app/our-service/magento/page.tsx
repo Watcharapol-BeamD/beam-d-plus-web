@@ -13,5 +13,5 @@ export default function MagentoPage() {
     );
   };
 
-  return <div className="flex-1">{renderMagento()}</div>;
+  return <div className="flex-1 animate-fade">{renderMagento()}</div>;
 }

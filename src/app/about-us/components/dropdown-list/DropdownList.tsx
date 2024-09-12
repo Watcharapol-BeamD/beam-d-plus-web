@@ -22,56 +22,63 @@ export default function DropdownList() {
       title: "SAP",
       url: "sap",
       description:
-        "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
+        `Extend and personalized SAP applications or integrate and connect entire landscapes with SAP BTP.
+         Empower your business users to connect processes and experiences,
+         decide confidently with integrity, and perpetuate continued business innovation.` ,
     },
     {
       id: 2,
       title: "Xnapp Sales",
       url: "xnapp-sales",
-      description:
-        "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
+      description:`XnappSales works out what your customers need, how much of it they need and when they need it, 
+      so the right pack of the right category can always be found on the shelf.` 
     },
     {
       id: 3,
       title: "Locus",
       url: "locus",
-      description:
-        "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
+      description:`Locus collaborates closely with NTT DATA R&D experts continuously to analyze real-world case studies and 
+      other sources to identify the most significant technology and societal trends that we believe will drive change over 
+      the next three to ten years. ` 
     },
     {
       id: 4,
       title: "Magento",
       url: "magento",
-      description:
-        "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
+      description:`The experience makes all the difference. Grow with Adobe Commerce.Adobe Commerce is a flexible 
+      and scalable commerce platform that lets you create uniquely personalized B2B and B2C experiences, 
+      no matter how many brands you have.` 
     },
     {
       id: 5,
       title: "SAP Business ONE",
       url: "sap-business-one",
-      description:
-        "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
+      description:`Gain greater control over your business or subsidiary
+With the SAP Business One solution, you can drive profitable business growth with streamlined processes,
+ greater insight, and strategic decision-making based on real-time information.` 
     },
     {
       id: 6,
       title: "Xlerate",
       url: "xlerate",
-      description:
-        "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
+      description:`XLERATE incorporates RDM based Rig-management, laser previsualization, and laser content management, 
+      into one piece of software! Allowing designers to manage their rig, while customizing their lasers all in one place. 
+      See what this free download can do for you.` 
     },
     {
       id: 7,
       title: "Latitude247",
       url: "latitude247",
-      description:
-        "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
+      description:`We are recognized for our industry leading product set that provides airlines with the ability to
+       differentiate themselves and create operating efficiencies to improve profitability.` 
     },
     {
       id: 8,
       title: "ChumChum",
       url: "chumchum",
-      description:
-        "Leverage role-based access to critical data, applications, and analytical tools – and streamline your processes across procurement, manufacturing, service, sales, finance, and HR. ",
+      description:`GT Next's Advanced Retail and Wholesale Solutions are designed to meet 
+      the evolving needs of modern retailers and wholesalers. Our solutions offer a unified platform 
+      for managing inventory, sales, and customer interactions across multiple channels.` 
     },
  
   ];

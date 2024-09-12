@@ -16,5 +16,5 @@ export default function ChumChumPage() {
     );
   };
 
-  return <>{renderChumchum()}</>;
+  return <div className="flex-1 animate-fade">{renderChumchum()}</div>;
 }

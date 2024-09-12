@@ -5,11 +5,11 @@ import Image from "next/image";
 export default function OurServiceMainBanner() {
   const renderOurServiceMainBanner = () => {
     return (
-      <div className="relative lg:h-160 md:h-152 sm:h-128 480px:h-119 410px:h-110 370px:h-[25rem] 310px:h-[21rem] h-[19rem] flex w-full">
+      <div className="relative lg:h-160 md:h-152 sm:h-128 480px:h-119 410px:h-110 370px:h-[25rem] 310px:h-[21rem] h-[19rem] flex w-full overflow-hidden">
         {/* <div className="relative lg:h-160 md:h-152 sm:h-128 min-[480px]:h-119 min-[400px]:h-110 h-96 flex w-full   "></div> */}
         <div className="clip-style-v5 absolute md:h-96 h-full md:w-96 w-full bg-gray-300 bottom-0"></div>
-        <div className="clip-style-v5 absolute md:h-50 h-2/3 md:w-96 w-full bg-primary bottom-0"></div>
-        <div className="absolute bottom-0">
+        <div className="clip-style-v5 absolute md:h-50 h-2/3 md:w-96 w-full bg-primary bottom-0 animate-fade-right"></div>
+        <div className="absolute bottom-0 animate-fade-up">
           <Image alt="" src={our_service_banner_img} className=" " />
         </div>
       </div>
@@ -19,7 +19,7 @@ export default function OurServiceMainBanner() {
   const renderDescription = () => {
     return (
       <div className="h-full w-full flex flex-col item-center justify-center md:py-0 py-6 ">
-        <div className="text-center sm:px-10 px-2 space-y-2">
+        <div className="text-center sm:px-10 px-2 space-y-2 animate-fade">
           <p className="text-3xl">OUR SERVICES</p>
           <p>
             At BeamD, we excel in digital transformation, seamlessly integrate
@@ -33,11 +33,9 @@ export default function OurServiceMainBanner() {
   };
 
   return (
-    <div>
-      <div className="flex w-full h-full md:flex-row flex-col">
+      <div className="flex w-full h-full md:flex-row flex-col bg-gray-300 ">
         <div className="md:w-1/2 w-full">{renderOurServiceMainBanner()}</div>
         <div className="md:w-1/2 w-full">{renderDescription()}</div>
       </div>
-    </div>
   );
 }

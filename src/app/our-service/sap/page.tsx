@@ -8,7 +8,7 @@ export default function SapPage() {
     return (
       <div className="xl:container mx-auto">
         <SapMainBanner />
-        <div className="px-2 py-4">
+        <div className=" md:px-10 px-2 py-4">
           <SapInfoSection />
           <ResourcePlanningSection />
         </div>
@@ -16,5 +16,5 @@ export default function SapPage() {
     );
   };
 
-  return <>{renderSap()}</>;
+  return <div className="flex-1 animate-fade">{renderSap()}</div>;
 }

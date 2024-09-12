@@ -108,7 +108,7 @@ export default function OurServiceSection() {
 
   const renderOurService = () => {
     return (
-      <div className="xl:container mx-auto flex justify-center xl:px-0 px-2">
+      <div className="xl:container mx-auto flex justify-center xl:px-0 px-2 animate-fade-up">
         {/* <div className="flex flex-wrap w-full bg-yellow-400 justify-center  "> */}
         <div className="grid md:grid-cols-3 360px:grid-cols-2 grid-cols-1 lg:w-2/3 gap-1 w-full content-center place-items-center">
           {serviceCard()}
