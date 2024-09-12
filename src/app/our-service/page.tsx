@@ -39,5 +39,5 @@ export default function OurServicePage() {
     );
   };
 
-  return <div className="flex-1">{renderOurService()}</div>;
+  return <div className="flex-1 animate-fade">{renderOurService()}</div>;
 }

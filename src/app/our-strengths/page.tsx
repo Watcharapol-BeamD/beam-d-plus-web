@@ -16,5 +16,5 @@ export default function OurStrengthsPage() {
     );
   };
 
-  return <div className="flex-1">{renderOurStrengths()}</div>;
+  return <div className="flex-1 animate-fade">{renderOurStrengths()}</div>;
 }

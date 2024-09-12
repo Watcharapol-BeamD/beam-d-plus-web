@@ -35,5 +35,5 @@ export default function Sapb1Page() {
     );
   };
 
-  return <>{renderSapb1()}</>;
+  return <div className="flex-1 animate-fade">{renderSapb1()}</div>;
 }

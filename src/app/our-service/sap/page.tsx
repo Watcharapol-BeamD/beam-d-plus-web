@@ -16,5 +16,5 @@ export default function SapPage() {
     );
   };
 
-  return <>{renderSap()}</>;
+  return <div className="flex-1 animate-fade">{renderSap()}</div>;
 }

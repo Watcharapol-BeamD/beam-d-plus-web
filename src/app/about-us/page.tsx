@@ -73,5 +73,5 @@ export default function AboutUsPage() {
     );
   };
 
-  return <div className="flex-1">{renderAboutUs()}</div>;
+  return <div className="flex-1 animate-fade">{renderAboutUs()}</div>;
 }

@@ -14,5 +14,5 @@ export default function XleratePage() {
     );
   };
 
-  return <div className="flex-1">{renderXlerate()}</div>;
+  return <div className="flex-1 animate-fade">{renderXlerate()}</div>;
 }

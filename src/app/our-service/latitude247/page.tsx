@@ -14,5 +14,5 @@ export default function Latitude247Page() {
     );
   };
 
-  return <>{renderLatitude247()}</>;
+  return <div className="flex-1 animate-fade">{renderLatitude247()}</div>;
 }

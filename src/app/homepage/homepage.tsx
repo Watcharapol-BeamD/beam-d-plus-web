@@ -39,5 +39,5 @@ export default function Homepage() {
     );
   };
 
-  return <div className="flex-1  ">{renderHomepage()}</div>;
+  return <div className="flex-1 animate-fade ">{renderHomepage()}</div>;
 }

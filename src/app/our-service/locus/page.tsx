@@ -21,5 +21,5 @@ export default function LocusPage() {
     );
   };
 
-  return <div className="flex-1">{renderLocus()}</div>;
+  return <div className="flex-1 animate-fade">{renderLocus()}</div>;
 }
