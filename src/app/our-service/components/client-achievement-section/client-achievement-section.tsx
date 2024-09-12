@@ -71,9 +71,9 @@ export default function ClientAchievementSection() {
         <div className="h-full w-full bg-gradient-to-t hover:from-sub-main from-primary flex flex-col justify-end p-3">
           <p className="text-bold 550px:text-base text-sm">{item.title}</p>
           <div className="space-x-2 text-xs">
-            {item.tag.map((tag) => {
+            {item.tag.map((tag,index) => {
               return (
-                <button className="border py-0.5 px-2 rounded-full">
+                <button key={index+"tag"} className="border py-0.5 px-2 rounded-full">
                   {tag}
                 </button>
               );
