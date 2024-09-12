@@ -28,7 +28,7 @@ export default function SolutionSection() {
   const renderSolution = () => {
     const solutionCarousel = () => {
       return (
-        <div id="solution-carousel" className="w-full ">
+        <div id="solution-carousel" className="w-full animate-fade-up">
           <Swiper
             spaceBetween={5}
             navigation={true}
@@ -43,9 +43,9 @@ export default function SolutionSection() {
               },
             }}
           >
-            <SwiperSlide>
+            <SwiperSlide className="">
               <div
-                className="bg-cover bg-center md:w-80 md:h-144 w-72 h-112 rounded-3xl overflow-hidden"
+                className="bg-cover bg-center md:w-80 md:h-144 w-72 h-112 rounded-3xl overflow-hidden "
                 style={{ backgroundImage: `url(${solution_img1.src})` }}
               >
                 <div className="bg-primary h-full w-full bg-opacity-60 text-white p-4 flex flex-col">

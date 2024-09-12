@@ -52,7 +52,7 @@ export default function OurStrengthsMainBanner() {
             </p>
           </div>
         </div>
-        <div className={`animate-fade-up h-full flex justify-end items-end md:w-1/2 w-full`} >
+        <div className={`animate-fade-left h-full flex justify-end items-end md:w-1/2 w-full`} >
           <div className="h-40 w-full invisible">
             Don't remove ,this is use for making image stick to right conner
           </div>
