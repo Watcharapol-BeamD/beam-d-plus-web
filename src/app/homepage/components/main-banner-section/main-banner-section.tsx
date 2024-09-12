@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import banner from "@/app/assets/main/multiethnicbusinessteamhavingabrainstorming_preview-ezgif.com-video-to-webp-converter.webp";
+import banner from "@/app/assets/main/5343184-Coll-wavebreak-Associate.webp";
 import Image from "next/image";
 import Button from "@/app/components/Button";
 import Link from "next/link";
