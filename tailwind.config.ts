@@ -21,10 +21,12 @@ const config: Config = {
         "cus-slide-in-right": "slide-to-right 0.5s ease-out forwards",
         "cus-slide-up": "slide-to-up 0.5s ease-out forwards",
         "cus-slide-down": "slide-to-down 0.5s ease-out forwards",
+        "cus-slide-in-left-700": "slide-to-left 0.7s ease-out forwards",
         "cus-slide-up-700": "slide-to-up 0.7s ease-out forwards",
         "cus-slide-up-800": "slide-to-up 0.8s ease-out forwards",
         "cus-slide-up-900": "slide-to-up 0.9s ease-out forwards",
         "cus-slide-up-1000": "slide-to-up 1s ease-out forwards",
+        
       },
       keyframes: {     
         "slide-to-left": {

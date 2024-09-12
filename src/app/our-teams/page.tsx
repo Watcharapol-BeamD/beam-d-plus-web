@@ -7,7 +7,7 @@ import PerformanceSection from "../homepage/components/performance-section/perfo
 export default function OurTeamPage() {
   const renderOurTeam = () => {
     return (
-      <div className="xl:container mx-auto  ">
+      <div className="xl:container mx-auto animate-fade ">
         <OurTeamMainBanner />
         <div className="lg:px-0 px-2 py-6">
           <TeamListSection />
