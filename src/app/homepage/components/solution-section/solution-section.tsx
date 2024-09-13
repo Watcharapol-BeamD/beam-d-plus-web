@@ -23,8 +23,6 @@ import services_img from "@/app/assets/solution/service-setting-svgrepo-com.svg"
 import new_ideas_in_process_img from "@/app/assets/solution/think-svgrepo-com.svg";
 
 export default function SolutionSection() {
-
-  
   const renderSolution = () => {
     const solutionCarousel = () => {
       return (
@@ -49,13 +47,14 @@ export default function SolutionSection() {
                 style={{ backgroundImage: `url(${solution_img1.src})` }}
               >
                 <div className="bg-primary h-full w-full bg-opacity-60 text-white p-4 flex flex-col">
-                <Image
+                  <Image
                     alt=""
                     src={services_img}
-                    className="text-red-400 md:h-40 h-36"
-                
+                    className=" md:h-40 h-36"
                   />
-                  <p className="font-bold md:text-xl text-lg uppercase md:pt-10 pt-2">ONE-STOP-SERVCE</p>
+                  <p className="font-bold md:text-xl text-lg uppercase md:pt-10 pt-2">
+                    ONE-STOP-SERVCE
+                  </p>
                   <p className="md:text-lg text-base text-start">
                     Our services encompass the entire end-to-end project cycle,
                     including comprehensive tech support and change management
@@ -79,9 +78,11 @@ export default function SolutionSection() {
                   <Image
                     alt=""
                     src={new_ideas_in_process_img}
-                    className="text-red-400 md:h-40 h-36"
+                    className=" md:h-40 h-36"
                   />
-                  <p className="font-bold md:text-xl text-lg uppercase md:pt-10 pt-2">Deep Expertise</p>
+                  <p className="font-bold md:text-xl text-lg uppercase md:pt-10 pt-2">
+                    Deep Expertise
+                  </p>
                   <p className="md:text-lg text-base text-start">
                     Our team rooted in extensive experience with cross-industry
                     knowledge. With a deep expertise in SAP ERP, we provide
@@ -100,7 +101,7 @@ export default function SolutionSection() {
                   <Image
                     alt=""
                     src={recognition_img}
-                    className="text-red-400 md:h-40 h-36"
+                    className=" md:h-40 h-36"
                   />
                   <p className="font-bold md:text-xl text-lg uppercase md:pt-10 pt-2">
                     Customer's Recognition
