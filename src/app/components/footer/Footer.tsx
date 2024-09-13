@@ -7,6 +7,8 @@ import linked_in_img from "@/app/assets/footer/linkedin-big-logo.png";
 import Link from "next/link";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+ 
   const renderFooter = () => {
     return (
       <div className="xl:container mx-auto w-full flex flex-col py-4">
@@ -85,7 +87,7 @@ export default function Footer() {
             <p>COOKIES</p> */}
           </div>
           <div className=" flex 840px:justify-normal justify-center">
-            <p>2007 - 2023 © ALL RIGHTS RESERVED</p>
+            <p>2007 - {currentYear} © ALL RIGHTS RESERVED.</p>
           </div>
         </div>
       </div>

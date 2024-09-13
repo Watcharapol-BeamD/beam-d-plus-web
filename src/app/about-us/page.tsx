@@ -11,7 +11,7 @@ import TechnologyExpertiseSection from "../homepage/components/technology-expert
 export default function AboutUsPage() {
   const renderDescription = () => {
     return (
-      <div className="py-10 md:text-lg text-base space-y-4 px-2">
+      <div className="py-10 md:text-lg text-base space-y-4 sm:px-10 px-2">
         <p>
           BeamD group was started in 2007 in Thailand by a group of experienced
           consultants (more than 20 years) from global technology consulting

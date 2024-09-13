@@ -19,7 +19,13 @@ export default function ContactUsForm() {
     const userPhoneNumber = form.current["user_phone_number"].value.trim();
     const message = form.current["message"].value.trim();
 
-    if (!firstName || !lastName || !companyEmail || !userPhoneNumber || !message) {
+    if (
+      !firstName ||
+      !lastName ||
+      !companyEmail ||
+      !userPhoneNumber ||
+      !message
+    ) {
       setFormError("Please fill in all required fields.");
       return false;
     }
@@ -71,63 +77,69 @@ export default function ContactUsForm() {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="flex justify-center flex-col items-center mt-6"
+          className="flex justify-center flex-col items-center mt-6 "
         >
-          <div className="grid sm:grid-cols-2 grid-cols-1 gap-8">
-            <div>
-              <p>First Name</p>
-              <input
-                type="text"
-                name="first_name"
-                className="py-2 outline-none border-b-2 border-black"
-              />
+          <div className="  w-full lg:px-14   px-10 flex flex-col gap-9">
+            {/* -------------------- */}
+            <div className="flex gap-9 md:flex-row flex-col justify-between">
+              <div className="w-full">
+                <p>First Name</p>
+                <input
+                  type="text"
+                  name="first_name"
+                  className="py-2 outline-none border-b-2 border-black w-full"
+                />
+              </div>
+              <div className="w-full">
+                <p>Last Name</p>
+                <input
+                  type="text"
+                  name="last_name"
+                  className="py-2 outline-none border-b-2 border-black w-full"
+                />
+              </div>
             </div>
-
-            <div>
-              <p>Last Name</p>
-              <input
-                type="text"
-                name="last_name"
-                className="py-2 outline-none border-b-2 border-black"
-              />
+   {/* -------------------- */}
+            <div className="flex gap-9 md:flex-row flex-col justify-between">
+              <div className="w-full">
+                <p>Company Name</p>
+                <input
+                  type="text"
+                  name="company_name"
+                  className="py-2 outline-none border-b-2 border-black w-full"
+                />
+              </div>
+              <div className="w-full">
+                <p>Company Email</p>
+                <input
+                  type="email"
+                  name="company_email"
+                  className="py-2 outline-none border-b-2 border-black w-full"
+                />
+              </div>
             </div>
-
-            <div>
-              <p>Company Name</p>
-              <input
-                type="text"
-                name="company_name"
-                className="py-2 outline-none border-b-2 border-black"
-              />
-            </div>
-
-            <div>
-              <p>Company Email</p>
-              <input
-                type="email"
-                name="company_email"
-                className="py-2 outline-none border-b-2 border-black"
-              />
-            </div>
-
-            <div className="grid grid-col-1 gap-10">
-              <div>
+   {/* -------------------- */}
+            <div className="flex gap-9 md:flex-row flex-col justify-between">
+              <div className=" w-full">
                 <p>Phone Number</p>
                 <input
                   type="text"
                   name="user_phone_number"
-                  className="py-2 outline-none border-b-2 border-black"
+                  className="py-2 outline-none border-b-2 border-black w-full"
                 />
               </div>
-
-              <div>
-                <p>Leave A Message</p>
-                <input
-                  type="text"
-                  name="message"
-                  className="py-2 outline-none border-b-2 border-black"
-                />
+              <div className="invisible w-full md:block hidden">
+                <p>use to be box</p>
               </div>
+            </div>
+   {/* -------------------- */}
+            <div className="w-full">
+              <p>Leave A Message</p>
+              <input
+                type="text"
+                name="message"
+                className="py-2 outline-none border-b-2 border-black w-full"
+              />
             </div>
           </div>
           <div className="mt-4">
