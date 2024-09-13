@@ -20,7 +20,7 @@ export default function ContactAddressSection() {
               <Image alt="" src={thailand} className="w-12" />
             </div>
 
-            <p>karnthanawat Building Floor5.</p>
+            <p>Karnthanawat Building Floor5.</p>
             <p>536 Ratchadapisek Rd., Samsennok,</p>
             <p>HuayKwang, Bangkok, Thailand 10310</p>
             <p>Tel +66615463539</p>
