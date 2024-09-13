@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import banner from "@/app/assets/main/5343184-Coll-wavebreak-Associate.webp";
+import banner from "@/app/assets/main/shared-image.webp";
 import Image from "next/image";
 import Button from "@/app/components/Button";
 import Link from "next/link";
