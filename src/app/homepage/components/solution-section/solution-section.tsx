@@ -18,9 +18,9 @@ import Image from "next/image";
 import solution_img1 from "@/app/assets/solution/smiling-asian-businesswoman-showing-tablet-her-manager-meeting-office.webp";
 import solution_img2 from "@/app/assets/solution/close-up-businessman-with-digital-tablet.webp";
 import solution_img3 from "@/app/assets/solution/business-people-shaking-hands-finishing-up-meeting-deals-business-concept.webp";
-import ribbon_img from "@/app/assets/solution/ribbon.svg";
-import services_img from "@/app/assets/solution/services.svg";
-import new_ideas_in_process_img from "@/app/assets/solution/new-ideas-in-process.svg";
+import recognition_img from "@/app/assets/solution/recognition-award-label-with-ribbon-tails-svgrepo-com.svg";
+import services_img from "@/app/assets/solution/service-setting-svgrepo-com.svg";
+import new_ideas_in_process_img from "@/app/assets/solution/think-svgrepo-com.svg";
 
 export default function SolutionSection() {
 
@@ -49,10 +49,11 @@ export default function SolutionSection() {
                 style={{ backgroundImage: `url(${solution_img1.src})` }}
               >
                 <div className="bg-primary h-full w-full bg-opacity-60 text-white p-4 flex flex-col">
-                  <Image
+                <Image
                     alt=""
-                    src={services_img} 
+                    src={services_img}
                     className="text-red-400 md:h-40 h-36"
+                
                   />
                   <p className="font-bold md:text-xl text-lg uppercase md:pt-10 pt-2">ONE-STOP-SERVCE</p>
                   <p className="md:text-lg text-base text-start">
@@ -77,7 +78,7 @@ export default function SolutionSection() {
                 <div className="bg-primary h-full w-full bg-opacity-60 text-white p-4">
                   <Image
                     alt=""
-                    src={ribbon_img}
+                    src={new_ideas_in_process_img}
                     className="text-red-400 md:h-40 h-36"
                   />
                   <p className="font-bold md:text-xl text-lg uppercase md:pt-10 pt-2">Deep Expertise</p>
@@ -98,11 +99,11 @@ export default function SolutionSection() {
                 <div className="bg-primary h-full w-full bg-opacity-60 text-white p-4">
                   <Image
                     alt=""
-                    src={new_ideas_in_process_img}
+                    src={recognition_img}
                     className="text-red-400 md:h-40 h-36"
                   />
                   <p className="font-bold md:text-xl text-lg uppercase md:pt-10 pt-2">
-                    Customer’s Recognition
+                    Customer's Recognition
                   </p>
                   <p className="md:text-lg text-base text-start">
                     Proven track record in project & change management, ensuring
