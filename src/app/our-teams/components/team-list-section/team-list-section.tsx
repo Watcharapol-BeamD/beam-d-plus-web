@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import team_img from "@/app/assets/our-team/african-head-department-is-satisfied-with-work-staff-asian-male-student-trendy-shirt-telling-univers.webp";
 import Ratchtar_Karasuddhi_img from "@/app/assets/our-team/teammate/Ratchtar_Karasuddhi_img.webp";
@@ -17,7 +18,6 @@ import Anulatha_Padmakumari_img from "@/app/assets/our-team/teammate/Anulatha_Pa
 import Gopakumar_Krishnamma_GK_img from "@/app/assets/our-team/teammate/Gopakumar_Krishnamma_GK_img.webp";
 import Prasanth_Kumar_D_img from "@/app/assets/our-team/teammate/Prasanth_Kumar_D_img.webp";
 
-
 type TeamCardProps = {
   id: number;
   image_name: StaticImageData;
@@ -25,6 +25,8 @@ type TeamCardProps = {
   position: string;
 };
 export default function TeamListSection() {
+  const [visibleCount, setVisibleCount] = useState(10);
+
   const data: TeamCardProps[] = [
     {
       id: 1,
@@ -55,61 +57,63 @@ export default function TeamListSection() {
       image_name: Nuttapon_Wongkongmunsakul_img,
       full_name: "Nuttapon Wongkongmunsakul (Nut)",
       position: "Solution Development Head",
-    },
-    {
+    },    {
       id: 6,
-      image_name: Watcharapol_Numpaya_img,
-      full_name: "Watcharapol Numpaya (Bew)",
-      position: "Application Developer",
-    },
-    {
-      id: 7,
       image_name: Deepak_VV_img,
       full_name: "Deepak VV",
       position: "DMS/ERP/SAP Implementation Head",
     },
+
+    {
+      id: 7,
+      image_name: Watcharapol_Numpaya_img,
+      full_name: "Watcharapol Numpaya (Bew)",
+      position: "Application Developer",
+    },
+
     {
       id: 8,
-      image_name: Parvathi_JS_img,
-      full_name: "Parvathi J S",
-      position: "React/Angular Developer",
-    },
-    {
-      id: 9,
-      image_name: Ullas_U_img,
-      full_name: "Ullas U",
-      position: "JAVA Backend Stack Developer",
-    },
-    {
-      id: 10,
       image_name: Ratnisa_Boonhenglee_img,
       full_name: "Ratnisa Boonhenglee (Ise)",
       position: "Functional Consultant",
     },
     {
-      id: 11,
+      id: 9,
       image_name: Suphitcha_Jirivipakorn_img,
       full_name: "Suphitcha Jirivipakorn (Dear)",
       position: "Functional Consultant",
     },
     {
-      id: 12,
+      id: 10,
       image_name: Theeraphat_Aksaranan_img,
       full_name: "Theeraphat Aksaranan (Top)",
       position: "Full Stack Developer",
-    },   {
-      id: 14,
-      image_name:Anulatha_Padmakumari_img  ,
+    },
+    {
+      id: 11,
+      image_name: Parvathi_JS_img,
+      full_name: "Parvathi J S",
+      position: "React/Angular Developer",
+    },
+    {
+      id: 12,
+      image_name: Ullas_U_img,
+      full_name: "Ullas U",
+      position: "JAVA Backend Stack Developer",
+    },
+    {
+      id: 13,
+      image_name: Anulatha_Padmakumari_img,
       full_name: "Anulatha Padmakumari",
       position: "Functional Consultant",
     },
     {
-      id: 13,
+      id: 14,
       image_name: Gopakumar_Krishnamma_GK_img,
       full_name: "Gopakumar Krishnamma (GK)",
       position: "Project Manager",
     },
- 
+
     {
       id: 15,
       image_name: Prasanth_Kumar_D_img,
@@ -142,15 +146,29 @@ export default function TeamListSection() {
 
   const renderCardList = () => {
     return (
-      <div className="h-full w-full flex justify-center flex-wrap gap-8 animate-cus-slide-in-left-700  ">
-        {data.map((item: TeamCardProps, index: number) => {
-          return (
-            <React.Fragment key={index}>{renderTeamCard(item)}</React.Fragment>
-          );
-        })}
+      <div className="h-full w-full flex justify-center flex-wrap gap-8 animate-cus-slide-in-left-700">
+        {data.slice(0, visibleCount).map((item) => renderTeamCard(item))}
       </div>
     );
   };
 
-  return <>{renderCardList()}</>;
+  const loadMore = () => {
+    setVisibleCount(visibleCount + 5); // Show 5 more team members
+  };
+
+  return (
+    <div>
+      {renderCardList()}
+      {visibleCount < data.length && (
+        <div className="  flex justify-center"> 
+           <button
+          onClick={loadMore}
+          className="mt-6 border border-primary px-4 py-2 rounded-full text-base text-primary shadow-md"
+        >
+          Load More
+        </button></div>
+  
+      )}
+    </div>
+  );
 }
