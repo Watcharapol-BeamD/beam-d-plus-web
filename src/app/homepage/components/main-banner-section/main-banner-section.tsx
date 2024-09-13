@@ -12,9 +12,9 @@ export default function MainBannerSection() {
 
   const renderBanner = () => {
     return (
-      <div id="main-banner" className="h-full w-full static xl:relative bg-gray-200 xl:block flex xl:flex-row flex-col-reverse ">
+      <div id="main-banner" className="h-full w-full static xl:relative   xl:block flex xl:flex-row flex-col-reverse ">
         
-        <div className={`animate-fade-right animate-ease-in-out md:py-10 md:px-10 px-4 py-10 xl:absolute xl:bottom-0 z-10  `} >
+        <div className={`animate-fade-right animate-ease-in-out md:py-10 md:px-10 px-4 py-4 xl:absolute xl:bottom-0 z-10`} >
           <div className={`lg:text-4xl text-3xl font-bold`} >
             <p>Your Awesome </p>
             <p>Technology Partner</p>
