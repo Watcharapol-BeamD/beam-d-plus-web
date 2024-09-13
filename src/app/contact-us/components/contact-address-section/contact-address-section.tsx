@@ -13,7 +13,7 @@ export default function ContactAddressSection() {
           <p className="text-lg">For Business Inquiries</p>
         </div>
 
-        <div className="flex justify-center ite md:flex-row flex-col gap-4">
+        <div className="flex justify-center ite md:flex-row flex-col md:gap-10 gap-4">
           <div className="sm:text-base text-sm ">
             <div className="flex items-center gap-1">
               <p className="sm:text-lg text-base font-bold">THAILAND </p>
