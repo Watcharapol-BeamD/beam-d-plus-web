@@ -51,7 +51,7 @@ export default function SolutionSection() {
                 <div className="bg-primary h-full w-full bg-opacity-60 text-white p-4 flex flex-col">
                   <Image
                     alt=""
-                    src={ribbon_img}
+                    src={services_img} 
                     className="text-red-400 md:h-40 h-36"
                   />
                   <p className="font-bold md:text-xl text-lg uppercase md:pt-10 pt-2">ONE-STOP-SERVCE</p>
@@ -77,7 +77,7 @@ export default function SolutionSection() {
                 <div className="bg-primary h-full w-full bg-opacity-60 text-white p-4">
                   <Image
                     alt=""
-                    src={services_img}
+                    src={ribbon_img}
                     className="text-red-400 md:h-40 h-36"
                   />
                   <p className="font-bold md:text-xl text-lg uppercase md:pt-10 pt-2">Deep Expertise</p>
