@@ -43,7 +43,7 @@ export default function SolutionSection() {
           >
             <SwiperSlide className="">
               <div
-                className="bg-cover bg-center md:w-80 md:h-144 w-72 h-112 rounded-3xl overflow-hidden "
+                className="bg-cover bg-center  min-h-80 rounded-3xl overflow-hidden "
                 style={{ backgroundImage: `url(${solution_img1.src})` }}
               >
                 <div className="bg-primary h-full w-full bg-opacity-60 text-white p-4 flex flex-col">
