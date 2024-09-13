@@ -19,7 +19,7 @@ export default function OurServiceSection() {
   const items = [
     {
       image: ml_img,
-      description: `SAP ERP & SAP HANA Consulting & Implementation`,
+      description: `SAP S/4 Hana and SAP B1 consulting & implementation`,
     },
     {
       image: thinking_img,
