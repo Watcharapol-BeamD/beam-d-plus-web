@@ -65,7 +65,7 @@ export default function ClientAchievementSection() {
   const renderAchievementCard = (item: AchievementDataType) => {
     return (
       <div
-        className="bg-cover bg-center lg:h-76 lg:w-76 910px:h-72 910px:w-72 550px:h-64 550px:w-64 h-56 370px:w-full w-56 rounded-3xl overflow-hidden text-white cursor-pointer hover:scale-105 transform transition-transform duration-300 "
+        className="bg-cover bg-center lg:h-76 lg:w-76 910px:h-72 910px:w-72 550px:h-64 550px:w-64 h-56 370px:w-full w-56 rounded-3xl overflow-hidden text-white hover:scale-105 transform transition-transform duration-300 "
         style={{ backgroundImage: `url(${item.image_name.src})` }}
       >
         <div className="h-full w-full bg-gradient-to-t hover:from-sub-main from-primary flex flex-col justify-end p-3">
