@@ -67,7 +67,7 @@ export default function ContactUsForm() {
 
   const renderContactForm = () => {
     return (
-      <div id="contact-us" className="border py-6 shadow-md bg-white w-full">
+      <div id="contact-us" className="border py-6 shadow-md bg-white w-full animate-fade-up">
         <p className="text-center text-3xl">LET'S CONNECT</p>
 
         {formError && (
