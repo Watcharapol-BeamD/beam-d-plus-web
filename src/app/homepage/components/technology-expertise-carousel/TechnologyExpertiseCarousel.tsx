@@ -31,7 +31,7 @@ import redux_img from "@/app/assets/technology/redux.png";
 import { useVisibilityOnScroll } from '@/app/hooks/useVisibilityOnScroll';
 
 export default function TechnologyExpertiseCarousel({isVisible}:{isVisible:boolean}) {
-  console.log(isVisible)
+
 // const isVisible= useVisibilityOnScroll("technology-expertise")
 
 
