@@ -9,11 +9,11 @@ export default function XlerateMainBanner() {
         style={{ backgroundImage: `url(${Xlerate_img.src})` }}
       >
         <div className="relative bg-gray-300 bg-opacity-50 h-full w-full flex justify-center items-center">
-          <div className="absolute bg-secondary h-auto md:w-160 w-auto px-4 py-6 rounded-3xl space-y-4">
-            <p className="md:text-4xl sm:text-3xl text-2xl font-bold text-center uppercase">
+          <div className="absolute bg-secondary h-auto md:w-160 w-auto px-4 py-6 rounded-3xl space-y-4 text-center">
+            <p className="md:text-4xl sm:text-3xl text-xl font-bold text-center uppercase">
               Xlerate
             </p>
-            <p className="md:text-4xl sm:text-3xl text-2xl font-bold">
+            <p className="md:text-4xl sm:text-3xl text-xl font-bold">
               FLEET & RESOURCE MANAGEMEN
             </p>
           </div>
