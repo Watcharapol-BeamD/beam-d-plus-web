@@ -29,7 +29,7 @@ export default function SolutionSection() {
         <div id="solution-carousel" className="w-full animate-fade-up">
           <Swiper
             spaceBetween={5}
-            navigation={true}
+            navigation={false}
             pagination={true}
             modules={[Navigation, Pagination]}
             breakpoints={{
