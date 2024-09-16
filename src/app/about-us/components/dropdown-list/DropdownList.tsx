@@ -74,7 +74,7 @@ With the SAP Business One solution, you can drive profitable business growth wit
     },
     {
       id: 8,
-      title: "ChumChum",
+      title: "CC+ eCommerce",
       url: "chumchum",
       description:`GT Next's Advanced Retail and Wholesale Solutions are designed to meet 
       the evolving needs of modern retailers and wholesalers. Our solutions offer a unified platform 
