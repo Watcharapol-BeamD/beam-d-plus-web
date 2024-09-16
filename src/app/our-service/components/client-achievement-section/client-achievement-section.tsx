@@ -65,7 +65,7 @@ export default function ClientAchievementSection() {
   const renderAchievementCard = (item: AchievementDataType) => {
     return (
       <div
-        className="bg-cover bg-center lg:h-76 lg:w-76 910px:h-72 910px:w-72 550px:h-64 550px:w-64 h-56 w-56 rounded-3xl overflow-hidden text-white cursor-pointer hover:scale-105 transform transition-transform duration-300 "
+        className="bg-cover bg-center lg:h-76 lg:w-76 910px:h-72 910px:w-72 550px:h-64 550px:w-64 h-56 370px:w-full w-56 rounded-3xl overflow-hidden text-white cursor-pointer hover:scale-105 transform transition-transform duration-300 "
         style={{ backgroundImage: `url(${item.image_name.src})` }}
       >
         <div className="h-full w-full bg-gradient-to-t hover:from-sub-main from-primary flex flex-col justify-end p-3">
@@ -89,7 +89,7 @@ export default function ClientAchievementSection() {
       <div className="xl:container mx-auto flex flex-col items-center justify-center w-full px-2 ">
         <p className="text-3xl py-8">Client Achievements</p>
         {/* <div className="flex flex-wrap w-full bg-yellow-400 justify-center  "> */}
-        <div className="xl:w-5/6 w-full content-center place-items-center gap-2 grid 810px:grid-cols-3 xs:grid-cols-2 grid-cols-1 ">
+        <div className="xl:w-5/6 w-full content-center place-items-center gap-2 grid 810px:grid-cols-3 370px:grid-cols-2 grid-cols-1 ">
           {data.map((item: AchievementDataType, index: number) => (
             <React.Fragment key={index}>
               {renderAchievementCard(item)}
