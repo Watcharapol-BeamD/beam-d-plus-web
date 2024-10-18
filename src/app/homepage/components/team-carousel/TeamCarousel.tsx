@@ -39,7 +39,7 @@ export default function TeamCarousel({ numberOfSlide }: TeamCarouselProps) {
     {
       profilePic: Kannika_Angkurarat_img,
       fullName: "May Kannika",
-      position: "Managing Directtor",
+      position: "Managing Director",
       description: `Highly experienced SAP consultant with expertise in change management and project implementation across functions;
        such as supply chain, finance, and sales. Having worked on highly complex project 
        environment for notable global and local companies in Thailand and SEA.
