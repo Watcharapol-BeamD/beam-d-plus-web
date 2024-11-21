@@ -1,5 +1,5 @@
 import React from "react";
-import beam_d_img from "@/app/assets/beamD-logo.png";
+import sea_tech_logo from "@/app/assets/SEA-Tech-logo.png";
 import Image from "next/image";
 import line_img from "@/app/assets/footer/line.png";
 import facebook_img from "@/app/assets/footer/facebook.png";
@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="xl:container mx-auto w-full flex flex-col py-4">
         <div className="h-full w-full  flex items-center 840px:flex-row flex-col ">
           <div className="h-full w-full flex flex-col justify-center 840px:items-start items-center 0 840px:py-0 py-4">
-            <Image alt="" src={beam_d_img} className="h-16 w-32" />
+            <Image alt="" src={sea_tech_logo} className="h-16 w-38" />
             <div className="gap-2 840px:flex hidden py-2">
               <Link href={"/about-us"}>ABOUT US</Link>
               <Link href={"/our-service"}>OUR SERVICE</Link>
@@ -27,22 +27,14 @@ export default function Footer() {
             <div className="gap-2   840px:px-0 px-1">
               <div className="w-full flex 840px:flex-row flex-col 840px:items-start items-center">
                 <div>
+         
                   <p>
                     <a
-                      href="https://www.beamd.com"
+                      href="http://www.sea-techsoftware.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      https://www.beamd.com
-                    </a>
-                  </p>
-                  <p>
-                    <a
-                      href="https://www.beamdplus.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      https://www.beamdplus.com
+                      http://www.sea-techsoftware.com/
                     </a>
                   </p>
                   <span>Email:</span>{" "}
@@ -58,21 +50,21 @@ export default function Footer() {
                   <div className="bg-white rounded-full p-1 border border-blue-600">
                     <Image alt="" src={facebook_img} className="h-6 w-6" />
                   </div>
-                  <p>@BeamDConsulting</p>
+                  <p>@SEA-TECHSOFTWARE</p>
                 </div>
 
                 <div className="flex items-center">
                   <div className="bg-white rounded-full p-2 border border-black">
                     <Image alt="" src={linked_in_img} className="h-4 w-4" />
                   </div>
-                  <p>BeamD</p>
+                  <p>SEA-TECHSOFTWARE</p>
                 </div>
 
                 <div className="flex items-center">
                   <div className="bg-white rounded-full p-1 border border-blue-600">
                     <Image alt="" src={line_img} className="h-6 w-6" />
                   </div>
-                  <p>@BeamD</p>
+                  <p>@SEA-TECHSOFTWARE</p>
                 </div>
               </div>
             </div>
