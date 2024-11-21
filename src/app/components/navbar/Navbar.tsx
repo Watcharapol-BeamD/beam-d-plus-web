@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useMediaQuery } from "@mui/material";
 import { useEffect, useState } from "react";
 import DrawerComponent from "../drawer";
-import beam_d_img from "@/app/assets/beamD-logo.png";
+import sea_tech_logo from "@/app/assets/SEA-Tech-logo.png";
 
 export default function Navbar() {
   const [isMounted, setIsMounted] = useState(false);
@@ -28,7 +28,7 @@ export default function Navbar() {
           <Link href={"/"} className="mr-2 ">
             <Image
               alt=""
-              src={beam_d_img}
+              src={sea_tech_logo}
               className="lg:h-16 lg:w-full h-12 w-full  "
             />
           </Link>

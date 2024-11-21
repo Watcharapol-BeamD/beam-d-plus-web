@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
@@ -13,10 +13,10 @@ import MailIcon from "@mui/icons-material/Mail";
 import MenuIcon from "@mui/icons-material/Menu";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 import Link from "next/link";
-import beam_d_img from "@/app/assets/beamD-logo.png";
+import sea_tech_logo from "@/app/assets/SEA-Tech-logo.png";
 import Image from "next/image";
 export default function DrawerComponent() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
@@ -73,7 +73,7 @@ export default function DrawerComponent() {
       <div className="flex justify-between w-full px-2">
         <div className="h-10 w-10 "> </div>
         <Link href={"/"} className=" ">
-          <Image alt="" src={beam_d_img} className="h-10 w-18" />
+          <Image alt="" src={sea_tech_logo} className="h-10 w-22" />
         </Link>
 
         <button onClick={toggleDrawer(true)}>
@@ -84,7 +84,7 @@ export default function DrawerComponent() {
       <Drawer anchor="top" open={open} onClose={toggleDrawer(false)}>
         <div className="flex justify-between items-center h-18 w-full px-2 bg-primary ">
           <div className="h-10 w-10 "> </div>
-          <Image alt="" src={beam_d_img} className="h-10 w-18" />
+          <Image alt="" src={sea_tech_logo} className="h-10 w-18" />
           <button onClick={toggleDrawer(false)}>
             <HighlightOffIcon fontSize="large" className="text-white" />
           </button>
